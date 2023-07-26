@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+    --gryphon-red: #C20430;
+    --gryphon-yellow: #FFC72A;
+    --gryphon-black: #000000;
+    --gryphon-blue: #69A3B9;
+    --gryphon-white: #FFFFFF;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--gryphon-black);
+    color: var(--gryphon-white);
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
