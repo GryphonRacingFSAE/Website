@@ -13,6 +13,7 @@ jobs:
       
       - name: Build
         run: |
+          export NUXT_APP_BASE_URL=/Website/
           npm i
           npm run generate
       
