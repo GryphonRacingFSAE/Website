@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MenuIcon from "vue-material-design-icons/Menu.vue";
+// import MenuIcon from "vue-material-design-icons/Menu.vue";
 import { ref } from "vue";
 import { RouterLink } from "vue-router";
 
@@ -17,7 +17,7 @@ const dropdown_active = ref(false);
         <RouterLink to="/projects">Projects</RouterLink>
         <RouterLink to="/cars">Cars</RouterLink>
         <RouterLink to="/sponsors">Sponsors</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
+        <RouterLink to="/ContactView">Contact</RouterLink>
         <MenuIcon class="hamburger" @click="dropdown_active = !dropdown_active"></MenuIcon>
     </div>
 </template>
