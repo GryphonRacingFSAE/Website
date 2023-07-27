@@ -1,9 +1,8 @@
-<script setup>
+<script setup lang="ts">
 import LeadProfile from "@/components/LeadProfile.vue";
 </script>
 
 <template>
-    <div>historical</div>
     <div class="profiles_list">
         <LeadProfile name="Ayden Bourdeau" />
         <LeadProfile name="Jonas Hill" />
