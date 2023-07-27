@@ -10,7 +10,7 @@ const profile_picture_url = computed(() => {
         console.warn(`Unknown name: ${props.name}`);
         cleaned_name = "unknown";
     }
-    return `/media/team_members/${cleaned_name}.jpg`;
+    return import.meta.env.BASE_URL + `media/team_members/${cleaned_name}.jpg`;
 });
 </script>
 
