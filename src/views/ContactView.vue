@@ -88,5 +88,3 @@
   background-color: var(--c);
   color: var(--gryphon-red);
 }
-
-</style>

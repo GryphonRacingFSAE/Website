@@ -1,0 +1,61 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "paths": {
+      "#imports": [
+        "C:/Users/walke/OneDrive/Documents/Coding/GitHub/Website/.nuxt/types/nitro-imports"
+      ],
+      "#paths": [
+        "C:/Users/walke/OneDrive/Documents/Coding/GitHub/Website/node_modules/nuxt/dist/core/runtime/nitro/paths"
+      ],
+      "~": [
+        "C:/Users/walke/OneDrive/Documents/Coding/GitHub/Website"
+      ],
+      "~/*": [
+        "C:/Users/walke/OneDrive/Documents/Coding/GitHub/Website/*"
+      ],
+      "@": [
+        "C:/Users/walke/OneDrive/Documents/Coding/GitHub/Website"
+      ],
+      "@/*": [
+        "C:/Users/walke/OneDrive/Documents/Coding/GitHub/Website/*"
+      ],
+      "~~": [
+        "C:/Users/walke/OneDrive/Documents/Coding/GitHub/Website"
+      ],
+      "~~/*": [
+        "C:/Users/walke/OneDrive/Documents/Coding/GitHub/Website/*"
+      ],
+      "@@": [
+        "C:/Users/walke/OneDrive/Documents/Coding/GitHub/Website"
+      ],
+      "@@/*": [
+        "C:/Users/walke/OneDrive/Documents/Coding/GitHub/Website/*"
+      ],
+      "assets": [
+        "C:/Users/walke/OneDrive/Documents/Coding/GitHub/Website/assets"
+      ],
+      "public": [
+        "C:/Users/walke/OneDrive/Documents/Coding/GitHub/Website/public"
+      ],
+      "public/*": [
+        "C:/Users/walke/OneDrive/Documents/Coding/GitHub/Website/public/*"
+      ]
+    }
+  },
+  "include": [
+    "C:/Users/walke/OneDrive/Documents/Coding/GitHub/Website/.nuxt/types/nitro-nuxt.d.ts",
+    "./types/nitro.d.ts",
+    "../**/*",
+    "../server/**/*"
+  ]
+}

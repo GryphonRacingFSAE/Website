@@ -1,5 +1,7 @@
-<script setup>
-import MenuIcon from "vue-material-design-icons/Menu.vue";
+<script setup lang="ts">
+// import MenuIcon from "vue-material-design-icons/Menu.vue";
+import { ref } from "vue";
+import { RouterLink } from "vue-router";
 
 // Most of this code was adapted from:
 // https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
@@ -10,13 +12,12 @@ const dropdown_active = ref(false);
 
 <template>
     <div class="navbar" :class="{ responsive: dropdown_active }">
-        <NuxtLink to="/">
-            Home
-        </NuxtLink>
-        <NuxtLink to="/team">Team</NuxtLink>
-        <NuxtLink to="/projects">Projects</NuxtLink>
-        <NuxtLink to="/historical">Historical</NuxtLink>
-        <NuxtLink to="/contact">Contact</NuxtLink>
+        <RouterLink to="/"> Home </RouterLink>
+        <RouterLink to="/team">Team</RouterLink>
+        <RouterLink to="/projects">Projects</RouterLink>
+        <RouterLink to="/cars">Cars</RouterLink>
+        <RouterLink to="/sponsors">Sponsors</RouterLink>
+        <RouterLink to="/ContactView">Contact</RouterLink>
         <MenuIcon class="hamburger" @click="dropdown_active = !dropdown_active"></MenuIcon>
     </div>
 </template>
