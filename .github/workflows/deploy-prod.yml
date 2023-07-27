@@ -20,7 +20,7 @@ jobs:
       - name: Upload Github Pages Artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: .output/public
+          path: dist
 
   # Taken from https://github.com/actions/deploy-pages/blob/master/README.md
   deploy:
