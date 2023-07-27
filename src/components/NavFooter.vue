@@ -22,7 +22,7 @@
             </div>
 
             <div class="teamLogo">
-                <NuxtLink to="/"><img src="media\GryphonBanner.svg" /></NuxtLink>
+                <NuxtLink to="/"><img src="public\media\GryphonBanner.svg" /></NuxtLink>
             </div>
 
             <div class="contactInformation">
