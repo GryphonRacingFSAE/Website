@@ -17,7 +17,7 @@ const dropdown_active = ref(false);
         <RouterLink to="/projects">Projects</RouterLink>
         <RouterLink to="/cars">Cars</RouterLink>
         <RouterLink to="/sponsors">Sponsors</RouterLink>
-        <RouterLink to="/ContactView">Contact</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink>
         <MenuIcon class="hamburger" @click="dropdown_active = !dropdown_active"></MenuIcon>
     </div>
 </template>
