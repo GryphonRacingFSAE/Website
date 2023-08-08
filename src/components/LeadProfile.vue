@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed } from "vue";
-const props = defineProps(["name"]);
+import { computed, ref } from "vue";
+const props = defineProps<{ title: string; name: string }>();
 
 const known_names = ["ayden_bourdeau", "jonas_hill", "kaden", "mahsam"];
 
@@ -12,13 +12,20 @@ const profile_picture_url = computed(() => {
     }
     return import.meta.env.BASE_URL + `media/team_members/${cleaned_name}.jpg`;
 });
+
+const popup = ref(false);
 </script>
 
 <template>
-    <div class="card">
+    <div class="card" @click="popup = true">
         <img :src="profile_picture_url" class="profile_picture" />
+        <h1>{{ props.title }}</h1>
         <h2>{{ props.name }}</h2>
-        <slot></slot>
+
+        <!-- We can add a popup later for each captain/lead -->
+        <!-- <div v-if="popup" class="popup">
+            <slot></slot>
+        </div> -->
     </div>
 </template>
 
@@ -29,8 +36,11 @@ const profile_picture_url = computed(() => {
     transition: 0.3s;
     border-radius: 5px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     background-color: var(--gryphon-white);
-    color: var(--gryphon-black);
+    color: var(--gryphon-light-black);
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -48,6 +58,12 @@ const profile_picture_url = computed(() => {
 }
 
 h1 {
-    padding: 0;
+    margin: 0.1em;
+    font-size: 1.5em;
+}
+
+h2 {
+    margin: 0.1em;
+    font-size: 1.2em;
 }
 </style>

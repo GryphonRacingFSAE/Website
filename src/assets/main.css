@@ -2,16 +2,19 @@
 
 :root {
     --gryphon-red: #C20430;
+    --gryphon-red-transparent: #C20430CC;
     --gryphon-yellow: #FFC72A;
+    --gryphon-light-black: #2C2C2C;
     --gryphon-black: #000000;
     --gryphon-blue: #69A3B9;
+    --gryphon-dark-white: #E5E5E5;
     --gryphon-white: #FFFFFF;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--gryphon-black);
-    color: var(--gryphon-white);
+    background-color: var(--gryphon-light-black);
+    color: var(--gryphon-dark-white);
     margin: 0;
 }
 

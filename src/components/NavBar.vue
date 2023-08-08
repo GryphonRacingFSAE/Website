@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// import MenuIcon from "vue-material-design-icons/Menu.vue";
+import MenuIcon from "vue-material-design-icons/Menu.vue";
 import { ref } from "vue";
 import { RouterLink } from "vue-router";
 
@@ -12,10 +12,9 @@ const dropdown_active = ref(false);
 
 <template>
     <div class="navbar" :class="{ responsive: dropdown_active }">
+        <img class="crest" src="/media/crest.svg" />
         <RouterLink to="/"> Home </RouterLink>
         <RouterLink to="/team">Team</RouterLink>
-        <RouterLink to="/projects">Projects</RouterLink>
-        <RouterLink to="/cars">Cars</RouterLink>
         <RouterLink to="/sponsors">Sponsors</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
         <MenuIcon class="hamburger" @click="dropdown_active = !dropdown_active"></MenuIcon>
@@ -23,12 +22,17 @@ const dropdown_active = ref(false);
 </template>
 
 <style scoped>
+.crest {
+    height: 3em;
+    margin: 10px;
+}
+
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     min-height: 3em;
-    background-color: var(--gryphon-red);
+    background-color: var(--gryphon-red-transparent);
     margin: 0;
     display: flex;
     overflow: hidden;
@@ -36,7 +40,7 @@ const dropdown_active = ref(false);
 }
 
 .navbar > * {
-    padding: 0 10px;
+    padding: 0 20px;
     color: var(--gryphon-white);
     text-decoration: none;
     font-size: 1.3rem;
@@ -59,7 +63,7 @@ const dropdown_active = ref(false);
 }
 
 @media screen and (max-width: 600px) {
-    .navbar a:not(:first-child) {
+    .navbar a:not(:nth-child(2)) {
         display: none;
     }
     .navbar .hamburger {

@@ -1,90 +1,81 @@
 <template>
-    <div class="footerWrapper">
-        <div class="mainFooter">
-            <!-- insert social media images here with links: -->
-            <div class="socialMediaLogos">
-                <h2>Follow us</h2>
-                <br />
-                <ul>
-                    <li>
-                        <img />
-                    </li>
-                    <li>
-                        <img />
-                    </li>
-                    <li>
-                        <img />
-                    </li>
-                    <li>
-                        <img />
-                    </li>
-                </ul>
-            </div>
+    <div class="footer">
+        <div class="banner">
+            <RouterLink to="/"><img src="/media/banner.svg" /></RouterLink>
+        </div>
 
-            <div class="teamLogo">
-                <RouterLink to="/"><img src="/media/GryphonBanner.svg" /></RouterLink>
-            </div>
+        <div class="contact_info">
+            <h2>Contact us at:</h2>
+            50 Stone Road East, Guelph, N1G2W1<br />
+            (519) 824-4120 ext 52698<br />
+            <a href="mailto:ugracing@uoguelph.ca" class="contact_email">ugracing@uoguelph.ca</a>
+        </div>
 
-            <div class="contactInformation">
-                <h2>Contact us at:</h2>
-                50 Stone Road East, Guelph, N1G2W1<br />
-                (519) 824-4120 ext 52698<br />
-                <a href="mailto:ugracing@uoguelph.ca@example.com" class="contact_email">ugracing@uoguelph.ca</a>
-            </div>
+        <div class="media_logos">
+            <a href="https://www.linkedin.com/company/gryphon-racing">
+                <img src="/social_media/linkedin.webp" />
+            </a>
+            <a href="https://www.instagram.com/gryphonracing">
+                <img src="/social_media/instagram.webp" />
+            </a>
+            <a href="https://discord.gg/jTW8CYar2H">
+                <img src="/social_media/discord.png" />
+            </a>
         </div>
     </div>
 </template>
 
 <style scoped>
-.footerWrapper {
+.footer {
     width: 100%;
-    padding-top: 5vh;
-    padding-bottom: 10vh;
-    margin: 0 auto;
-    background-color: var(gryphon-black);
+    background-color: var(--gryphon-light-black);
+    color: var(--gryphon-dark-white);
     text-align: center;
-}
-.mainFooter {
+    align-items: center;
+    justify-content: space-evenly;
     display: flex;
-    padding-left: 8vw;
-    padding-right: 20vw;
+    padding: 50px 0px;
 }
 
-.mainFooter div {
-    padding-top: 1vh;
-    padding-left: 4vw;
-    padding-right: 4vw;
-}
-.teamLogo {
-    margin-top: 3vh;
-}
-
-.socialMediaLogos {
-    height: 50px;
-    width: 18vw;
-}
-.socialMediaLogos ul {
-    list-style-type: none;
-    display: flex;
-    position: relative;
-    padding-left: 0;
-    width: 20vw;
-}
-.socialMediaLogos li {
-    margin-right: 5vh;
-}
-.socialMediaLogos img {
-    background-color: aqua;
+.media_logos img {
     height: 50px;
     width: 50px;
-}
-.contact_email {
-    text-decoration: none;
-    color: var(--gryphon-white);
+    margin: 10px;
 }
 
-.contactInformation {
+.contact_email {
+    text-decoration: none;
+    color: var(--gryphon-dark-white);
+}
+
+.contact_info {
     text-align: left;
     line-height: 170%;
+}
+
+.banner {
+    width: 30vw;
+    height: 10vh;
+    margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer > * {
+        margin: 10px 0px;
+    }
+
+    .contact_info {
+        text-align: center;
+    }
+
+    .banner {
+        width: 80vw;
+        margin-bottom: 40px;
+    }
 }
 </style>
