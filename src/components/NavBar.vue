@@ -59,7 +59,7 @@ const dropdown_active = ref(false);
     top: calc(3em + 40px);
     right: 0;
     background-color: var(--gryphon-red-transparent);
-    display: flex;
+    display: none;
     flex-direction: column;
     z-index: 1000;
 }
@@ -94,6 +94,10 @@ const dropdown_active = ref(false);
     }
     .navbar .hamburger {
         /* display: block; */
+        display: flex;
+    }
+
+    .dropdown {
         display: flex;
     }
 }
