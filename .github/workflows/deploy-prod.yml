@@ -13,7 +13,7 @@ jobs:
       
       - name: Build
         run: |
-          export VITE_BASE_URL=https://gryphonracingfsae.github.io/Website/
+          export VITE_BASE_URL=/Website/
           npm i
           npm run generate
       

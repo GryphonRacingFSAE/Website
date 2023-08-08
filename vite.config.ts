@@ -2,7 +2,6 @@ import { fileURLToPath, URL } from "node:url";
 
 import { defineConfig, loadEnv, type ConfigEnv } from "vite";
 import vue from "@vitejs/plugin-vue";
-import { createHtmlPlugin } from "vite-plugin-html";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }: ConfigEnv) => {
@@ -11,16 +10,7 @@ export default defineConfig(({ mode }: ConfigEnv) => {
     env.VITE_BASE_URL ??= "/";
 
     return {
-        plugins: [
-            vue(),
-            createHtmlPlugin({
-                inject: {
-                    data: {
-                        VITE_BASE_URL: env.VITE_BASE_URL,
-                    },
-                },
-            }),
-        ],
+        plugins: [vue()],
         resolve: {
             alias: {
                 "@": fileURLToPath(new URL("./src", import.meta.url)),
