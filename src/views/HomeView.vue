@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
+import NavFooter from "@/components/NavFooter.vue";
 import { useNow } from "@vueuse/core";
 
 function useTimeTill(date: Date) {
@@ -20,18 +21,22 @@ const time_till_new_hampshire = useTimeTill(new Date(2024, 4, 21));
 const time_till_michigan = useTimeTill(new Date(2024, 6, 15));
 </script>
 
-<template class="root">
-    <img class="landing_page_image" src="/media/autocross_grc19.jpg" />
-    <div class="overlay">
-        <img class="banner" src="/media/banner.svg" />
-        <div class="upcoming_events">
-            <h1>Upcoming Events</h1>
-            <h2>Toronto Shootout</h2>
-            <div>{{ time_till_toronto }}</div>
-            <h2>Formula Hybrid + Electric</h2>
-            <div>{{ time_till_new_hampshire }}</div>
-            <h2>Michigan FSAE</h2>
-            <div>{{ time_till_michigan }}</div>
+<template>
+    <div class="landing_page_image">
+        <div class="overlay">
+            <img class="banner" src="/media/banner.svg" />
+            <div class="upcoming_events">
+                <h1>Upcoming Events</h1>
+                <h2>Toronto Shootout</h2>
+                <div>{{ time_till_toronto.days }}</div>
+                <h2>Formula Hybrid + Electric</h2>
+                <div>{{ time_till_new_hampshire.days }}</div>
+                <h2>Michigan FSAE</h2>
+                <div>{{ time_till_michigan.days }}</div>
+            </div>
+        </div>
+        <div class="floating_scroll_body">
+            <NavFooter></NavFooter>
         </div>
     </div>
 </template>
@@ -40,7 +45,26 @@ const time_till_michigan = useTimeTill(new Date(2024, 6, 15));
 .landing_page_image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+
+    /* The image used */
+    background-image: url("/media/autocross_grc19.jpg");
+
+    /* Set a specific height */
+    min-height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.floating_scroll_body {
+    z-index: 1;
+    /* height: 200vh; */
+    width: 100%;
+    top: 100%;
+    background-color: rgba(255, 255, 255, 0);
     position: absolute;
 }
 

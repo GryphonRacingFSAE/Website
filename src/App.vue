@@ -6,5 +6,5 @@ import NavFooter from "@/components/NavFooter.vue";
 <template>
     <NavBar />
     <RouterView />
-    <NavFooter />
+    <NavFooter v-if="$route.path != '/'" />
 </template>

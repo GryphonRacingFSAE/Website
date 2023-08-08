@@ -11,13 +11,18 @@ const dropdown_active = ref(false);
 </script>
 
 <template>
-    <div class="navbar" :class="{ responsive: dropdown_active }">
+    <div class="navbar highlight">
         <img class="crest" src="/media/crest.svg" />
-        <RouterLink to="/"> Home </RouterLink>
+        <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/team">Team</RouterLink>
         <RouterLink to="/sponsors">Sponsors</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
         <MenuIcon class="hamburger" @click="dropdown_active = !dropdown_active"></MenuIcon>
+    </div>
+    <div class="dropdown highlight" v-if="dropdown_active">
+        <RouterLink to="/team">Team</RouterLink>
+        <RouterLink to="/sponsors">Sponsors</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink>
     </div>
 </template>
 
@@ -31,12 +36,12 @@ const dropdown_active = ref(false);
     position: fixed;
     top: 0;
     width: 100%;
-    min-height: 3em;
+    height: calc(3em + 40px);
     background-color: var(--gryphon-red-transparent);
     margin: 0;
     display: flex;
     overflow: hidden;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .navbar > * {
@@ -49,9 +54,30 @@ const dropdown_active = ref(false);
     align-items: center;
 }
 
-.navbar a:hover {
+.dropdown {
+    position: fixed;
+    top: calc(3em + 40px);
+    right: 0;
+    background-color: var(--gryphon-red-transparent);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.dropdown a {
+    padding: 5px 30px;
+    color: var(--gryphon-white);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.highlight a:hover {
     background-color: var(--gryphon-yellow);
-    color: var(--gryphon-black);
+    color: var(--gryphon-light-black);
+    transition-duration: 300ms;
 }
 
 .hamburger {
@@ -69,17 +95,6 @@ const dropdown_active = ref(false);
     .navbar .hamburger {
         /* display: block; */
         display: flex;
-    }
-
-    .navbar.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .navbar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
     }
 }
 </style>

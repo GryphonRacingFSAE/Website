@@ -2,7 +2,7 @@
 import { computed, ref } from "vue";
 const props = defineProps<{ title: string; name: string }>();
 
-const known_names = ["ayden_bourdeau", "jonas_hill", "kaden", "mahsam"];
+const known_names = ["ayden_bourdeau", "jonas_hill", "kaden", "mahsam", "owen_fray"];
 
 const profile_picture_url = computed(() => {
     let cleaned_name = props.name.replace(" ", "_").toLowerCase();

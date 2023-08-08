@@ -9,10 +9,12 @@ import LeadProfile from "@/components/LeadProfile.vue";
             <LeadProfile title="Admin Captain" name="Ayden Bourdeau" />
             <LeadProfile title="Dynamics Captain" name="Matt Aziz" />
             <LeadProfile title="Electrical Captain" name="Matt Verburg" />
-            <LeadProfile title="Embedded Lead" name="Dallas Hart" />
-            <LeadProfile title="Harness Lead" name="Patrick McNutt" />
+        </div>
+        <div class="profiles_list">
             <LeadProfile title="Suspension Lead" name="Owen Fray" />
             <LeadProfile title="Low Voltage Lead" name="Rayne van Voorst" />
+            <LeadProfile title="Harness Lead" name="Patrick McNutt" />
+            <LeadProfile title="Embedded Lead" name="Dallas Hart" />
         </div>
     </div>
 </template>
@@ -31,7 +33,7 @@ import LeadProfile from "@/components/LeadProfile.vue";
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
