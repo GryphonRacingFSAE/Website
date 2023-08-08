@@ -19,6 +19,9 @@
             <a href="https://discord.gg/jTW8CYar2H">
                 <img src="/social_media/discord.png" />
             </a>
+            <a href="https://github.com/GryphonRacingFSAE">
+                <img src="/social_media/github.svg" style="filter: invert(92%)" />
+            </a>
         </div>
     </div>
 </template>
