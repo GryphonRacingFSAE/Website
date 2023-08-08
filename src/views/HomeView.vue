@@ -22,18 +22,17 @@ const time_till_michigan = useTimeTill(new Date(2024, 6, 15));
 
 <template class="root">
     <img class="landing_page_image" src="/media/autocross_grc19.jpg" />
-    <div class="upcoming_events">
-        <h1>Upcoming Events:</h1>
-        <h2>Toronto Shootout</h2>
-        <div>{{ time_till_toronto }}</div>
-        <h2>Formula Hybrid + Electric</h2>
-        <div>{{ time_till_new_hampshire }}</div>
-        <h2>Michigan FSAE</h2>
-        <div>{{ time_till_michigan }}</div>
-    </div>
     <div class="overlay">
-        <h1>Gryphon Racing</h1>
-        <h2>University of Guelph's Formula SAE Team</h2>
+        <img class="banner" src="/media/banner.svg" />
+        <div class="upcoming_events">
+            <h1>Upcoming Events</h1>
+            <h2>Toronto Shootout</h2>
+            <div>{{ time_till_toronto }}</div>
+            <h2>Formula Hybrid + Electric</h2>
+            <div>{{ time_till_new_hampshire }}</div>
+            <h2>Michigan FSAE</h2>
+            <div>{{ time_till_michigan }}</div>
+        </div>
     </div>
 </template>
 
@@ -43,21 +42,30 @@ const time_till_michigan = useTimeTill(new Date(2024, 6, 15));
     height: 100%;
     object-fit: cover;
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
 }
 
 .upcoming_events {
-    padding: 12pt;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
     color: #000000;
     width: 30%;
-    left: auto;
-    margin-right: auto;
-    border-radius: 16pt;
+    min-width: 400px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    bottom: 64pt;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.banner {
+    width: 40%;
+    min-width: 400px;
 }
 </style>

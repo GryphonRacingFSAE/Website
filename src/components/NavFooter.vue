@@ -1,15 +1,13 @@
 <template>
     <div class="footer">
-        <div class="banner">
-            <RouterLink to="/"><img src="/media/banner.svg" /></RouterLink>
-        </div>
-
         <div class="contact_info">
             <h2>Contact us at:</h2>
             50 Stone Road East, Guelph, N1G2W1<br />
             (519) 824-4120 ext 52698<br />
             <a href="mailto:ugracing@uoguelph.ca" class="contact_email">ugracing@uoguelph.ca</a>
         </div>
+
+        <img class="banner" src="/media/banner.svg" />
 
         <div class="media_logos">
             <a href="https://www.linkedin.com/company/gryphon-racing">
@@ -34,6 +32,7 @@
     align-items: center;
     justify-content: space-evenly;
     display: flex;
+    align-items: center;
     padding: 50px 0px;
 }
 
@@ -55,14 +54,11 @@
 
 .banner {
     width: 30vw;
-    height: 10vh;
-    margin: 10px;
 }
 
 @media screen and (max-width: 600px) {
     .footer {
         flex-direction: column;
-        align-items: center;
     }
 
     .footer > * {
@@ -75,6 +71,7 @@
 
     .banner {
         width: 80vw;
+        margin-top: 40px;
         margin-bottom: 40px;
     }
 }

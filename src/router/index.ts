@@ -13,14 +13,14 @@ export const routes = [
         path: "/team",
         component: () => import("@/views/TeamView.vue"),
     },
-    {
-        path: "/cars",
-        component: () => import("@/views/CarsView.vue"),
-    },
-    {
-        path: "/projects",
-        component: () => import("@/views/ProjectsView.vue"),
-    },
+    // {
+    //     path: "/cars",
+    //     component: () => import("@/views/CarsView.vue"),
+    // },
+    // {
+    //     path: "/projects",
+    //     component: () => import("@/views/ProjectsView.vue"),
+    // },
     {
         path: "/sponsors",
         component: () => import("@/views/SponsorView.vue"),
