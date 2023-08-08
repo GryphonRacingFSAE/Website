@@ -22,7 +22,7 @@
             </div>
 
             <div class="teamLogo">
-                <RouterLink to="/"><img src="/public/media/GryphonBanner.svg" /></RouterLink>
+                <RouterLink to="/"><img src="/media/GryphonBanner.svg" /></RouterLink>
             </div>
 
             <div class="contactInformation">
