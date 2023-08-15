@@ -29,25 +29,34 @@
     line-height: 250%;
     display: flex;
     padding-top: 15vh;
-    padding-bottom: 15vh;
-    widows: 100%;
+    padding-bottom: 10vh;
+    padding-left: 15%;
+    padding-right: 15%;
     background-color: var(--gryphon-white);
     color: var(--gryphon-red);
 }
+
+.info {
+    width: 50%;
+}
+
 .map {
     border: 0;
     border-radius: 2em;
     margin-left: 6em;
+    width: 50%;
 }
 
 .shop_info p {
     font-size: 2em;
 }
+
 .shop_info h1 {
     font-size: 4em;
+    line-height: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .shop_info {
         flex-direction: column;
         align-items: center;
@@ -61,6 +70,7 @@
 
     .info {
         text-align: center;
+        width: 80vw;
     }
 }
 </style>

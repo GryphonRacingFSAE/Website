@@ -19,8 +19,8 @@ const popup = ref(false);
 <template>
     <div class="card" @click="popup = true">
         <img :src="profile_picture_url" class="profile_picture" />
-        <h1>{{ props.title }}</h1>
-        <h2>{{ props.name }}</h2>
+        <h1>{{ props.name }}</h1>
+        <h2>{{ props.title }}</h2>
 
         <!-- We can add a popup later for each captain/lead -->
         <!-- <div v-if="popup" class="popup">
@@ -45,7 +45,7 @@ const popup = ref(false);
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
 }
 
 .profile_picture {

@@ -11,16 +11,16 @@
 
         <div class="media_logos">
             <a href="https://www.linkedin.com/company/gryphon-racing">
-                <img src="/social_media/linkedin.webp" />
+                <img src="/social_media/linkedin.svg" />
             </a>
             <a href="https://www.instagram.com/gryphonracing">
-                <img src="/social_media/instagram.webp" />
+                <img src="/social_media/instagram.svg" />
             </a>
             <a href="https://discord.gg/jTW8CYar2H">
-                <img src="/social_media/discord.png" />
+                <img src="/social_media/discord.svg" />
             </a>
             <a href="https://github.com/GryphonRacingFSAE">
-                <img src="/social_media/github.svg" style="filter: invert(92%)" />
+                <img src="/social_media/github.svg" />
             </a>
         </div>
     </div>
@@ -43,6 +43,7 @@
     height: 50px;
     width: 50px;
     margin: 10px;
+    filter: invert(92%);
 }
 
 .contact_email {

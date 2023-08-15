@@ -6,14 +6,17 @@ import { RouterLink } from "vue-router";
 // Most of this code was adapted from:
 // https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
 // https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
-
 const dropdown_active = ref(false);
+
+window.addEventListener("scroll", () => {
+    dropdown_active.value = false;
+});
 </script>
 
 <template>
     <div class="navbar highlight">
         <img class="crest" src="/media/crest.svg" />
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/" aria-haspopup="true" role="button" tabindex="0">Home</RouterLink>
         <RouterLink to="/team">Team</RouterLink>
         <RouterLink to="/sponsors">Sponsors</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
@@ -59,6 +62,7 @@ const dropdown_active = ref(false);
     top: calc(3em + 40px);
     right: 0;
     background-color: var(--gryphon-red-transparent);
+    border-radius: 0 0 0 25px;
     display: none;
     flex-direction: column;
     z-index: 1000;
@@ -74,10 +78,12 @@ const dropdown_active = ref(false);
     align-items: center;
 }
 
-.highlight a:hover {
-    background-color: var(--gryphon-yellow);
-    color: var(--gryphon-light-black);
-    transition-duration: 300ms;
+@media (hover: hover) and (pointer: fine) {
+    .highlight a:hover {
+        background-color: var(--gryphon-yellow);
+        color: var(--gryphon-light-black);
+        transition-duration: 300ms;
+    }
 }
 
 .hamburger {
