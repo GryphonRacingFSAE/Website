@@ -2,12 +2,12 @@
 import { computed, ref } from "vue";
 const props = defineProps<{ title: string; name: string }>();
 
-const known_names = ["ayden_bourdeau", "jonas_hill", "kaden", "mahsam", "owen_fray"];
+const known_names = ["ayden_bourdeau", "owen_fray", "dallas_hart", "matt_aziz", "patrick_mcnutt", "rayne_van_voorst", "matt_verburg"];
 
 const profile_picture_url = computed(() => {
-    let cleaned_name = props.name.replace(" ", "_").toLowerCase();
+    let cleaned_name = props.name.replaceAll(" ", "_").toLowerCase();
     if (!known_names.includes(cleaned_name)) {
-        console.warn(`Unknown name: ${props.name}`);
+        console.warn(`Unknown name: ${props.name} : ${cleaned_name}}`);
         cleaned_name = "unknown";
     }
     return import.meta.env.BASE_URL + `media/team_members/${cleaned_name}.jpg`;

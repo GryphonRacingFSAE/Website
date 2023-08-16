@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed } from "vue";
 import NavFooter from "@/components/NavFooter.vue";
 import { useNow } from "@vueuse/core";
 
@@ -76,6 +76,30 @@ const time_till_soonest = computed(() => {
             </div>
         </div>
         <div class="floating_scroll_body">
+            <div class="additional_info">
+                <div class="about_us">
+                    <h1>About Us</h1>
+                    <p>
+                        Gryphon Racing is a club where University of Guelph students can gain real-world engineering experience building a performance vehicle for Formula Student competitions. This
+                        gives students the opportunity to explore and pursue their passion for knowledge through firsthand experience.
+                    </p>
+                </div>
+                <div class="our_cars">
+                    <h1>Our Cars</h1>
+                    <div class="car_listings">
+                        <div>
+                            <h2>GRC19</h2>
+                            <p>Our 2019 combustion car</p>
+                            <img class="car_portrait" src="/car_portraits/grc19.jpg" />
+                        </div>
+                        <div>
+                            <h2>GRC22</h2>
+                            <p>Gryphon Racing's first ever: electric car, full aerodynamics kit, custom gearbox, custom ECU</p>
+                            <img class="car_portrait" src="/car_portraits/grc19.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
             <NavFooter></NavFooter>
         </div>
     </div>
@@ -97,6 +121,70 @@ const time_till_soonest = computed(() => {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.additional_info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--gryphon-white);
+    color: var(--gryphon-red);
+    padding: 3vh 15%;
+}
+
+.about_us {
+    justify-content: center;
+    flex-direction: column;
+    line-height: 250%;
+    display: flex;
+}
+
+.about_us h1 {
+    margin-bottom: 0;
+}
+
+.about_us p {
+    line-height: 150%;
+    font-size: 1.2em;
+}
+
+.our_cars {
+    justify-content: center;
+    flex-direction: column;
+    line-height: 250%;
+    display: flex;
+}
+
+.our_cars > h1 {
+    margin-bottom: 0;
+}
+
+.car_listings {
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.car_listings > div {
+    width: 45%;
+}
+
+.car_listings > div > h2 {
+    margin-bottom: 0;
+}
+
+.car_listings > div > p {
+    margin-top: 0;
+    line-height: 130%;
+    font-size: 1.2em;
+}
+
+.car_portrait {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 
 .floating_scroll_body {
@@ -150,6 +238,7 @@ const time_till_soonest = computed(() => {
     border-radius: 20px;
     align-items: center;
     text-align: center;
+    padding-bottom: 15px;
 }
 
 .overlay {
