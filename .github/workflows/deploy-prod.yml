@@ -13,7 +13,7 @@ jobs:
       
       - name: Build
         run: |
-          export VITE_BASE_URL=/Website/
+          export VITE_BASE_URL=/
           npm i
           npm run generate
       

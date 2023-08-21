@@ -90,17 +90,19 @@ const time_till_soonest = computed(() => {
                         <div>
                             <h2>GRC19</h2>
                             <p>
-                                The first and last in Gryphon Racing's lineup. For the first time since the team's founding, the 600cc GSX-R engine was mounted transversely in the car and
-                                the iconic shaft drive was replaced with a chain and custom-built limited slip differential. This allowed the team to switch to 10” rims and lower the car's overall
-                                center of gravity. Following 2019, the team has switched to developing an electric car, ending an almost 20-year history of GSX-R powertrains and moving the team into
-                                the modern realm of electric powertrains.
+                                The first and last in Gryphon Racing's legacy. For the first time since the team's founding, the 600cc GSX-R engine was mounted transversely in the car and the iconic
+                                shaft drive was replaced with a chain and custom-built limited slip differential. This allowed the team to switch to 10” rims and lower the car's overall center of
+                                gravity.
                             </p>
                             <img class="car_portrait" src="/car_portraits/grc19.jpg" />
                         </div>
                         <div>
                             <h2>GRC22</h2>
-                            <p>Gryphon Racing's first ever: electric car, full aerodynamics kit, custom gearbox, custom ECU</p>
-                            <img class="car_portrait" src="/car_portraits/grc19.jpg" />
+                            <p>
+                                A new generation of Gryphon Racing design. This car marks the ending of an almost 20-year history of GSX-R powertrains. The team at Gryphon Racing has spent countless
+                                hours developing Gryphon Racing's first ever: electric car, full aerodynamics kit, custom gearbox + differential, and custom Vehicle Control Unit.
+                            </p>
+                            <img class="car_portrait" src="/car_portraits/grc22.jpg" />
                         </div>
                     </div>
                 </div>
