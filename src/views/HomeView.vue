@@ -89,7 +89,12 @@ const time_till_soonest = computed(() => {
                     <div class="car_listings">
                         <div>
                             <h2>GRC19</h2>
-                            <p>Our 2019 combustion car</p>
+                            <p>
+                                The first and last in Gryphon Racing's lineup. For the first time since the team's founding, the 600cc GSX-R engine was mounted transversely in the car and
+                                the iconic shaft drive was replaced with a chain and custom-built limited slip differential. This allowed the team to switch to 10” rims and lower the car's overall
+                                center of gravity. Following 2019, the team has switched to developing an electric car, ending an almost 20-year history of GSX-R powertrains and moving the team into
+                                the modern realm of electric powertrains.
+                            </p>
                             <img class="car_portrait" src="/car_portraits/grc19.jpg" />
                         </div>
                         <div>
