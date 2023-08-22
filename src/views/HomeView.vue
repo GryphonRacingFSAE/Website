@@ -178,6 +178,16 @@ const time_till_soonest = computed(() => {
     width: 45%;
 }
 
+@media screen and (max-width: 1000px) {
+    .car_listings {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .car_listings > div {
+        width: 100%;
+    }
+}
+
 .car_listings > div > h2 {
     margin-bottom: 0;
 }
