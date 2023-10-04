@@ -41,7 +41,7 @@ const time_till_soonest = computed(() => {
 <template>
     <div class="landing_page_image">
         <div class="overlay">
-            <img class="banner" src="/media/banner.svg" />
+            <img class="banner" src="/media/banner.svg" alt="Banner Image" />
             <div class="upcoming_events" v-if="upcoming_events.length != 0">
                 <!-- The next event that we'll be attending -->
                 <h1>{{ upcoming_events[0].name }}</h1>
@@ -94,7 +94,7 @@ const time_till_soonest = computed(() => {
                                 shaft drive was replaced with a chain and custom-built limited slip differential. This allowed the team to switch to 10” rims and lower the car's overall center of
                                 gravity.
                             </p>
-                            <img class="car_portrait" src="/car_portraits/grc19.jpg" />
+                            <img class="car_portrait" src="/car_portraits/grc19.webp" alt="GRC19 Car Portrait" />
                         </div>
                         <div>
                             <h2>GRC22</h2>
@@ -102,7 +102,7 @@ const time_till_soonest = computed(() => {
                                 A new generation of Gryphon Racing design. This car marks the ending of an almost 20-year history of GSX-R powertrains. The team at Gryphon Racing has spent countless
                                 hours developing Gryphon Racing's first ever: electric car, full aerodynamics kit, custom gearbox + differential, and custom Vehicle Control Unit.
                             </p>
-                            <img class="car_portrait" src="/car_portraits/grc22.jpg" />
+                            <img class="car_portrait" src="/car_portraits/grc22.webp" alt="GRC22 Car Portrait" />
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@ const time_till_soonest = computed(() => {
     height: 100%;
 
     /* The image used */
-    background-image: url("/media/autocross_grc19.jpg");
+    background-image: url("/media/autocross_grc19.webp");
 
     /* Set a specific height */
     min-height: 100vh;
