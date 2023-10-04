@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted } from "vue";
 
-function addLoadEventListener() {
+onMounted(() => {
     const map: HTMLElement = document.getElementById("map")!;
     const frame: HTMLIFrameElement = document.createElement("iframe");
     frame.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21842.523643301887!2d-80.23692987083086!3d43.530101771774326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9b28ceea7401%3A0xa48ca79ad3a559a6!2sGRYPHON%20RACING!5e0!3m2!1sen!2sca!4v1690415587608!5m2!1sen!2sca";
@@ -12,10 +12,6 @@ function addLoadEventListener() {
     frame.height = "100%";
     frame.width = "100%";
     map.appendChild(frame);
-}
-
-onMounted(() => {
-    addLoadEventListener();
 });
 </script>
 
