@@ -7,20 +7,20 @@
             <a href="mailto:ugracing@uoguelph.ca" class="contact_email">ugracing@uoguelph.ca</a>
         </div>
 
-        <img class="banner" src="/media/banner.svg" />
+        <img class="banner" src="/media/banner.svg" alt="Gryphon Racing Banner"/>
 
         <div class="media_logos">
             <a href="https://www.linkedin.com/company/gryphon-racing">
-                <img src="/social_media/linkedin.svg" />
+                <img src="/social_media/linkedin.svg" alt="Linkedin"/>
             </a>
             <a href="https://www.instagram.com/gryphonracing">
-                <img src="/social_media/instagram.svg" />
+                <img src="/social_media/instagram.svg" alt="Instagram"/>
             </a>
             <a href="https://discord.gg/jTW8CYar2H">
-                <img src="/social_media/discord.svg" />
+                <img src="/social_media/discord.svg" alt="Discord"/>
             </a>
             <a href="https://github.com/GryphonRacingFSAE">
-                <img src="/social_media/github.svg" />
+                <img src="/social_media/github.svg" alt="GitHub"/>
             </a>
         </div>
     </div>

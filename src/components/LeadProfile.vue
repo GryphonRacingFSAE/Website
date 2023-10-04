@@ -10,7 +10,7 @@ const profile_picture_url = computed(() => {
         console.warn(`Unknown name: ${props.name} : ${cleaned_name}}`);
         cleaned_name = "unknown";
     }
-    return import.meta.env.BASE_URL + `media/team_members/${cleaned_name}.jpg`;
+    return import.meta.env.BASE_URL + `media/team_members_webp/${cleaned_name}.webp`;
 });
 
 const popup = ref(false);
@@ -18,7 +18,7 @@ const popup = ref(false);
 
 <template>
     <div class="card" @click="popup = true">
-        <img :src="profile_picture_url" class="profile_picture" />
+        <img :src="profile_picture_url" class="profile_picture" :alt="props.name"/>
         <h1>{{ props.name }}</h1>
         <h2>{{ props.title }}</h2>
 

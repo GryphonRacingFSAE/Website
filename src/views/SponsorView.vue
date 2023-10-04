@@ -3,48 +3,48 @@
         <h1>Sponsors</h1>
         <div class="list_container platinum">
             <div class="sponsor_list">
-                <img src="/sponsors/apt.png" />
-                <img src="/sponsors/musashi.png" />
-                <img src="/sponsors/uog_eng.png" />
-                <img src="/sponsors/true_gear.png" />
-                <img src="/sponsors/fastenal.png" />
+                <img src="/sponsors/apt.webp" alt="APT"/>
+                <img src="/sponsors/musashi.webp" alt="Musashi"/>
+                <img src="/sponsors/uog_eng.webp" alt="UOG Engineering"/>
+                <img src="/sponsors/true_gear.webp" alt="True Gear"/>
+                <img src="/sponsors/fastenal.webp" alt="Fastenal"/>
             </div>
         </div>
         <div class="list_container gold">
             <div class="sponsor_list">
-                <img src="/sponsors/denso.png" />
-                <img src="/sponsors/aoc.png" />
-                <img src="/sponsors/jmp.png" />
-                <img src="/sponsors/applied_precision.png" />
-                <img src="/sponsors/parker.png" />
-                <img src="/sponsors/summit_laser.png" />
-                <img src="/sponsors/dominos.png" />
-                <img src="/sponsors/westex.png" />
-                <img src="/sponsors/lab_fund.png" />
-                <img src="/sponsors/grain_farmers.png" />
+                <img src="/sponsors/denso.webp" alt="Denso"/>
+                <img src="/sponsors/aoc.webp" alt="AOC"/>
+                <img src="/sponsors/jmp.webp" alt="JMP"/>
+                <img src="/sponsors/applied_precision.webp" alt="Applied Precision"/>
+                <img src="/sponsors/parker.webp"  alt="Parker"/>
+                <img src="/sponsors/summit_laser.webp" alt="Summit Laser"/>
+                <img src="/sponsors/dominos.webp" alt="Dominos"/>
+                <img src="/sponsors/westex.webp" alt="Westex"/>
+                <img src="/sponsors/lab_fund.webp" alt="Lab Fund"/>
+                <img src="/sponsors/grain_farmers.webp" alt="Grain Farmers"/>
             </div>
         </div>
         <div class="list_container silver">
             <div class="sponsor_list">
-                <img src="/sponsors/quaife.png" />
-                <img src="/sponsors/skf.png" />
-                <img src="/sponsors/linamar.png" />
-                <img src="/sponsors/vibrant.png" />
-                <img src="/sponsors/webber.png" />
-                <img src="/sponsors/evonik.png" />
-                <img src="/sponsors/gryphon_technical.png" />
-                <img src="/sponsors/westview.png" />
+                <img src="/sponsors/quaife.webp" alt="Quaife"/>
+                <img src="/sponsors/skf.webp" alt="SKF"/>
+                <img src="/sponsors/linamar.webp" alt="Linamar"/>
+                <img src="/sponsors/vibrant.webp" alt="Vibrant"/>
+                <img src="/sponsors/webber.webp" alt="Webber"/>
+                <img src="/sponsors/evonik.webp" alt="Evonik"/>
+                <img src="/sponsors/gryphon_technical.webp" alt="Gryphon Technical"/>
+                <img src="/sponsors/westview.webp" alt="Westview"/>
             </div>
         </div>
         <div class="list_container bronze">
             <div class="sponsor_list">
-                <img src="/sponsors/aurora_bearing.png" />
-                <img src="/sponsors/bodycote.png" />
-                <img src="/sponsors/composites_canada.png" />
-                <img src="/sponsors/hoosier.png" />
-                <img src="/sponsors/paradigm.png" />
-                <img src="/sponsors/grand_river_sign_design.png" />
-                <img src="/sponsors/vr3.png" />
+                <img src="/sponsors/aurora_bearing.webp" alt="Aurora Bearing"/>
+                <img src="/sponsors/bodycote.webp" alt="Bodycote"/>
+                <img src="/sponsors/composites_canada.webp" alt="Composites Canada"/>
+                <img src="/sponsors/hoosier.webp" alt="Hoosier"/>
+                <img src="/sponsors/paradigm.webp" alt="Paradigm"/>
+                <img src="/sponsors/grand_river_sign_design.webp" alt="Grand River Sign Design"/>
+                <img src="/sponsors/vr3.webp" alt="VR3"/>
             </div>
         </div>
         <br />
@@ -118,8 +118,12 @@ h2 {
     margin-right: 1em;
 }
 
+.sponsor_list img {
+  width: 95%;
+}
+
 .platinum > .sponsor_list > img {
-    width: 400px;
+    max-width: 400px;
     margin: 1em;
 }
 
@@ -128,7 +132,7 @@ h2 {
 }
 
 .gold > .sponsor_list > img {
-    width: 175px;
+    max-width: 175px;
     margin: 1em;
 }
 
@@ -137,7 +141,7 @@ h2 {
 }
 
 .silver > .sponsor_list > img {
-    width: 150px;
+    max-width: 150px;
     margin: 1em;
 }
 .silver {
@@ -145,7 +149,7 @@ h2 {
 }
 
 .bronze > .sponsor_list > img {
-    width: 100px;
+    max-width: 100px;
     margin: 1em;
 }
 .bronze {
