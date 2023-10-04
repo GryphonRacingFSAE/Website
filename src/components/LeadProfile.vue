@@ -18,7 +18,7 @@ const popup = ref(false);
 
 <template>
     <div class="card" @click="popup = true">
-        <img :src="profile_picture_url" class="profile_picture" :alt="props.name"/>
+        <img :src="profile_picture_url" class="profile_picture" :alt="props.name" />
         <h1>{{ props.name }}</h1>
         <h2>{{ props.title }}</h2>
 
