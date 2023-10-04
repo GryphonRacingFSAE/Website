@@ -1,3 +1,20 @@
+<script setup lang="ts">
+import { onMounted } from "vue";
+
+onMounted(() => {
+    const map: HTMLElement = document.getElementById("map")!;
+    const frame: HTMLIFrameElement = document.createElement("iframe");
+    frame.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21842.523643301887!2d-80.23692987083086!3d43.530101771774326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9b28ceea7401%3A0xa48ca79ad3a559a6!2sGRYPHON%20RACING!5e0!3m2!1sen!2sca!4v1690415587608!5m2!1sen!2sca";
+    frame.allowFullscreen = true;
+    frame.referrerPolicy = "no-referrer-when-downgrade";
+    frame.title = "Gryphon Maps";
+    frame.frameBorder = "0"; // Deprecated by vue, but css styling properties have no effect
+    frame.height = "100%";
+    frame.width = "100%";
+    map.appendChild(frame);
+});
+</script>
+
 <template>
     <div class="shop_info">
         <div class="info">
@@ -12,13 +29,8 @@
                 sponsors or advisors
             </p>
         </div>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21842.523643301887!2d-80.23692987083086!3d43.530101771774326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9b28ceea7401%3A0xa48ca79ad3a559a6!2sGRYPHON%20RACING!5e0!3m2!1sen!2sca!4v1690415587608!5m2!1sen!2sca"
-            class="map"
-            allowfullscreen
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+
+        <div id="map" class="map"></div>
     </div>
 </template>
 
@@ -28,22 +40,27 @@
     justify-content: center;
     line-height: 250%;
     display: flex;
-    padding-top: 15vh;
-    padding-bottom: 10vh;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding: 15vh 15% 10vh;
     background-color: var(--gryphon-white);
     color: var(--gryphon-red);
 }
 
-.info {
+.map {
+    background: url(/media/maps_loading.webp);
+    background-size: cover;
+    border-radius: 2em;
+    overflow: hidden;
+    border: 0;
+
+    margin-left: 6em;
+    margin-top: auto;
+    margin-bottom: auto;
+
     width: 50%;
+    height: 30vw;
 }
 
-.map {
-    border: 0;
-    border-radius: 2em;
-    margin-left: 6em;
+.info {
     width: 50%;
 }
 
@@ -60,12 +77,13 @@
     .shop_info {
         flex-direction: column;
         align-items: center;
+        padding: 10vh 15% 10vh;
     }
 
     .map {
         margin-left: 0;
-        width: 80vw;
-        height: 80vw;
+        width: 100%;
+        height: 60vw;
     }
 
     .info {
