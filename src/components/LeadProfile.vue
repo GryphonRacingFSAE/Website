@@ -10,7 +10,7 @@ const profile_picture_url = computed(() => {
         console.warn(`Unknown name: ${props.name} : ${cleaned_name}}`);
         cleaned_name = "unknown";
     }
-    return import.meta.env.BASE_URL + `media/team_members_webp/${cleaned_name}.webp`;
+    return import.meta.env.BASE_URL + `media/team_members/${cleaned_name}.webp`;
 });
 
 const popup = ref(false);
