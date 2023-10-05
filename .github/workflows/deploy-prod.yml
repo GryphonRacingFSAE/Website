@@ -28,9 +28,17 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm install && npm install -g @lhci/cli@0.12.x
-      - run: npm run build
-      - run: lhci autorun
+
+      - name: Install
+        run: | 
+          npm install
+          npm install -g @lhci/cli@0.12.x
+          npm run build
+
+      - name: Run Lighthouse CI
+        run: lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
   # Taken from https://github.com/actions/deploy-pages/blob/master/README.md
   deploy:
