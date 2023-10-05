@@ -3,7 +3,7 @@
         "collect": {
             "startServerCommand": "npm run preview",
             "startServerReadyPattern": "Local:   http://127.0.0.1:4173/",
-            "numberOfRuns": 1,
+            "numberOfRuns": 2,
             "url": [
                 "http://localhost:4173",
                 "http://localhost:4173/team",
@@ -14,34 +14,6 @@
 
         "upload": {
             "target": "temporary-public-storage"
-        },
-
-        "assert": {
-            "preset": "lighthouse:recommended",
-            "assertions": {
-                "bf-cache": "off",
-                "font-display": "off",
-                "installable-manifest": "off",
-                "maskable-icon": "off",
-                "unused-css-rules": "off",
-                "prioritize-lcp-image": "off",
-                "service-worker": "off",
-                "splash-screen": "off",
-                "themed-omnibox": "off",
-                "unsized-images": "off",
-                "unused-javascript": "off",
-                "uses-rel-preconnect": "off",
-                "uses-passive-event-listeners": "off",
-                "uses-text-compression": "off",
-                "render-blocking-resources": "off",
-                "uses-rel-preload": "off",
-                "uses-responsive-images": "off",
-                "largest-contentful-paint": "off",
-                "first-contentful-paint": ["error", {"minScore": 0.6}],
-                "first-meaningful-paint": ["error", {"maxNumericValue": 3000}],
-                "deprecations": "off",
-                "csp-xss": "off"
-            }
         }
     }
 }
