@@ -1,0 +1,19 @@
+{
+    "ci": {
+        "collect": {
+            "startServerCommand": "npm run preview",
+            "startServerReadyPattern": "Local:   http://127.0.0.1:4173/",
+            "numberOfRuns": 2,
+            "url": [
+                "http://localhost:4173",
+                "http://localhost:4173/team",
+                "http://localhost:4173/sponsors",
+                "http://localhost:4173/contact"
+            ]
+        },
+
+        "upload": {
+            "target": "temporary-public-storage"
+        }
+    }
+}
