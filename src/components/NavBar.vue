@@ -15,23 +15,27 @@ window.addEventListener("scroll", () => {
 
 <template>
     <div class="navbar highlight">
-        <img class="crest" src="/media/crest.svg" alt="Gryphon Racing Crest" />
-        <RouterLink to="/" aria-haspopup="true" role="button" tabindex="0">Home</RouterLink>
+        <RouterLink to="/" class="crest"><img src="/media/crest.svg" alt="Gryphon Racing Crest" /></RouterLink>
+        <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/team">Team</RouterLink>
         <RouterLink to="/sponsors">Sponsors</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
         <MenuIcon class="hamburger" @click="dropdown_active = !dropdown_active"></MenuIcon>
     </div>
-    <div class="dropdown highlight" v-if="dropdown_active">
-        <RouterLink to="/team">Team</RouterLink>
-        <RouterLink to="/sponsors">Sponsors</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
-    </div>
+
+    <transition name="slide">
+        <div class="dropdown highlight" v-if="dropdown_active" @click="dropdown_active = !dropdown_active">
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/team">Team</RouterLink>
+            <RouterLink to="/sponsors">Sponsors</RouterLink>
+            <RouterLink to="/contact">Contact</RouterLink>
+        </div>
+    </transition>
 </template>
 
 <style scoped>
-.crest {
-    height: 3em;
+.crest img {
+    height: 70%;
     margin: 10px;
 }
 
@@ -39,7 +43,7 @@ window.addEventListener("scroll", () => {
     position: fixed;
     top: 0;
     width: 100%;
-    height: calc(3em + 40px);
+    height: calc(3em + 30px);
     background-color: var(--gryphon-red-transparent);
     margin: 0;
     display: flex;
@@ -51,7 +55,7 @@ window.addEventListener("scroll", () => {
     padding: 0 20px;
     color: var(--gryphon-white);
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -59,31 +63,33 @@ window.addEventListener("scroll", () => {
 
 .dropdown {
     position: fixed;
-    top: calc(3em + 40px);
+    top: calc(3em + 30px);
     right: 0;
-    background-color: var(--gryphon-red-transparent);
-    border-radius: 0 0 0 25px;
     display: none;
     flex-direction: column;
     z-index: 1000;
+
+    /* Dropdown animation */
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
 }
 
 .dropdown a {
-    padding: 5px 30px;
+    padding: 10px 25px;
     color: var(--gryphon-white);
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     display: flex;
     align-items: center;
+    background-color: var(--gryphon-red-transparent);
+    border-top: 1px solid var(--gryphon-white);
+    border-left: 1px solid var(--gryphon-white);
 }
 
-@media (hover: hover) and (pointer: fine) {
-    .highlight a:hover {
-        background-color: var(--gryphon-yellow);
-        color: var(--gryphon-light-black);
-        transition-duration: 300ms;
-    }
+.dropdown :last-child {
+    border-radius: 0 0 0 25px;
+    border-bottom: 1px solid var(--gryphon-white);
 }
 
 .hamburger {
@@ -94,10 +100,26 @@ window.addEventListener("scroll", () => {
     margin-right: 10px;
 }
 
+/* Dropdown animation */
+.slide-enter-from,
+.slide-leave-to {
+    transform: scaleY(0);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .highlight a:not(.crest):hover {
+        /* Dont highlight the crest cause it looks weird */
+        background-color: var(--gryphon-yellow);
+        color: var(--gryphon-light-black);
+        transition-duration: 300ms;
+    }
+}
+
 @media screen and (max-width: 600px) {
-    .navbar a:not(:nth-child(2)) {
+    .navbar a:not(:nth-child(1)) {
         display: none;
     }
+
     .navbar .hamburger {
         /* display: block; */
         display: flex;

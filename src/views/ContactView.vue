@@ -63,6 +63,8 @@ onMounted(() => {
 
 .info {
     width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .shop_info p {
@@ -72,6 +74,17 @@ onMounted(() => {
 .shop_info h1 {
     font-size: 4em;
     line-height: 1em;
+}
+
+@media screen and (max-width: 1500px) {
+    .shop_info p {
+        font-size: 1.5em;
+        line-height: 1.8rem;
+    }
+
+    .shop_info h1 {
+        font-size: 2.2em;
+    }
 }
 
 @media screen and (max-width: 1000px) {

@@ -32,11 +32,10 @@
     background-color: var(--gryphon-light-black);
     color: var(--gryphon-dark-white);
     text-align: center;
-    align-items: center;
     justify-content: space-evenly;
     display: flex;
     align-items: center;
-    padding: 50px 0px;
+    padding: 50px 0;
 }
 
 .media_logos img {
@@ -66,7 +65,7 @@
     }
 
     .footer > * {
-        margin: 10px 0px;
+        margin: 10px 0;
     }
 
     .contact_info {

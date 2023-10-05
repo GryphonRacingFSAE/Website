@@ -65,12 +65,12 @@
 
 <style scoped>
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 0;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     margin: 0;
 }
 
@@ -99,32 +99,26 @@ h2 {
     margin-top: 3em;
 }
 
-.sponsor_list > p {
-    margin: 1em;
-    font-size: 1.5em;
-}
-
 .individuals {
-    padding: 0% 5%;
+    padding: 1em 5% 1em;
     display: flex;
     flex-direction: row;
     font-size: 1.5em;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .individuals > p {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 0 1em 1em;
 }
 
 .sponsor_list img {
     width: 95%;
+    padding: 2%;
 }
 
 .platinum > .sponsor_list > img {
-    max-width: 400px;
-    margin: 1em;
+    max-width: 25%;
 }
 
 .platinum {
@@ -132,8 +126,7 @@ h2 {
 }
 
 .gold > .sponsor_list > img {
-    max-width: 175px;
-    margin: 1em;
+    max-width: 15%;
 }
 
 .gold {
@@ -141,18 +134,48 @@ h2 {
 }
 
 .silver > .sponsor_list > img {
-    max-width: 150px;
-    margin: 1em;
+    max-width: 12%;
 }
+
 .silver {
     background-color: silver;
 }
 
 .bronze > .sponsor_list > img {
-    max-width: 100px;
-    margin: 1em;
+    max-width: 10%;
 }
+
 .bronze {
     background-color: #cd7f32;
+}
+
+@media screen and (max-width: 750px) {
+    .list_container {
+        width: 95%;
+        padding-left: 5%;
+        margin-top: 1.5em;
+    }
+
+    .platinum > .sponsor_list > img {
+        max-width: 45%;
+    }
+
+    .gold > .sponsor_list > img {
+        max-width: 20%;
+    }
+
+    .silver > .sponsor_list > img {
+        max-width: 18%;
+    }
+
+    .bronze > .sponsor_list > img {
+        max-width: 15%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .individuals > p {
+        margin-bottom: 0.5em;
+    }
 }
 </style>
