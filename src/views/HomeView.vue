@@ -19,6 +19,10 @@ const events = [
         name: "Toronto Shootout",
         date: new Date(2023, 8, 30),
     },
+  {
+    name: "Toronto Shootout",
+    date: new Date(2023, 8, 30),
+  },
     {
         name: "Formula Hybrid + Electric",
         date: new Date(2024, 3, 21),
