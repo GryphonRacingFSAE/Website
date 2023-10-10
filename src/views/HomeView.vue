@@ -171,7 +171,6 @@ const time_till_soonest = computed(() => {
 }
 
 .car_listings {
-    justify-content: center;
     flex-direction: row;
     display: flex;
     padding: 0;
@@ -255,7 +254,7 @@ const time_till_soonest = computed(() => {
     background-color: rgba(255, 255, 255, 0.7);
     color: #000000;
     width: 30%;
-    min-width: 400px;
+    min-width: 300px;
     border-radius: 20px;
     align-items: center;
     text-align: center;
@@ -274,6 +273,6 @@ const time_till_soonest = computed(() => {
 
 .banner {
     width: 40%;
-    min-width: 400px;
+    min-width: 300px;
 }
 </style>
