@@ -11,7 +11,7 @@ import LeadProfile from "@/components/LeadProfile.vue";
             <LeadProfile title="Electrical Captain" name="Matt Verburg" />
         </div>
         <div class="profiles_list">
-            <LeadProfile title="Suspension Lead" name="Owen Fray" />
+            <LeadProfile title="Suspension Lead" name="Owen Frey" />
             <LeadProfile title="Low Voltage Lead" name="Rayne van Voorst" />
             <LeadProfile title="Harness Lead" name="Patrick McNutt" />
             <LeadProfile title="Embedded Lead" name="Dallas Hart" />

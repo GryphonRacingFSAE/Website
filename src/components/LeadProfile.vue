@@ -2,7 +2,7 @@
 import { computed, ref } from "vue";
 const props = defineProps<{ title: string; name: string }>();
 
-const known_names = ["ayden_bourdeau", "owen_fray", "dallas_hart", "matt_aziz", "patrick_mcnutt", "rayne_van_voorst", "matt_verburg"];
+const known_names = ["ayden_bourdeau", "owen_frey", "dallas_hart", "matt_aziz", "patrick_mcnutt", "rayne_van_voorst", "matt_verburg"];
 
 const profile_picture_url = computed(() => {
     let cleaned_name = props.name.replaceAll(" ", "_").toLowerCase();
@@ -10,6 +10,7 @@ const profile_picture_url = computed(() => {
         console.warn(`Unknown name: ${props.name} : ${cleaned_name}}`);
         cleaned_name = "unknown";
     }
+
     return import.meta.env.BASE_URL + `media/team_members/${cleaned_name}.webp`;
 });
 
