@@ -16,16 +16,20 @@ function timeTill(date: Date) {
 
 const events = [
     {
-        name: "Toronto Shootout",
-        date: new Date(2023, 8, 30),
-    },
-    {
         name: "Formula Hybrid + Electric",
         date: new Date(2024, 3, 21),
     },
     {
         name: "Michigan FSAE",
         date: new Date(2024, 6, 15),
+    },
+    {
+        name: "Pittsburgh Shootout",
+        date: new Date(2024, 9, 14),
+    },
+    {
+        name: "Formula Wheat V2",
+        date: new Date(2024, 9, 28),
     },
 ];
 
@@ -221,7 +225,7 @@ const time_till_soonest = computed(() => {
 }
 
 .event > * {
-    margin: 10px 0px;
+    margin: 10px 0;
 }
 
 .event > p {
