@@ -1,8 +1,6 @@
 name: Build and Deploy Production Branch
 on:
   push:
-    branches:
-      main
 
 jobs:
   build:
@@ -22,10 +20,30 @@ jobs:
         with:
           path: dist
 
+  # Audit the site
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install
+        run: | 
+          npm install
+          npm install -g @lhci/cli@0.12.x
+          npm run build
+
+      - name: Run Lighthouse CI
+        run: lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+
   # Taken from https://github.com/actions/deploy-pages/blob/master/README.md
   deploy:
-    # Add a dependency to the build job
-    needs: build
+    needs: [build, lighthouse]
+    if: github.ref == 'refs/heads/main'
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
