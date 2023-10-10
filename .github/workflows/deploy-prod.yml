@@ -36,7 +36,7 @@ jobs:
           npm run build
 
       - name: Run Lighthouse CI
-        run: lhci autorun
+        run: lhci --throttling.cpuSlowdownMultiplier=2 autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
