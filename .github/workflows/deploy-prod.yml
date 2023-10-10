@@ -42,9 +42,8 @@ jobs:
 
   # Taken from https://github.com/actions/deploy-pages/blob/master/README.md
   deploy:
-
     needs: [build, lighthouse]
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
