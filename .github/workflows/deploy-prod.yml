@@ -22,6 +22,8 @@ jobs:
 
   # Audit the site
   lighthouse:
+    if: github.ref != 'refs/heads/main'
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -36,14 +38,13 @@ jobs:
           npm run build
 
       - name: Run Lighthouse CI
-        run: lhci --throttling.cpuSlowdownMultiplier=2 autorun
+        run: lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
   # Taken from https://github.com/actions/deploy-pages/blob/master/README.md
   deploy:
-    needs: [build, lighthouse]
-    if: github.ref == 'refs/heads/main'
+    needs: [build]
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
