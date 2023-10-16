@@ -1,8 +1,22 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
-const props = defineProps<{ title: string; name: string; linkedin?: string}>();
+const props = defineProps<{ title: string; name: string; linkedin?: string }>();
 
-const known_names = ["ayden_bourdeau", "owen_frey", "dallas_hart", "matt_aziz", "patrick_mcnutt", "rayne_van_voorst", "matt_verburg", "hayden_foley", "rajaee_mundle", "evan_rutten"];
+const known_names = [
+    "ayden_bourdeau",
+    "owen_frey",
+    "dallas_hart",
+    "matt_aziz",
+    "patrick_mcnutt",
+    "rayne_van_voorst",
+    "matt_verburg",
+    "hayden_foley",
+    "rajaee_mundle",
+    "evan_rutten",
+    "chris_walker",
+    "jacob_dykstra",
+    "bethany_hughes",
+];
 
 const profile_picture_url = computed(() => {
     let cleaned_name = props.name.replaceAll(" ", "_").toLowerCase();
