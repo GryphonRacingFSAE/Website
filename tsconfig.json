@@ -1,6 +1,6 @@
 {
     "extends": "@vue/tsconfig/tsconfig.dom.json",
-    "include": ["global.d.ts", "env.d.ts", "src/**/*", "src/**/*.vue"],
+    "include": ["global.d.ts", "env.d.ts", "src/**/*", "src/**/*.vue","src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"],
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
@@ -8,6 +8,7 @@
         },
         "lib": ["es2022", "dom"],
         "module": "es2022",
+        "allowJs": true,
         "strict": true
     }
 }
