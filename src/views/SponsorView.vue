@@ -3,48 +3,48 @@
         <h1>Sponsors</h1>
         <div class="list_container platinum">
             <div class="sponsor_list">
-                <img src="/sponsors/apt.webp" width="400" height="120" alt="APT"/>
-                <img src="/sponsors/musashi.webp" width="400" height="71" alt="Musashi"/>
-                <img src="/sponsors/uog_eng.webp" width="400" height="129" alt="UOG Engineering"/>
-                <img src="/sponsors/true_gear.webp" width="400" height="144" alt="True Gear"/>
-                <img src="/sponsors/fastenal.webp" width="400" height="87" alt="Fastenal"/>
+                <img src="/sponsors/apt.webp" width="400" height="120" alt="APT" />
+                <img src="/sponsors/musashi.webp" width="400" height="71" alt="Musashi" />
+                <img src="/sponsors/uog_eng.webp" width="400" height="129" alt="UOG Engineering" />
+                <img src="/sponsors/true_gear.webp" width="400" height="144" alt="True Gear" />
+                <img src="/sponsors/fastenal.webp" width="400" height="87" alt="Fastenal" />
             </div>
         </div>
         <div class="list_container gold">
             <div class="sponsor_list">
-                <img src="/sponsors/denso.webp" width="400" height="78" alt="Denso"/>
+                <img src="/sponsors/denso.webp" width="400" height="78" alt="Denso" />
                 <img src="/sponsors/aoc.webp" width="400" height="400" alt="AOC" />
-                <img src="/sponsors/jmp.webp"  width="400" height="138" alt="JMP"/>
+                <img src="/sponsors/jmp.webp" width="400" height="138" alt="JMP" />
                 <img src="/sponsors/applied_precision.webp" width="400" height="141" alt="Applied Precision" />
-                <img src="/sponsors/parker.webp" width="400" height="154" alt="Parker"  />
-                <img src="/sponsors/summit_laser.webp" width="400" height="400" alt="Summit Laser"/>
-                <img src="/sponsors/dominos.webp" width="400" height="400" alt="Dominos"/>
-                <img src="/sponsors/westex.webp" width="400" height="144" alt="Westex"/>
-                <img src="/sponsors/lab_fund.webp" width="400" height="402" alt="Lab Fund"/>
-                <img src="/sponsors/grain_farmers.webp" width="400" height="400" alt="Grain Farmers"/>
+                <img src="/sponsors/parker.webp" width="400" height="154" alt="Parker" />
+                <img src="/sponsors/summit_laser.webp" width="400" height="400" alt="Summit Laser" />
+                <img src="/sponsors/dominos.webp" width="400" height="400" alt="Dominos" />
+                <img src="/sponsors/westex.webp" width="400" height="144" alt="Westex" />
+                <img src="/sponsors/lab_fund.webp" width="400" height="402" alt="Lab Fund" />
+                <img src="/sponsors/grain_farmers.webp" width="400" height="400" alt="Grain Farmers" />
             </div>
         </div>
         <div class="list_container silver">
             <div class="sponsor_list">
-                <img src="/sponsors/quaife.webp" width="400" height="97" alt="Quaife"/>
-                <img src="/sponsors/skf.webp" width="400" height="191" alt="SKF"/>
-                <img src="/sponsors/linamar.webp" width="400" height="101" alt="Linamar"/>
-                <img src="/sponsors/vibrant.webp" width="400" height="120" alt="Vibrant"/>
-                <img src="/sponsors/webber.webp" width="400" height="180" alt="Webber"/>
-                <img src="/sponsors/evonik.webp" width="400" height="104" alt="Evonik"/>
-                <img src="/sponsors/gryphon_technical.webp" width="400" height="184" alt="Gryphon Technical"/>
-                <img src="/sponsors/westview.webp" width="400" height="205" alt="Westview"/>
+                <img src="/sponsors/quaife.webp" width="400" height="97" alt="Quaife" />
+                <img src="/sponsors/skf.webp" width="400" height="191" alt="SKF" />
+                <img src="/sponsors/linamar.webp" width="400" height="101" alt="Linamar" />
+                <img src="/sponsors/vibrant.webp" width="400" height="120" alt="Vibrant" />
+                <img src="/sponsors/webber.webp" width="400" height="180" alt="Webber" />
+                <img src="/sponsors/evonik.webp" width="400" height="104" alt="Evonik" />
+                <img src="/sponsors/gryphon_technical.webp" width="400" height="184" alt="Gryphon Technical" />
+                <img src="/sponsors/westview.webp" width="400" height="205" alt="Westview" />
             </div>
         </div>
         <div class="list_container bronze">
             <div class="sponsor_list">
-                <img src="/sponsors/aurora_bearing.webp" width="400" height="129" alt="Aurora Bearing"/>
-                <img src="/sponsors/bodycote.webp" width="400" height="203" alt="Bodycote"/>
-                <img src="/sponsors/composites_canada.webp" width="400" height="106" alt="Composites Canada"/>
-                <img src="/sponsors/hoosier.webp" width="400" height="123" alt="Hoosier"/>
-                <img src="/sponsors/paradigm.webp" width="400" height="81" alt="Paradigm"/>
-                <img src="/sponsors/grand_river_sign_design.webp" width="400" height="98" alt="Grand River Sign Design"/>
-                <img src="/sponsors/vr3.webp" height="143" width="400" alt="VR3"/>
+                <img src="/sponsors/aurora_bearing.webp" width="400" height="129" alt="Aurora Bearing" />
+                <img src="/sponsors/bodycote.webp" width="400" height="203" alt="Bodycote" />
+                <img src="/sponsors/composites_canada.webp" width="400" height="106" alt="Composites Canada" />
+                <img src="/sponsors/hoosier.webp" width="400" height="123" alt="Hoosier" />
+                <img src="/sponsors/paradigm.webp" width="400" height="81" alt="Paradigm" />
+                <img src="/sponsors/grand_river_sign_design.webp" width="400" height="98" alt="Grand River Sign Design" />
+                <img src="/sponsors/vr3.webp" height="143" width="400" alt="VR3" />
             </div>
         </div>
         <br />
@@ -180,5 +180,4 @@ h2 {
     }
 }
 </style>
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>

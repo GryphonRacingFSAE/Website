@@ -25,11 +25,11 @@ const events = [
     },
     {
         name: "Pittsburgh Shootout",
-        date: new Date(2024, 9, 14),
+        date: new Date(2024, 8, 14),
     },
     {
         name: "Formula Wheat V2",
-        date: new Date(2024, 9, 28),
+        date: new Date(2024, 8, 28),
     },
 ];
 

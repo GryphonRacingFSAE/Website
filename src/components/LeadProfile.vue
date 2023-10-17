@@ -1,8 +1,22 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
-const props = defineProps<{ title: string; name: string }>();
+const props = defineProps<{ title: string; name: string; linkedin?: string }>();
 
-const known_names = ["ayden_bourdeau", "owen_fray", "dallas_hart", "matt_aziz", "patrick_mcnutt", "rayne_van_voorst", "matt_verburg"];
+const known_names = [
+    "ayden_bourdeau",
+    "owen_frey",
+    "dallas_hart",
+    "matt_aziz",
+    "patrick_mcnutt",
+    "rayne_van_voorst",
+    "matt_verburg",
+    "hayden_foley",
+    "rajaee_mundle",
+    "evan_rutten",
+    "chris_walker",
+    "jacob_dykstra",
+    "bethany_hughes",
+];
 
 const profile_picture_url = computed(() => {
     let cleaned_name = props.name.replaceAll(" ", "_").toLowerCase();
@@ -10,6 +24,7 @@ const profile_picture_url = computed(() => {
         console.warn(`Unknown name: ${props.name} : ${cleaned_name}}`);
         cleaned_name = "unknown";
     }
+
     return import.meta.env.BASE_URL + `media/team_members/${cleaned_name}.webp`;
 });
 
@@ -17,7 +32,7 @@ const popup = ref(false);
 </script>
 
 <template>
-    <div class="card" @click="popup = true">
+    <a class="card" :href="linkedin" target="_blank" @click="popup = true">
         <img :src="profile_picture_url" class="profile_picture" :alt="props.name" />
         <h1>{{ props.name }}</h1>
         <h2>{{ props.title }}</h2>
@@ -26,7 +41,7 @@ const popup = ref(false);
         <!-- <div v-if="popup" class="popup">
             <slot></slot>
         </div> -->
-    </div>
+    </a>
 </template>
 
 <style scoped>
