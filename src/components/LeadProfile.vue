@@ -16,6 +16,8 @@ const known_names = [
     "chris_walker",
     "jacob_dykstra",
     "bethany_hughes",
+    "korab_islami",
+    "jonathan_chung",
 ];
 
 const profile_picture_url = computed(() => {
