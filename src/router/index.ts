@@ -1,6 +1,5 @@
 import HomeView from "@/views/HomeView.vue";
 
-
 export const routes = [
     {
         path: "/",
@@ -19,7 +18,7 @@ export const routes = [
         component: () => import("@/views/SponsorView.vue"),
     },
     {
-        path: '/club-documents',
+        path: "/club-documents",
         component: () => import("@/views/DocumentsView.vue"),
     },
 ];

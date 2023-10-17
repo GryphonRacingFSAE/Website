@@ -7,7 +7,8 @@
                 "http://localhost:4173",
                 "http://localhost:4173/team",
                 "http://localhost:4173/sponsors",
-                "http://localhost:4173/contact"
+                "http://localhost:4173/contact",
+                "http://localhost:4173/club-documents"
             ]
         },
 

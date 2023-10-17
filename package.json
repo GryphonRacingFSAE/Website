@@ -16,7 +16,6 @@
     "@vueuse/core": "^10.2.1",
     "vue": "^3.3.4",
     "vue-material-design-icons": "^5.2.0",
-    "vue-pdf": "^4.3.0",
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
