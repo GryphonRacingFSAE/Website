@@ -26,8 +26,8 @@
 }
 
 .links-wrapper {
-  padding-right: 1em;
-  padding-left: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .pdf-document {
@@ -66,12 +66,11 @@ hr {
     border-radius: 50px;
 }
 
-
 @media screen and (min-width: 500px) {
-  .roots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    .roots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 </style>
