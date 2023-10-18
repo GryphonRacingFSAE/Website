@@ -1,45 +1,33 @@
 <template>
     <div class="roots">
-        <h1 style="color: black" class="centered-title">Club Documents</h1>
-        <div v-for="(document, index) in documents" :key="index" class="document">
-            <h2 style="color: black; text-align: center">{{ document.title }}</h2>
-            <a :href="document.url" target="_blank" class="centered-link" style="margin-top: 10px">View Document</a>
+        <div class="links-wrapper">
+            <a href="/media/Constitution.pdf" target="_blank">Constitution</a>
+            <hr />
+            <a href="/media/Individual_Responsibility_Signoff.pdf" target="_blank">Individual Responsibility Signoff</a>
+            <hr />
+            <a href="/media/Leadership_Code_of_Conduct.pdf" target="_blank">Leadership Code of Conduct</a>
+            <hr />
+            <a href="/media/Vehicle_Usage_Procedure.pdf" target="_blank">Vehicle Usage Procedure</a>
+            <hr />
+        </div>
+
+        <!-- <div v-for="(document, index) in documents" :key="index" class="document">
+            <hr/>
+            <a :href="document.url" target="_blank" class="centered-link" style="margin-top: 10px">{{ document.title }}</a>
 
             <p class="solid"></p>
-        </div>
+        </div> -->
     </div>
 </template>
-
-<script>
-export default {
-    data() {
-        return {
-            documents: [
-                {
-                    title: "Constitution",
-                    url: "/media/Constitution.pdf",
-                },
-                {
-                    title: "Individual Responsibility Signoff",
-                    url: "/media/Individual_Responsibility_Signoff.pdf",
-                },
-                {
-                    title: "Leadership Code of Conduct",
-                    url: "/media/Leadership_Code_of_Conduct.pdf",
-                },
-                {
-                    title: "Vehicle Usage Procedure",
-                    url: "/media/Vehicle_Usage_Procedure.pdf",
-                },
-            ],
-        };
-    },
-};
-</script>
 
 <style scoped>
 .document {
     margin-bottom: 5px;
+}
+
+.links-wrapper {
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .pdf-document {
@@ -49,22 +37,41 @@ export default {
     height: 100%;
     display: flex;
 }
-@media screen and (max-width: 500px) {
-    .individuals > p {
-        margin-bottom: 0.5em;
-    }
-}
-.centered-link {
+
+a {
     display: block;
-    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding-top: 1em;
+    color: black;
+    transition-duration: 0.2s;
 }
+a:hover {
+    color: var(--gryphon-red);
+    translate: 5px;
+}
+
 .roots {
     background-color: white;
-    padding-top: 6px;
+    padding-top: 5em;
     padding-bottom: 2em;
 }
-.centered-title {
-    text-align: center; 
-    margin-top: 100px; 
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 99%;
+    background: linear-gradient(to right, var(--gryphon-red) 0%, var(--gryphon-white) 80%);
+    height: 3px;
+    border-radius: 50px;
+}
+
+
+@media screen and (min-width: 500px) {
+  .roots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 </style>

@@ -5,7 +5,7 @@ import LeadProfile from "@/components/LeadProfile.vue";
 <template>
     <div class="team">
         <h2>Team Captains</h2>
-        <hr/>
+        <hr />
         <div class="profiles_list">
             <LeadProfile title="Admin Captain" name="Ayden Bourdeau" linkedin="https://www.linkedin.com/in/aydenbourdeau/" />
             <LeadProfile title="Dynamics Captain" name="Matt Aziz" linkedin="https://linkedin.com/in/matthewaziz" />
@@ -13,7 +13,7 @@ import LeadProfile from "@/components/LeadProfile.vue";
         </div>
 
         <h2>Team Leads</h2>
-        <hr/>
+        <hr />
         <div class="profiles_list">
             <LeadProfile title="Suspension Lead" name="Owen Frey" linkedin="https://www.linkedin.com/in/owen-frey-8435b3261/" />
             <LeadProfile title="Low Voltage Lead" name="Rayne van Voorst" linkedin="https://www.linkedin.com/in/rayne-van-voorst-691030225/" />
@@ -25,7 +25,7 @@ import LeadProfile from "@/components/LeadProfile.vue";
         </div>
 
         <h2>Senior Members</h2>
-        <hr/>
+        <hr />
         <div class="profiles_list">
             <LeadProfile title="Software" name="Evan Rutten" linkedin="https://www.linkedin.com/in/evan-rutten/" />
             <LeadProfile title="Electrical" name="Chris Walker" linkedin="https://www.linkedin.com/in/christopher-w-185485216/" />
@@ -45,13 +45,13 @@ import LeadProfile from "@/components/LeadProfile.vue";
 }
 
 hr {
-  border: 0;
-  clear:both;
-  display:block;
-  width: 99%;
-  background: linear-gradient(to right, var(--gryphon-white) 5%, var(--gryphon-red) 50%, var(--gryphon-white) 95%);
-  height: 3px;
-  border-radius: 50px;
+    border: 0;
+    clear: both;
+    display: block;
+    width: 99%;
+    background: linear-gradient(to right, var(--gryphon-white) 5%, var(--gryphon-red) 50%, var(--gryphon-white) 95%);
+    height: 3px;
+    border-radius: 50px;
 }
 
 h2 {
