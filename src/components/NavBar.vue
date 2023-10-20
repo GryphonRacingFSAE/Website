@@ -43,7 +43,7 @@ window.addEventListener("scroll", () => {
     position: fixed;
     top: 0;
     width: 100%;
-    height: calc(3em + 30px);
+    height: 4em;
     background-color: var(--gryphon-red-transparent);
     margin: 0;
     display: flex;
@@ -63,7 +63,7 @@ window.addEventListener("scroll", () => {
 
 .dropdown {
     position: fixed;
-    top: calc(3em + 30px);
+    top: 4em;
     right: 0;
     display: none;
     flex-direction: column;

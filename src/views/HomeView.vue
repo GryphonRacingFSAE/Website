@@ -73,7 +73,7 @@ const time_till_soonest = computed(() => {
                     <template v-for="(event, index) in upcoming_events" :key="event.name">
                         <div v-if="index != 0" class="event">
                             <h2>{{ event.name }}</h2>
-                            <p>{{ event.date.toLocaleDateString("en-us", { year: "numeric", month: "short", day: "numeric" }) }}</p>
+                            <h3>{{ event.date.toLocaleDateString("en-us", { year: "numeric", month: "short", day: "numeric" }) }}</h3>
                         </div>
                     </template>
                 </template>
@@ -219,8 +219,18 @@ const time_till_soonest = computed(() => {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
     width: 100%;
+}
+
+.event h2 {
+  width: 65%;
+  font-size: 22px;
+  padding-left: 5px;
+}
+
+.event h3 {
+  font-size: 18px;
+  padding-right: 5px;
 }
 
 .event > * {
@@ -254,7 +264,7 @@ const time_till_soonest = computed(() => {
     background-color: rgba(255, 255, 255, 0.7);
     color: #000000;
     width: 30%;
-    min-width: 300px;
+    min-width: 350px;
     border-radius: 20px;
     align-items: center;
     text-align: center;
@@ -272,6 +282,7 @@ const time_till_soonest = computed(() => {
 }
 
 .banner {
+    padding-top: 4em;  /* So we are not hidden under navbar on some screens */
     width: 40%;
     min-width: 300px;
 }
