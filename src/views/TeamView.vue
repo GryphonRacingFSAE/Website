@@ -31,8 +31,8 @@ import LeadProfile from "@/components/LeadProfile.vue";
             <LeadProfile title="Electrical" name="Chris Walker" linkedin="https://www.linkedin.com/in/christopher-w-185485216/" />
             <LeadProfile title="CAD" name="Jacob Dykstra" linkedin="https://www.linkedin.com/in/jacob-dykstra-071889268/" />
             <LeadProfile title="CAD" name="Julian VanLandschoot" />
-            <LeadProfile title="Mechanical" name="Korab Islami" />
             <LeadProfile title="Manufacturing" name="Jonathan Chung" linkedin="https://www.linkedin.com/in/jonathan-chung-b05941242/" />
+            <LeadProfile title="Dynamics" name="Korab Islami" />
             <LeadProfile title="Dynamics" name="Max Brown" linkedin="https://www.linkedin.com/in/max-brown-314957263" />
         </div>
     </div>
