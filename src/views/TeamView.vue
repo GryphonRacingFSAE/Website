@@ -30,8 +30,10 @@ import LeadProfile from "@/components/LeadProfile.vue";
             <LeadProfile title="Software" name="Evan Rutten" linkedin="https://www.linkedin.com/in/evan-rutten/" />
             <LeadProfile title="Electrical" name="Chris Walker" linkedin="https://www.linkedin.com/in/christopher-w-185485216/" />
             <LeadProfile title="CAD" name="Jacob Dykstra" linkedin="https://www.linkedin.com/in/jacob-dykstra-071889268/" />
-            <LeadProfile title="Mechanics" name="Korab Islami" />
+            <LeadProfile title="CAD" name="Julian VanLandschoot" />
+            <LeadProfile title="Mechanical" name="Korab Islami" />
             <LeadProfile title="Manufacturing" name="Jonathan Chung" linkedin="https://www.linkedin.com/in/jonathan-chung-b05941242/" />
+            <LeadProfile title="Dynamics" name="Max Brown" linkedin="https://www.linkedin.com/in/max-brown-314957263" />
         </div>
     </div>
 </template>
@@ -66,7 +68,7 @@ a {
 }
 
 .profiles_list {
-    max-width: 1000px;
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

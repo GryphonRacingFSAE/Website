@@ -18,6 +18,8 @@ const known_names = [
     "bethany_hughes",
     "korab_islami",
     "jonathan_chung",
+    "max_brown",
+    "julian_vanlandschoot",
 ];
 
 const profile_picture_url = computed(() => {
@@ -66,21 +68,22 @@ const popup = ref(false);
 }
 
 .profile_picture {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     image-rendering: crisp-edges;
     /* image-rendering: -webkit-optimize-contrast; */
     object-fit: cover;
     border-radius: 10px;
+    padding-bottom: 5px;
 }
 
 h1 {
     margin: 0.1em;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 h2 {
     margin: 0.1em;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 </style>
