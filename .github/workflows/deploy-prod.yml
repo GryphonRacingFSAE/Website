@@ -22,6 +22,8 @@ jobs:
 
   # Audit the site
   lighthouse:
+    if: github.ref != 'refs/heads/main'
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -42,7 +44,7 @@ jobs:
 
   # Taken from https://github.com/actions/deploy-pages/blob/master/README.md
   deploy:
-    needs: [build, lighthouse]
+    needs: [build]
     if: github.ref == 'refs/heads/main'
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
