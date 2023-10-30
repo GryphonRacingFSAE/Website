@@ -7,8 +7,13 @@
     --gryphon-light-black: #2C2C2C;
     --gryphon-black: #000000;
     --gryphon-blue: #69A3B9;
+    --gryphon-dark-gray: #4d4d4d;
+    --gryphon-gray: #979797;;
+    --gryphon-light-gray: #8C8C8C;
     --gryphon-dark-white: #E5E5E5;
     --gryphon-white: #FFFFFF;
+
+    --swiper-theme-color: var(--gryphon-red-transparent) !important;
 }
 
 body {

@@ -14,6 +14,10 @@ export const routes = [
         component: () => import("@/views/TeamView.vue"),
     },
     {
+        path: "/cars",
+        component: () => import("@/views/CarsView.vue"),
+    },
+    {
         path: "/sponsors",
         component: () => import("@/views/SponsorView.vue"),
     },

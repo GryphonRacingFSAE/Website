@@ -98,7 +98,7 @@ const time_till_soonest = computed(() => {
                                 shaft drive was replaced with a chain and custom-built limited slip differential. This allowed the team to switch to 10” rims and lower the car's overall center of
                                 gravity.
                             </p>
-                            <img class="car_portrait" src="/car_portraits/grc19.webp" width="1000" height="667" alt="GRC19 Car Portrait" />
+                            <img class="car_portrait" src="/current_cars/grc19.webp" width="1000" height="667" alt="GRC19 Car Portrait" />
                         </div>
                         <div>
                             <h2>GRC22</h2>
@@ -106,7 +106,7 @@ const time_till_soonest = computed(() => {
                                 A new generation of Gryphon Racing design. This car marks the ending of an almost 20-year history of GSX-R powertrains. The team at Gryphon Racing has spent countless
                                 hours developing Gryphon Racing's first ever: electric car, full aerodynamics kit, custom gearbox + differential, and custom Vehicle Control Unit.
                             </p>
-                            <img class="car_portrait" src="/car_portraits/grc22.webp" width="1000" height="667" alt="GRC22 Car Portrait" />
+                            <img class="car_portrait" src="/current_cars/grc22.webp" width="1000" height="667" alt="GRC22 Car Portrait" />
                         </div>
                     </div>
                 </div>
@@ -223,14 +223,14 @@ const time_till_soonest = computed(() => {
 }
 
 .event h2 {
-  width: 65%;
-  font-size: 22px;
-  padding-left: 5px;
+    width: 65%;
+    font-size: 22px;
+    padding-left: 5px;
 }
 
 .event h3 {
-  font-size: 18px;
-  padding-right: 5px;
+    font-size: 18px;
+    padding-right: 5px;
 }
 
 .event > * {
@@ -282,7 +282,7 @@ const time_till_soonest = computed(() => {
 }
 
 .banner {
-    padding-top: 4em;  /* So we are not hidden under navbar on some screens */
+    padding-top: 4em; /* So we are not hidden under navbar on some screens */
     width: 40%;
     min-width: 300px;
 }
