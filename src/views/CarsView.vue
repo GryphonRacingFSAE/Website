@@ -1,15 +1,6 @@
 <script setup lang="ts">
 import {ref} from "vue";
-// Import Swiper Vue.js components
-import {Swiper, SwiperSlide} from "swiper/vue";
-import {Navigation, Pagination, Mousewheel, Keyboard, Autoplay} from "swiper/modules";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-const modules = [Pagination, Navigation, Mousewheel, Keyboard, Autoplay];
+import CarGallery from "@/components/CarGallery.vue";
 
 const ourCars = [
   {
@@ -133,19 +124,7 @@ function updateSelectedCar(id: number) {
     <!-- Display car and info -->
     <div class="car_info">
       <h1>GRC {{ selectedCar?.id }}</h1>
-
-      <div class="swiper_wrapper">
-        <swiper :cssMode="true" :pagination="true" :mousewheel="true" :keyboard="true"
-                :slidesPerView="1" :spaceBetween="30" :loop="true"
-                :autoplay="{ delay: 4000, disableOnInteraction: true }"
-                :modules="modules"
-        >
-          <swiper-slide v-for="image in selectedCar?.images" :key="image">
-            <img :src="`all_cars/grc${selectedCar?.id}/${image}.webp`" alt="GRC Gallery Image" width="900"
-                 height="500"/>
-          </swiper-slide>
-        </swiper>
-      </div>
+      <CarGallery :id="selectedCar?.id || 0" :images="selectedCar?.images || []"/>
 
       <h2>About</h2>
       <p class="about">{{ selectedCar?.about }}</p>
@@ -167,7 +146,7 @@ function updateSelectedCar(id: number) {
 .cars_view {
   color: var(--gryphon-light-black);
   background-color: var(--gryphon-white);
-  padding: 5.2em 2em 4em;
+  padding: 5.2em 0em 4em;
   display: flex;
 }
 
@@ -187,10 +166,10 @@ function updateSelectedCar(id: number) {
   font-size: 20px;
   border: none;
   width: 90%;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-top: .25em;
+  margin-bottom: .25em;
 }
 
 .cars_selector button:not(.selected_car) {
@@ -216,25 +195,6 @@ function updateSelectedCar(id: number) {
   align-items: center;
 }
 
-.swiper-slide {
-  border-radius: 1em;
-  text-align: center;
-  font-size: 18px;
-  background: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  border-radius: 1em;
-  display: block;
-  width: 100%;
-  height: 40vw;
-  max-height: 500px;
-  object-fit: cover;
-}
-
 h1 {
   margin-top: 0;
 }
@@ -249,13 +209,6 @@ h2 {
   text-align: center;
   font-size: 1.3em;
   margin: 0;
-}
-
-.swiper_wrapper {
-  width: 85%;
-  max-width: 750px;
-  border-radius: 1em;
-  box-shadow: 0 0 10px var(--gryphon-light-gray);
 }
 
 .stats {
@@ -285,14 +238,10 @@ h2 {
     width: 100%;
   }
 
-  .swiper-slide img {
-    height: 50vw;
-  }
-
   .cars_selector {
     min-width: 0;
     padding-top: 0;
-    padding-bottom: 1em;
+    padding-bottom: .5em;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
@@ -300,9 +249,11 @@ h2 {
 
   .cars_selector button {
     width: 20%;
-    min-width: 110px;
-    margin-left: 0.3em;
-    margin-right: 0.3em;
+    min-width: 100px;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    padding-top: .25em;
+    padding-bottom: .25em;
   }
 
   .selector_title {
