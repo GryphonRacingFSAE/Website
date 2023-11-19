@@ -223,14 +223,14 @@ const time_till_soonest = computed(() => {
 }
 
 .event h2 {
-  width: 65%;
-  font-size: 22px;
-  padding-left: 5px;
+    width: 65%;
+    font-size: 22px;
+    padding-left: 5px;
 }
 
 .event h3 {
-  font-size: 18px;
-  padding-right: 5px;
+    font-size: 18px;
+    padding-right: 5px;
 }
 
 .event > * {
@@ -282,7 +282,7 @@ const time_till_soonest = computed(() => {
 }
 
 .banner {
-    padding-top: 4em;  /* So we are not hidden under navbar on some screens */
+    padding-top: 4em; /* So we are not hidden under navbar on some screens */
     width: 40%;
     min-width: 300px;
 }
