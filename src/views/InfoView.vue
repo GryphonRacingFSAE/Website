@@ -17,32 +17,51 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="shop_info">
-        <div class="info">
-            <h1>Gryphon Racing</h1>
-            <p>
-                University of Guelph<br />
-                Physical Resources Building<br />
-                50 Stone Rd E, Guelph, ON N1G 2W1
-            </p>
-            <p>
-                Join our team as members, <br />
-                sponsors or advisors
-            </p>
+    <div class="root">
+        <div class="shop_info">
+            <div class="info">
+                <h1>Location</h1>
+                <p>
+                    University of Guelph<br />
+                    Physical Resources Building<br />
+                    50 Stone Rd E, Guelph, ON N1G 2W1
+                </p>
+                <p>
+                    Join our team as members, <br />
+                    sponsors or advisors
+                </p>
+            </div>
+
+            <div id="map" class="map"></div>
         </div>
 
-        <div id="map" class="map"></div>
+        <div class="links-wrapper">
+            <h2>Club Documents</h2>
+            <a href="/media/club_docs/Constitution.pdf" target="_blank">Constitution</a>
+            <hr />
+            <a href="/media/club_docs/Individual_Responsibility_Signoff.pdf" target="_blank">Individual Responsibility Signoff</a>
+            <hr />
+            <a href="/media/club_docs/Leadership_Code_of_Conduct.pdf" target="_blank">Leadership Code of Conduct</a>
+            <hr />
+            <a href="/media/club_docs/Vehicle_Usage_Procedure.pdf" target="_blank">Vehicle Usage Procedure</a>
+            <hr />
+        </div>
     </div>
 </template>
 
 <style scoped>
+.root {
+    width: 100%;
+    background-color: var(--gryphon-white);
+}
+
 .shop_info {
     position: relative;
     justify-content: center;
     line-height: 250%;
     display: flex;
     padding: 15vh 15% 10vh;
-    background-color: var(--gryphon-white);
+
     color: var(--gryphon-red);
 }
 
@@ -74,6 +93,46 @@ onMounted(() => {
 .shop_info h1 {
     font-size: 4em;
     line-height: 1em;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    color: var(--gryphon-red);
+}
+
+.links-wrapper {
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 4em;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    color: black;
+    transition-duration: 0.2s;
+}
+a:hover {
+    color: var(--gryphon-red);
+    translate: 8px;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 99%;
+    background: linear-gradient(to right, var(--gryphon-red) 0%, var(--gryphon-white) 100%);
+    height: 3px;
+    border-radius: 50px;
 }
 
 @media screen and (max-width: 1500px) {
