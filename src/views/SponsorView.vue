@@ -1,7 +1,7 @@
 <template>
     <div class="root">
-        <h1>Sponsors</h1>
         <div class="list_container platinum">
+            <h2>Platinum Sponsors</h2>
             <div class="sponsor_list">
                 <img src="/sponsors/apt.webp" width="400" height="120" alt="APT" />
                 <img src="/sponsors/musashi.webp" width="400" height="71" alt="Musashi" />
@@ -11,6 +11,7 @@
             </div>
         </div>
         <div class="list_container gold">
+            <h2>Gold Sponsors</h2>
             <div class="sponsor_list">
                 <img src="/sponsors/denso.webp" width="400" height="78" alt="Denso" />
                 <img src="/sponsors/aoc.webp" width="400" height="400" alt="AOC" />
@@ -25,6 +26,7 @@
             </div>
         </div>
         <div class="list_container silver">
+            <h2>Silver Sponsors</h2>
             <div class="sponsor_list">
                 <img src="/sponsors/quaife.webp" width="400" height="97" alt="Quaife" />
                 <img src="/sponsors/skf.webp" width="400" height="191" alt="SKF" />
@@ -37,13 +39,14 @@
             </div>
         </div>
         <div class="list_container bronze">
+            <h2>Bronze Sponsors</h2>
             <div class="sponsor_list">
+                <img src="/sponsors/grand_river_sign_design.webp" width="400" height="98" alt="Grand River Sign Design" />
                 <img src="/sponsors/aurora_bearing.webp" width="400" height="129" alt="Aurora Bearing" />
                 <img src="/sponsors/bodycote.webp" width="400" height="203" alt="Bodycote" />
                 <img src="/sponsors/composites_canada.webp" width="400" height="106" alt="Composites Canada" />
                 <img src="/sponsors/hoosier.webp" width="400" height="123" alt="Hoosier" />
                 <img src="/sponsors/paradigm.webp" width="400" height="81" alt="Paradigm" />
-                <img src="/sponsors/grand_river_sign_design.webp" width="400" height="98" alt="Grand River Sign Design" />
                 <img src="/sponsors/vr3.webp" height="143" width="400" alt="VR3" />
             </div>
         </div>
@@ -70,6 +73,8 @@ h1 {
 }
 
 h2 {
+    padding-bottom: 4px;
+    text-align: center;
     font-size: 1.8em;
     margin: 0;
 }
@@ -86,20 +91,22 @@ h2 {
 }
 
 .sponsor_list {
+    border-radius: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    background-color: var(--gryphon-white);
 }
 
 .list_container {
     width: 95%;
-    padding-left: 5%;
-    margin-top: 3em;
+    max-width: 1200px;
+    margin-top: 1.5em;
 }
 
 .individuals {
+    max-width: 1200px;
     padding: 1em 5% 1em;
     display: flex;
     flex-direction: row;
@@ -122,41 +129,51 @@ h2 {
     max-width: 25%;
 }
 
-.platinum {
-    background-color: #e5e4e2;
+.platinum > .sponsor_list {
+    background: linear-gradient(to right, #93918e, #d8d7d4);
+}
+
+.platinum > h2 {
+    color: #93918e;
 }
 
 .gold > .sponsor_list > img {
-    max-width: 15%;
+    max-width: 12%;
 }
 
-.gold {
-    background-color: gold;
+.gold > .sponsor_list {
+    background: linear-gradient(to right, #c09b24, #ddc579);
+}
+
+.gold > h2 {
+    color: #caa52e;
 }
 
 .silver > .sponsor_list > img {
     max-width: 12%;
 }
 
-.silver {
-    background-color: silver;
+.silver > .sponsor_list {
+    background: linear-gradient(to right, #c7c6c6, #ededed);
+}
+
+.silver > h2 {
+    color: #c7c6c6;
 }
 
 .bronze > .sponsor_list > img {
     max-width: 10%;
 }
 
-.bronze {
-    background-color: #cd7f32;
+.bronze > .sponsor_list {
+    background: linear-gradient(to right, #bf7226, #f4c292);
+}
+
+.bronze > h2 {
+    color: #bd732a;
 }
 
 @media screen and (max-width: 750px) {
-    .list_container {
-        width: 95%;
-        padding-left: 5%;
-        margin-top: 1.5em;
-    }
-
     .platinum > .sponsor_list > img {
         max-width: 45%;
     }
@@ -180,4 +197,5 @@ h2 {
     }
 }
 </style>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
