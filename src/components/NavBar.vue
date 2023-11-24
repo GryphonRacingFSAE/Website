@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/team">Team</RouterLink>
         <RouterLink to="/sponsors">Sponsors</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
+        <RouterLink to="/info">Info</RouterLink>
         <MenuIcon class="hamburger" @click="dropdown_active = !dropdown_active"></MenuIcon>
     </div>
 
@@ -28,7 +28,7 @@ window.addEventListener("scroll", () => {
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="/team">Team</RouterLink>
             <RouterLink to="/sponsors">Sponsors</RouterLink>
-            <RouterLink to="/contact">Contact</RouterLink>
+            <RouterLink to="/infot">Info</RouterLink>
         </div>
     </transition>
 </template>
