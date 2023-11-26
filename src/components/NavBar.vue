@@ -28,7 +28,7 @@ window.addEventListener("scroll", () => {
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="/team">Team</RouterLink>
             <RouterLink to="/sponsors">Sponsors</RouterLink>
-            <RouterLink to="/infot">Info</RouterLink>
+            <RouterLink to="/info">Info</RouterLink>
         </div>
     </transition>
 </template>
