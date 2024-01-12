@@ -119,17 +119,20 @@ h2 {
     text-align: center;
     font-size: 1.8em;
     margin: 0;
+    /* Important because we need to override main.css */
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
 }
 
 .root {
     background-color: var(--gryphon-white);
-    padding-top: 7em;
+    padding-top: 5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--gryphon-light-black);
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .sponsor_list {
@@ -137,7 +140,7 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -166,6 +169,9 @@ h2 {
     height: auto;
     width: 95%;
     padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .diamond > .sponsor_list > a,
@@ -173,12 +179,9 @@ h2 {
     max-width: 25%;
 }
 
+.diamond > h2,
 .diamond > .sponsor_list {
-    background: linear-gradient(to right, #98d9f7, #b2effa);
-}
-
-.diamond > h2 {
-    color: #98d9f7;
+    background: linear-gradient(to right, #72cff9, #c6f0f9);
 }
 
 .platinum > .sponsor_list > a,
@@ -186,12 +189,9 @@ h2 {
     max-width: 20%;
 }
 
+.platinum > h2,
 .platinum > .sponsor_list {
     background: linear-gradient(to right, #93918e, #d8d7d4);
-}
-
-.platinum > h2 {
-    color: #93918e;
 }
 
 .gold > .sponsor_list > a,
@@ -199,12 +199,9 @@ h2 {
     max-width: 12%;
 }
 
+.gold > h2,
 .gold > .sponsor_list {
     background: linear-gradient(to right, #c09b24, #ddc579);
-}
-
-.gold > h2 {
-    color: #caa52e;
 }
 
 .silver > .sponsor_list > a,
@@ -212,12 +209,9 @@ h2 {
     max-width: 12%;
 }
 
+.silver > h2,
 .silver > .sponsor_list {
     background: linear-gradient(to right, #c7c6c6, #ededed);
-}
-
-.silver > h2 {
-    color: #c7c6c6;
 }
 
 .bronze > .sponsor_list > a,
@@ -225,34 +219,9 @@ h2 {
     max-width: 10%;
 }
 
+.bronze > h2,
 .bronze > .sponsor_list {
     background: linear-gradient(to right, #bf7226, #f4c292);
-}
-
-.bronze > h2 {
-    color: #bd732a;
-}
-
-@media screen and (max-width: 750px) {
-    .diamond > .sponsor_list img {
-        max-width: 45%;
-    }
-
-    .platinum > .sponsor_list img {
-        max-width: 35%;
-    }
-
-    .gold > .sponsor_list img {
-        max-width: 20%;
-    }
-
-    .silver > .sponsor_list img {
-        max-width: 18%;
-    }
-
-    .bronze > .sponsor_list img {
-        max-width: 15%;
-    }
 }
 
 @media screen and (max-width: 500px) {
