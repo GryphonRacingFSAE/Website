@@ -181,11 +181,14 @@ h2 {
     height: auto;
     width: 95%;
     padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .diamond > .sponsor_list > a,
 .diamond > .sponsor_list > img {
-    max-width: 25%;
+    width: 25%;
 }
 
 .diamond > h2,
@@ -195,7 +198,7 @@ h2 {
 
 .platinum > .sponsor_list > a,
 .platinum > .sponsor_list > img {
-    max-width: 20%;
+    width: 20%;
 }
 
 .platinum > h2,
@@ -205,7 +208,7 @@ h2 {
 
 .gold > .sponsor_list > a,
 .gold > .sponsor_list > img {
-    max-width: 12%;
+    width: 12%;
 }
 
 .gold > h2,
@@ -215,7 +218,7 @@ h2 {
 
 .silver > .sponsor_list > a,
 .silver > .sponsor_list > img {
-    max-width: 12%;
+    width: 12%;
 }
 
 .silver > h2,
