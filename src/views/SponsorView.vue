@@ -26,6 +26,9 @@
                 <a href="https://www.uoguelph.ca/engineering/">
                     <img src="/sponsors/uog_eng.webp" width="400" height="129" alt="UOG Engineering" />
                 </a>
+                <a href="https://www.inhousesolutions.com/">
+                    <img src="/sponsors/in_house_solutions.webp" width="400" height="238" alt="In House Solutions" />
+                </a>
             </div>
         </div>
         <div class="list_container gold">
@@ -34,8 +37,6 @@
                 <a href="https://aocresins.com/en-amr/home/">
                     <img src="/sponsors/aoc.webp" width="400" height="400" alt="AOC" />
                 </a>
-                <!-- <img src="/sponsors/applied_precision.webp" width="400" height="141" alt="Applied Precision" /> -->
-                <!-- <img src="/sponsors/parker.webp" width="400" height="154" alt="Parker" /> -->
                 <a href="https://www.summitlaser.ca/">
                     <img src="/sponsors/summit_laser.webp" width="400" height="400" alt="Summit Laser" />
                 </a>
@@ -45,6 +46,14 @@
                 <a href="https://gfo.ca/">
                     <img src="/sponsors/grain_farmers.webp" width="400" height="400" alt="Grain Farmers" />
                 </a>
+                <a href="https://rapidharness.com/">
+                    <img src="/sponsors/rapidharness.webp" width="400" height="61" alt="Rapid Harness" />
+                </a>
+                <a href="https://cambridgeheattreating.com//">
+                    <img src="/sponsors/cambridge_heat_treating.webp" width="400" height="224" alt="Cambridge Heat Treating" />
+                </a>
+                <!-- <img src="/sponsors/applied_precision.webp" width="400" height="141" alt="Applied Precision" /> -->
+                <!-- <img src="/sponsors/parker.webp" width="400" height="154" alt="Parker" /> -->
             </div>
         </div>
         <div class="list_container silver">
@@ -58,6 +67,9 @@
                 </a>
                 <a href="https://www.skf.com/ca/en">
                     <img src="/sponsors/skf.webp" width="400" height="191" alt="SKF" />
+                </a>
+                <a href="https://agile-manufacturing.com/">
+                    <img src="/sponsors/agile.webp" width="400" height="58" alt="Agile Manufacturing" />
                 </a>
                 <!-- <img src="/sponsors/linamar.webp" width="400" height="101" alt="Linamar" /> -->
                 <!-- <img src="/sponsors/vibrant.webp" width="400" height="120" alt="Vibrant" /> -->
@@ -119,17 +131,20 @@ h2 {
     text-align: center;
     font-size: 1.8em;
     margin: 0;
+    /* Fpr text gradiant: Important because we need to override main.css */
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
 }
 
 .root {
     background-color: var(--gryphon-white);
-    padding-top: 7em;
+    padding-top: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--gryphon-light-black);
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .sponsor_list {
@@ -137,7 +152,7 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -173,12 +188,9 @@ h2 {
     max-width: 25%;
 }
 
+.diamond > h2,
 .diamond > .sponsor_list {
     background: linear-gradient(to right, #98d9f7, #b2effa);
-}
-
-.diamond > h2 {
-    color: #98d9f7;
 }
 
 .platinum > .sponsor_list > a,
@@ -186,12 +198,9 @@ h2 {
     max-width: 20%;
 }
 
+.platinum > h2,
 .platinum > .sponsor_list {
     background: linear-gradient(to right, #93918e, #d8d7d4);
-}
-
-.platinum > h2 {
-    color: #93918e;
 }
 
 .gold > .sponsor_list > a,
@@ -199,12 +208,9 @@ h2 {
     max-width: 12%;
 }
 
+.gold > h2,
 .gold > .sponsor_list {
     background: linear-gradient(to right, #c09b24, #ddc579);
-}
-
-.gold > h2 {
-    color: #caa52e;
 }
 
 .silver > .sponsor_list > a,
@@ -212,12 +218,9 @@ h2 {
     max-width: 12%;
 }
 
+.silver > h2,
 .silver > .sponsor_list {
     background: linear-gradient(to right, #c7c6c6, #ededed);
-}
-
-.silver > h2 {
-    color: #c7c6c6;
 }
 
 .bronze > .sponsor_list > a,
@@ -225,33 +228,35 @@ h2 {
     max-width: 10%;
 }
 
+.bronze > h2,
 .bronze > .sponsor_list {
     background: linear-gradient(to right, #bf7226, #f4c292);
 }
 
-.bronze > h2 {
-    color: #bd732a;
-}
-
 @media screen and (max-width: 750px) {
-    .diamond > .sponsor_list img {
-        max-width: 45%;
+    .diamond > .sponsor_list > a,
+    .diamond > .sponsor_list > img {
+        width: 45%;
     }
 
-    .platinum > .sponsor_list img {
-        max-width: 35%;
+    .platinum > .sponsor_list > a,
+    .platinum > .sponsor_list > img {
+        width: 35%;
     }
 
-    .gold > .sponsor_list img {
-        max-width: 20%;
+    .gold > .sponsor_list > a,
+    .gold > .sponsor_list > img {
+        width: 20%;
     }
 
-    .silver > .sponsor_list img {
-        max-width: 18%;
+    .silver > .sponsor_list > a,
+    .silver > .sponsor_list > img {
+        width: 18%;
     }
 
-    .bronze > .sponsor_list img {
-        max-width: 15%;
+    .bronze > .sponsor_list > a,
+    .bronze > .sponsor_list > img {
+        width: 15%;
     }
 }
 
