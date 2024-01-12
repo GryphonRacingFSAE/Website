@@ -26,6 +26,9 @@
                 <a href="https://www.uoguelph.ca/engineering/">
                     <img src="/sponsors/uog_eng.webp" width="400" height="129" alt="UOG Engineering" />
                 </a>
+                <a href="https://www.inhousesolutions.com/">
+                    <img src="/sponsors/in_house_solutions.webp" width="400" height="238" alt="In House Solutions" />
+                </a>
             </div>
         </div>
         <div class="list_container gold">
@@ -34,8 +37,6 @@
                 <a href="https://aocresins.com/en-amr/home/">
                     <img src="/sponsors/aoc.webp" width="400" height="400" alt="AOC" />
                 </a>
-                <!-- <img src="/sponsors/applied_precision.webp" width="400" height="141" alt="Applied Precision" /> -->
-                <!-- <img src="/sponsors/parker.webp" width="400" height="154" alt="Parker" /> -->
                 <a href="https://www.summitlaser.ca/">
                     <img src="/sponsors/summit_laser.webp" width="400" height="400" alt="Summit Laser" />
                 </a>
@@ -45,6 +46,14 @@
                 <a href="https://gfo.ca/">
                     <img src="/sponsors/grain_farmers.webp" width="400" height="400" alt="Grain Farmers" />
                 </a>
+                <a href="https://rapidharness.com/">
+                    <img src="/sponsors/rapidharness.webp" width="400" height="61" alt="Rapid Harness" />
+                </a>
+                <a href="https://cambridgeheattreating.com//">
+                    <img src="/sponsors/cambridge_heat_treating.webp" width="400" height="224" alt="Cambridge Heat Treating" />
+                </a>
+                <!-- <img src="/sponsors/applied_precision.webp" width="400" height="141" alt="Applied Precision" /> -->
+                <!-- <img src="/sponsors/parker.webp" width="400" height="154" alt="Parker" /> -->
             </div>
         </div>
         <div class="list_container silver">
@@ -58,6 +67,9 @@
                 </a>
                 <a href="https://www.skf.com/ca/en">
                     <img src="/sponsors/skf.webp" width="400" height="191" alt="SKF" />
+                </a>
+                <a href="https://agile-manufacturing.com/">
+                    <img src="/sponsors/agile.webp" width="400" height="58" alt="Agile Manufacturing" />
                 </a>
                 <!-- <img src="/sponsors/linamar.webp" width="400" height="101" alt="Linamar" /> -->
                 <!-- <img src="/sponsors/vibrant.webp" width="400" height="120" alt="Vibrant" /> -->
@@ -234,23 +246,28 @@ h2 {
 }
 
 @media screen and (max-width: 750px) {
-    .diamond > .sponsor_list img {
+    .diamond > .sponsor_list > a,
+    .diamond > .sponsor_list > img {
         max-width: 45%;
     }
 
-    .platinum > .sponsor_list img {
+    .platinum > .sponsor_list > a,
+    .platinum > .sponsor_list > img {
         max-width: 35%;
     }
 
-    .gold > .sponsor_list img {
+    .gold > .sponsor_list > a,
+    .gold > .sponsor_list > img {
         max-width: 20%;
     }
 
-    .silver > .sponsor_list img {
+    .silver > .sponsor_list > a,
+    .silver > .sponsor_list > img {
         max-width: 18%;
     }
 
-    .bronze > .sponsor_list img {
+    .bronze > .sponsor_list > a,
+    .bronze > .sponsor_list > img {
         max-width: 15%;
     }
 }
