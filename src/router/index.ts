@@ -6,8 +6,8 @@ export const routes = [
         component: HomeView,
     },
     {
-        path: "/contact",
-        component: () => import("@/views/ContactView.vue"),
+        path: "/info",
+        component: () => import("@/views/InfoView.vue"),
     },
     {
         path: "/team",
