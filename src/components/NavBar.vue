@@ -18,6 +18,7 @@ window.addEventListener("scroll", () => {
         <RouterLink to="/" class="crest"><img src="/media/crest.svg" alt="Gryphon Racing Crest" /></RouterLink>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/team">Team</RouterLink>
+        <RouterLink to="/cars">Our Cars</RouterLink>
         <RouterLink to="/sponsors">Sponsors</RouterLink>
         <RouterLink to="/info">Info</RouterLink>
         <MenuIcon class="hamburger" @click="dropdown_active = !dropdown_active"></MenuIcon>
@@ -27,6 +28,7 @@ window.addEventListener("scroll", () => {
         <div class="dropdown highlight" v-if="dropdown_active" @click="dropdown_active = !dropdown_active">
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="/team">Team</RouterLink>
+            <RouterLink to="/cars">Our Cars</RouterLink>
             <RouterLink to="/sponsors">Sponsors</RouterLink>
             <RouterLink to="/info">Info</RouterLink>
         </div>

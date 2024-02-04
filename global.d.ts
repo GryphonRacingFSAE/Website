@@ -10,3 +10,13 @@ declare module "vue-material-design-icons/*.vue" {
     }>;
     export default IconVue;
 }
+
+declare module "*.json" {
+    const value: any;
+    export default value;
+}
+
+declare module "swiper/types/modules/*" {
+    const value: any;
+    export default value;
+}
