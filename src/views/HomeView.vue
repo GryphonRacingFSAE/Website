@@ -16,12 +16,24 @@ function timeTill(date: Date) {
 
 const events = [
     {
+        name: "College Royal",
+        date: new Date(2024, 2, 17),
+    },
+    {
+        name: "GRC22 Reveal",
+        date: new Date(2024, 3, 6),
+    },
+    {
         name: "Formula Hybrid + Electric",
-        date: new Date(2024, 3, 21),
+        date: new Date(2024, 3, 29),
     },
     {
         name: "Michigan FSAE",
-        date: new Date(2024, 6, 15),
+        date: new Date(2024, 5, 12),
+    },
+    {
+        name: "Oakland Grand Prix",
+        date: new Date(2024, 5, 29),
     },
     {
         name: "Pittsburgh Shootout",
