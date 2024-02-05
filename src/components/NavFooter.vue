@@ -57,9 +57,10 @@
 
 .banner {
     width: 30vw;
+    max-width: 500px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .footer {
         flex-direction: column;
     }
