@@ -33,6 +33,9 @@ const ourCars = [
                 "Autocross Event": "86th / 86th",
                 Endurance: "46th / 58th",
             },
+            "Toronto Shootout 2023": {
+                Overall: "12th / 14th",
+            },
         },
     },
 
@@ -151,8 +154,8 @@ const ourCars = [
         about: undefined,
         stats: undefined,
         results: {
-            "Formula Michigan": {
-                Overall: "Withdrawn",
+            "Formula California": {
+                Overall: "52nd / 61st",
                 "Presentation Event": "34th / 60th",
                 "Design Event": "59th / 59th",
                 "Cost Event": "29th / 58th",
@@ -162,12 +165,6 @@ const ourCars = [
             },
         },
     },
-
-    // {
-    //   id: 10,
-    //   images: [],
-    // },
-
     {
         id: 9,
         images: [],
@@ -188,7 +185,7 @@ const ourCars = [
 
     {
         id: 8,
-        images: [],
+        images: ["grc08", "nose"],
         about: undefined,
         stats: undefined,
         results: {
@@ -224,7 +221,7 @@ const ourCars = [
 
     {
         id: 5,
-        images: [],
+        images: ["team_photo", "grc05"],
         about: undefined,
         stats: undefined,
         results: {
@@ -243,7 +240,7 @@ const ourCars = [
 
     {
         id: 4,
-        images: [],
+        images: ["team_photo", "grc04"],
         about: undefined,
         stats: undefined,
         results: {
@@ -262,7 +259,7 @@ const ourCars = [
 
     {
         id: 3,
-        images: [],
+        images: ["team_photo", "grc03", "cad", "frame"],
         about: undefined,
         stats: undefined,
         results: {
