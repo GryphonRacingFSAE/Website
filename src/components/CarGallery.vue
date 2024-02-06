@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{ id: number; images: string[] }>();
+const props = defineProps<{ id: number | string; images: string[] }>();
 
 // Handy Swiper JS Examples: https://swiperjs.com/demos
 import type { PaginationOptions } from "swiper/types";

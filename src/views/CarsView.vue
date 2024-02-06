@@ -169,7 +169,7 @@ const ourCars = [
     // },
 
     {
-        id: 9,
+        id: "09",
         images: [],
         about: undefined,
         stats: undefined,
@@ -187,7 +187,7 @@ const ourCars = [
     },
 
     {
-        id: 8,
+        id: "08",
         images: [],
         about: undefined,
         stats: undefined,
@@ -204,7 +204,7 @@ const ourCars = [
     },
 
     {
-        id: 7,
+        id: "07",
         images: [],
         about: undefined,
         stats: undefined,
@@ -223,8 +223,8 @@ const ourCars = [
     },
 
     {
-        id: 5,
-        images: [],
+        id: "05",
+        images: ["team_photo", "grc05"],
         about: undefined,
         stats: undefined,
         results: {
@@ -242,8 +242,8 @@ const ourCars = [
     },
 
     {
-        id: 4,
-        images: [],
+        id: "04",
+        images: ["team_photo", "grc04"],
         about: undefined,
         stats: undefined,
         results: {
@@ -261,8 +261,8 @@ const ourCars = [
     },
 
     {
-        id: 3,
-        images: [],
+        id: "03",
+        images: ["team_photo", "grc03", "cad", "frame"],
         about: undefined,
         stats: undefined,
         results: {
