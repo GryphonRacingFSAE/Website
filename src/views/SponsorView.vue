@@ -14,8 +14,8 @@
         <div class="list_container platinum">
             <h2>Platinum Sponsors</h2>
             <div class="sponsor_list">
-                <a href="https://www.answerprecision.com/">
-                    <img src="/sponsors/apt.webp" width="400" height="120" alt="APT" />
+                <a href="https://www.tek.com/">
+                    <img src="/sponsors/tektronix.webp" width="1077" height="194" alt="Textronix" />
                 </a>
                 <a href="https://true-gear.com/">
                     <img src="/sponsors/true_gear.webp" width="400" height="144" alt="True Gear" />
@@ -34,6 +34,9 @@
         <div class="list_container gold">
             <h2>Gold Sponsors</h2>
             <div class="sponsor_list">
+                <a href="https://www.answerprecision.com/">
+                    <img src="/sponsors/apt.webp" width="400" height="120" alt="APT" />
+                </a>
                 <a href="https://aocresins.com/en-amr/home/">
                     <img src="/sponsors/aoc.webp" width="400" height="400" alt="AOC" />
                 </a>
@@ -95,9 +98,18 @@
                 <a href="https://www.hoosiertirecanada.com/">
                     <img src="/sponsors/hoosier.webp" width="400" height="123" alt="Hoosier" />
                 </a>
-                <img src="/sponsors/quaife.webp" width="400" height="97" alt="Quaife" />
-                <img src="/sponsors/vr3.webp" height="143" width="400" alt="VR3" />
-                <img src="/sponsors/foam_geometrix.webp" height="140" width="278" alt="Foam Geometrix" />
+                <a href="https://www.foamgeometrix.ca/">
+                    <img src="/sponsors/foam_geometrix.webp" height="140" width="278" alt="Foam Geometrix" />
+                </a>
+                <a href="https://www.quaife.co.uk/">
+                    <img src="/sponsors/quaife.webp" width="400" height="97" alt="Quaife" />
+                </a>
+                <a href="https://vr3.ca/">
+                    <img src="/sponsors/vr3.webp" height="143" width="400" alt="VR3" />
+                </a>
+                <a href="https://www.homedepot.ca/">
+                    <img src="/sponsors/home_depot.webp" height="400" width="400" alt="Home Depot" />
+                </a>
 
                 <!-- <img src="/sponsors/aurora_bearing.webp" width="400" height="129" alt="Aurora Bearing" /> -->
                 <!-- <img src="/sponsors/paradigm.webp" width="400" height="81" alt="Paradigm" /> -->
