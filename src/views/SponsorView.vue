@@ -95,11 +95,12 @@
                 <a href="https://www.hoosiertirecanada.com/">
                     <img src="/sponsors/hoosier.webp" width="400" height="123" alt="Hoosier" />
                 </a>
+                <img src="/sponsors/quaife.webp" width="400" height="97" alt="Quaife" />
+                <img src="/sponsors/vr3.webp" height="143" width="400" alt="VR3" />
+                <img src="/sponsors/foam_geometrix.webp" height="140" width="278" alt="Foam Geometrix" />
 
                 <!-- <img src="/sponsors/aurora_bearing.webp" width="400" height="129" alt="Aurora Bearing" /> -->
-                <!-- <img src="/sponsors/quaife.webp" width="400" height="97" alt="Quaife" /> -->
                 <!-- <img src="/sponsors/paradigm.webp" width="400" height="81" alt="Paradigm" /> -->
-                <!-- <img src="/sponsors/vr3.webp" height="143" width="400" alt="VR3" /> -->
             </div>
         </div>
         <br />
