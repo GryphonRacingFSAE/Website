@@ -98,6 +98,9 @@
                 <a href="https://www.hoosiertirecanada.com/">
                     <img src="/sponsors/hoosier.webp" width="400" height="123" alt="Hoosier" />
                 </a>
+                <a href="https://www.foamgeometrix.ca/">
+                    <img src="/sponsors/foam_geometrix.webp" height="140" width="278" alt="Foam Geometrix" />
+                </a>
                 <a href="https://www.quaife.co.uk/">
                     <img src="/sponsors/quaife.webp" width="400" height="97" alt="Quaife" />
                 </a>
