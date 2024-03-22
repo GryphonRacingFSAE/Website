@@ -20,7 +20,7 @@ const ourCars = [
     {
         id: 19,
         images: ["backfire", "driving", "parking", "team_photo", "transport"],
-        about: "Currently, GRC 19, is Gryphon Racing's only competition ready car. It will soon be retired in favor of GRC 19, and will be the last gas powered car built by Gryphon Racing.",
+        about: "Currently, GRC 19, is Gryphon Racing's only competition ready car. It will soon be retired in favor of GRC 22, and will be the last gas powered car built by Gryphon Racing.",
         stats: undefined,
         results: {
             "Formula Michigan": {
