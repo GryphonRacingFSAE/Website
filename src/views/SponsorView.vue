@@ -6,6 +6,9 @@
                 <a href="https://www.uoguelph.ca/engineering/">
                     <img src="/sponsors/lab_fund.webp" width="400" height="402" alt="Lab Fund" />
                 </a>
+                <a href="https://www.linkedin.com/in/mark-van-voorst-p-eng-14322b20">
+                    <img src="/sponsors/van-voorst-engineering.webp" width="400" height="402" alt="Van Voorst Engineering" />
+                </a>
                 <a href="https://musashiamericas.com/">
                     <img src="/sponsors/musashi.webp" width="400" height="71" alt="Musashi" />
                 </a>
@@ -46,9 +49,9 @@
                 <a href="https://www.dominos.ca/en/">
                     <img src="/sponsors/dominos.webp" width="400" height="400" alt="Dominos" />
                 </a>
-                <a href="https://gfo.ca/">
+                <!-- <a href="https://gfo.ca/">
                     <img src="/sponsors/grain_farmers.webp" width="400" height="400" alt="Grain Farmers" />
-                </a>
+                </a> -->
                 <a href="https://rapidharness.com/">
                     <img src="/sponsors/rapidharness.webp" width="400" height="61" alt="Rapid Harness" />
                 </a>
@@ -73,6 +76,9 @@
                 </a>
                 <a href="https://agile-manufacturing.com/">
                     <img src="/sponsors/agile.webp" width="400" height="58" alt="Agile Manufacturing" />
+                </a>
+                <a href="https://www.facebook.com/idigexcavating/">
+                    <img src="/sponsors/i-dig.webp" width="400" height="300" alt="I-DIG Excavating" />
                 </a>
                 <!-- <img src="/sponsors/linamar.webp" width="400" height="101" alt="Linamar" /> -->
                 <!-- <img src="/sponsors/vibrant.webp" width="400" height="120" alt="Vibrant" /> -->
