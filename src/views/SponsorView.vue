@@ -32,6 +32,9 @@
                 <a href="https://www.inhousesolutions.com/">
                     <img src="/sponsors/in_house_solutions.webp" width="400" height="238" alt="In House Solutions" />
                 </a>
+                <a href="https://www.altium.com/">
+                    <img src="/sponsors/Altium.png" width="1077" height="194" alt="Textronix" />
+                </a>
             </div>
         </div>
         <div class="list_container gold">
