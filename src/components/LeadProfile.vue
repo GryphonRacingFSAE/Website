@@ -24,6 +24,7 @@ const known_names = [
     "chloe_san_juan",
     "giuliana_koledin",
     "riyan_noaman",
+    "christian_alloway",
 ];
 
 const profile_picture_url = computed(() => {
