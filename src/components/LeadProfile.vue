@@ -20,6 +20,10 @@ const known_names = [
     "jonathan_chung",
     "max_brown",
     "julian_vanlandschoot",
+    "sheel_sachdev",
+    "chloe_san_juan",
+    "giuliana_koledin",
+    "riyan_noaman",
 ];
 
 const profile_picture_url = computed(() => {
