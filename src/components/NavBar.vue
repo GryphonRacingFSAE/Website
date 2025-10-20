@@ -15,38 +15,39 @@ window.addEventListener("scroll", () => {
 
 <template>
     <div class="navbar highlight">
-        <RouterLink to="/" class="crest"><img src="/media/crest.svg" alt="Gryphon Racing Crest" /></RouterLink>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/team">Team</RouterLink>
-        <RouterLink to="/cars">Our Cars</RouterLink>
-        <RouterLink to="/sponsors">Sponsors</RouterLink>
-        <RouterLink to="/info">Info</RouterLink>
+        <RouterLink to="/" class="banner"><img src="/media/banner.svg" alt="Gryphon Racing Crest" /></RouterLink>
+        <RouterLink to="/">HOME</RouterLink>
+        <RouterLink to="/team">TEAM</RouterLink>
+        <RouterLink to="/cars">OUR CARS</RouterLink>
+        <RouterLink to="/sponsors">SPONSORS</RouterLink>
+        <RouterLink to="/info">INFO</RouterLink>
         <MenuIcon class="hamburger" @click="dropdown_active = !dropdown_active"></MenuIcon>
     </div>
 
     <transition name="slide">
         <div class="dropdown highlight" v-if="dropdown_active" @click="dropdown_active = !dropdown_active">
-            <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/team">Team</RouterLink>
-            <RouterLink to="/cars">Our Cars</RouterLink>
-            <RouterLink to="/sponsors">Sponsors</RouterLink>
-            <RouterLink to="/info">Info</RouterLink>
+            <RouterLink to="/">HOME</RouterLink>
+            <RouterLink to="/team">TEAM</RouterLink>
+            <RouterLink to="/cars">OUR CARS</RouterLink>
+            <RouterLink to="/sponsors">SPONSORS</RouterLink>
+            <RouterLink to="/info">INFO</RouterLink>
         </div>
     </transition>
 </template>
 
 <style scoped>
-.crest img {
+.banner img {
     height: 70%;
-    margin: 10px;
+    margin-top: 4px;
 }
 
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 4em;
-    background-color: var(--gryphon-red-transparent);
+    height: 5em;
+    background-color: var(--gryphon-light-black-transparent);
+    backdrop-filter: blur(10px);
     margin: 0;
     display: flex;
     overflow: hidden;
@@ -57,7 +58,7 @@ window.addEventListener("scroll", () => {
     padding: 0 20px;
     color: var(--gryphon-white);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -65,7 +66,7 @@ window.addEventListener("scroll", () => {
 
 .dropdown {
     position: fixed;
-    top: 4em;
+    top: 5em;
     right: 0;
     display: none;
     flex-direction: column;
@@ -73,18 +74,18 @@ window.addEventListener("scroll", () => {
 
     /* Dropdown animation */
     transform-origin: top;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .dropdown a {
     padding: 10px 25px;
     color: var(--gryphon-white);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: bold;
     display: flex;
     align-items: center;
-    background-color: var(--gryphon-red-transparent);
+    background-color: var(--gryphon-light-black-transparent);
     border-top: 1px solid var(--gryphon-white);
     border-left: 1px solid var(--gryphon-white);
 }
@@ -109,8 +110,8 @@ window.addEventListener("scroll", () => {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .highlight a:not(.crest):hover {
-        /* Dont highlight the crest cause it looks weird */
+    .highlight a:not(.banner):hover {
+        /* Dont highlight the banner cause it looks weird */
         background-color: var(--gryphon-yellow);
         color: var(--gryphon-light-black);
         transition-duration: 300ms;

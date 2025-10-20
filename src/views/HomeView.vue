@@ -293,9 +293,22 @@ const time_till_soonest = computed(() => {
     justify-content: space-evenly;
 }
 
-.banner {
-    padding-top: 4em; /* So we are not hidden under navbar on some screens */
-    width: 40%;
-    min-width: 300px;
+.banner { 
+    padding-top: 4em; /* So we are not hidden under navbar on some screens */ 
+    width: 40%; 
+    min-width: 300px;  
+
+    /* animation: slide-in 1.0s ease-in-out forwards; */ /* messing around with banner animation */  
+} 
+
+@keyframes slide-in {
+    from { 
+        transform: translateX(100%); 
+        opacity: 0; 
+    } to { 
+        transform: translateX(0); 
+        opacity: 1; 
+    } 
 }
+
 </style>
