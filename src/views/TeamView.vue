@@ -16,29 +16,31 @@ import LeadProfile from "@/components/LeadProfile.vue";
         <h2>Team Captains</h2>
         <hr />
         <div class="profiles_list">
+            <LeadProfile title="Dynamics" name="Giuliana Koledin" linkedin="https://www.linkedin.com/in/giuliana-koledin-234501323/" />
             <LeadProfile title="Dynamics" name="Jacob Dykstra" linkedin="https://www.linkedin.com/in/jacob-dykstra-071889268/" />
+            <LeadProfile title="Electrical" name="Evan Rutten" linkedin="https://www.linkedin.com/in/evan-rutten/" />
         </div>
 
         <h2>Team Leads</h2>
         <hr />
         <div class="profiles_list">
-            <LeadProfile title="Brakes" name="Sheel Sachdev" linkedin="https://www.linkedin.com/in/sheel-sachdev-0648a023b/" />
             <LeadProfile title="Aerodynamics" name="Hayden Foley" linkedin="https://www.linkedin.com/in/hayden-foley-a67b44235" />
-            <LeadProfile title="Aerodynamics" name="Rajaee Mundle" linkedin="https://www.linkedin.com/in/rajaee-mundle-56195824b/" />
-            <LeadProfile title="Frame" name="Jonathan Chung" linkedin="https://www.linkedin.com/in/jonathan-chung-b05941242/" />
+            <LeadProfile title="Aerodynamics" name="Ian Castelino" linkedin="https://www.linkedin.com/in/ian-castelino/" />
+            <LeadProfile title="Brakes" name="Sheel Sachdev" linkedin="https://www.linkedin.com/in/sheel-sachdev-0648a023b/" />
+            <LeadProfile title="Business" name="Maria Maldonado" linkedin="https://www.linkedin.com/in/maria-maldonado-94b619223/" />
+            <LeadProfile title="Driveline" name="Christian Alloway" linkedin="https://www.linkedin.com/in/christian-alloway-9a939a201/" />
+            <LeadProfile title="Electrical" name="Rayne van Voorst" linkedin="https://www.linkedin.com/in/rayne-van-voorst-691030225/" />
+            <LeadProfile title="Electrical" name="Zohair Salman" linkedin="https://www.linkedin.com/in/zohairsalman/" />
+            <LeadProfile title="Embedded" name="Riyan Noaman" linkedin="https://www.linkedin.com/in/riyan-noaman-526744211/" />
             <LeadProfile title="Frame" name="Julian Vanlandschoot" />
+            <LeadProfile title="Suspension" name="Korab Islami" linkedin="https://www.linkedin.com/in/korabislami/" />
             <LeadProfile title="Suspension" name="Owen Frey" linkedin="https://www.linkedin.com/in/owen-frey-8435b3261/" />
-            <LeadProfile title="Low Voltage" name="Rayne van Voorst" linkedin="https://www.linkedin.com/in/rayne-van-voorst-691030225/" />
-            <LeadProfile title="Embedded" name="Evan Rutten" linkedin="https://www.linkedin.com/in/evan-rutten/" />
-            <LeadProfile title="Business" name="Chloe San Juan" linkedin="https://www.linkedin.com/in/chloesanjuan/" />
         </div>
 
         <h2>Senior Members</h2>
         <hr />
         <div class="profiles_list">
-            <LeadProfile title="Dynamics" name="Christian Alloway" linkedin="https://www.linkedin.com/in/christian-alloway-9a939a201/" />
-            <LeadProfile title="Dynamics" name="Giuliana Koledin" linkedin="https://www.linkedin.com/in/giuliana-koledin-234501323/" />
-            <LeadProfile title="Electrical" name="Riyan Noaman" linkedin="https://www.linkedin.com/in/riyan-noaman-526744211/" />
+            <LeadProfile title="Aerodynamics" name="Anish Ganapathyraju" linkedin="https://www.linkedin.com/in/anish-ganapathyraju-24aa8832a/" />
         </div>
     </div>
 </template>
