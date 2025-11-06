@@ -25,6 +25,10 @@ const known_names = [
     "giuliana_koledin",
     "riyan_noaman",
     "christian_alloway",
+    "ian_castelino",
+    "maria_maldonado",
+    "zohair_salman",
+    "anish_ganapathyraju",
 ];
 
 const profile_picture_url = computed(() => {
