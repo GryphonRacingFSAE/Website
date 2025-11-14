@@ -57,7 +57,7 @@ const time_till_soonest = computed(() => {
 <template>
     <div class="landing_page_image">
         <div class="overlay">
-            <img class="banner" src="/media/banner.svg" alt="Banner Image" />
+            <img class="banner" src="/media/crest.svg" alt="Banner Image" />
             <div class="upcoming_events" v-if="upcoming_events.length != 0">
                 <!-- The next event that we'll be attending -->
                 <h1>{{ upcoming_events[0].name }}</h1>
@@ -93,32 +93,40 @@ const time_till_soonest = computed(() => {
         </div>
         <div class="floating_scroll_body">
             <div class="additional_info">
-                <div class="about_us">
-                    <h1>About Us</h1>
-                    <p>
-                        Gryphon Racing is a club where University of Guelph students can gain real-world engineering experience building a performance vehicle for Formula Student competitions. This
-                        gives students the opportunity to explore and pursue their passion for knowledge through firsthand experience.
-                    </p>
+                <div class="about_us_section">
+                    <div class="about_us">
+                        <h1>About Us</h1>
+                        <p>
+                            Gryphon Racing is an engineering team that build race cars and led by students from University of Guelph is where students can gain real-world engineering experience building a performance vehicle for Formula Student competitions. This
+                            gives students the opportunity to explore and pursue their passion for knowledge through firsthand experiences as team members are required to design, buld, test, and troubleshooting. <br><br>
+                            Founded in 2002, the Gryphon Racing has built 19 cars and competed in multiple events from Formula Michigan to Toronto shout out. The team has evolved from building small displacement, gas-powered vehicles to electrical vehicles with advanced aerodynamics and custom systems. 
+                        </p>
+                    </div>
+                    <div class="about_us_img">
+                        <img src="/media/grc24_showcase.webp" width="1000" height="667" alt="Gryphon Racing 2024" />
+                    </div>
                 </div>
-                <div class="our_cars">
-                    <h1>Our Cars</h1>
-                    <div class="car_listings">
-                        <div>
-                            <h2>GRC19</h2>
-                            <p>
-                                The first and last in Gryphon Racing's legacy. For the first time since the team's founding, the 600cc GSX-R engine was mounted transversely in the car and the iconic
-                                shaft drive was replaced with a chain and custom-built limited slip differential. This allowed the team to switch to 10” rims and lower the car's overall center of
-                                gravity.
-                            </p>
-                            <img class="car_portrait" src="/current_cars/grc19.webp" width="1000" height="667" alt="GRC19 Car Portrait" />
-                        </div>
-                        <div>
-                            <h2>GRC22</h2>
-                            <p>
-                                A new generation of Gryphon Racing design. This car marks the ending of an almost 20-year history of GSX-R powertrains. The team at Gryphon Racing has spent countless
-                                hours developing Gryphon Racing's first ever: electric car, full aerodynamics kit, custom gearbox + differential, and custom Vehicle Control Unit.
-                            </p>
-                            <img class="car_portrait" src="/current_cars/grc22.webp" width="1000" height="667" alt="GRC22 Car Portrait" />
+                <div class="our_cars_section">
+                    <div class="our_cars">
+                        <h1>Recent Cars</h1>
+                        <div class="car_listings">
+                            <div>
+                                <h2>GRC22   </h2>
+                                <p>
+                                    A new generation of Gryphon Racing design. This car marks the ending of an almost 20-year history of GSX-R powertrains. The team at Gryphon Racing has spent countless
+                                    hours developing Gryphon Racing's first ever: electric car, full aerodynamics kit, custom gearbox + differential, and custom Vehicle Control Unit.
+                                </p>
+                                <img class="car_portrait" src="/current_cars/grc22_our_cars.webp" width="1000" height="667" alt="GRC22 Car Portrait" />
+                            </div>
+                            <div>
+                                <h2>GRC19</h2>
+                                <p>
+                                    The first and last in Gryphon Racing's legacy. For the first time since the team's founding, the 600cc GSX-R engine was mounted transversely in the car and the iconic
+                                    shaft drive was replaced with a chain and custom-built limited slip differential. This allowed the team to switch to 10” rims and lower the car's overall center of
+                                    gravity.
+                                </p>
+                                <img class="car_portrait" src="/current_cars/grc19.webp" width="1000" height="667" alt="GRC19 Car Portrait" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -134,7 +142,7 @@ const time_till_soonest = computed(() => {
     height: 100%;
 
     /* The image used */
-    background-image: url("/media/autocross_grc19.webp");
+    background-image: url("/media/grc24_teampicture.webp");   /* reminder: convert this image to webp */
 
     /* Set a specific height */
     min-height: 100vh;
@@ -150,9 +158,17 @@ const time_till_soonest = computed(() => {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--gryphon-white);
-    color: var(--gryphon-red);
-    padding: 3vh 15%;
+    background-color: var(--gryphon-black);
+    color: var(--gryphon-white);
+}
+
+.about_us_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 60px;
 }
 
 .about_us {
@@ -160,10 +176,16 @@ const time_till_soonest = computed(() => {
     flex-direction: column;
     line-height: 250%;
     display: flex;
+    flex: 1;
+    padding: 0 40px;
 }
 
 .about_us h1 {
     margin-bottom: 0;
+    font-size: 2.4em;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: var(--gryphon-red);
 }
 
 .about_us p {
@@ -171,15 +193,38 @@ const time_till_soonest = computed(() => {
     font-size: 1.2em;
 }
 
+.about_us_img {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_us_img > img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.our_cars_section {
+    padding: 0;
+}
+
 .our_cars {
     justify-content: center;
     flex-direction: column;
     line-height: 250%;
     display: flex;
+    padding: 0 15%;
 }
 
 .our_cars > h1 {
     margin-bottom: 0;
+    font-size: 2.4em;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: var(--gryphon-red);
 }
 
 .car_listings {
@@ -193,7 +238,20 @@ const time_till_soonest = computed(() => {
     width: 45%;
 }
 
+@media screen and (max-width: 800px) {
+    .landing_page_image {
+        background-image: url("/media/grc22_background.webp");
+    }
+}
+
 @media screen and (max-width: 1000px) {
+
+
+    .about_us_section {
+        padding: 6vh;
+        flex-direction: column;
+    }
+    
     .car_listings {
         flex-direction: column;
         justify-content: center;
@@ -295,20 +353,12 @@ const time_till_soonest = computed(() => {
 
 .banner { 
     padding-top: 4em; /* So we are not hidden under navbar on some screens */ 
-    width: 40%; 
-    min-width: 300px;  
+    width: 5%; 
+    min-width: 100px;  
 
-    /* animation: slide-in 1.0s ease-in-out forwards; */ /* messing around with banner animation */  
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
 } 
-
-@keyframes slide-in {
-    from { 
-        transform: translateX(100%); 
-        opacity: 0; 
-    } to { 
-        transform: translateX(0); 
-        opacity: 1; 
-    } 
-}
 
 </style>

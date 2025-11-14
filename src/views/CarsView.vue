@@ -6,7 +6,7 @@ const ourCars = [
     {
         id: 22,
         images: ["grc22"],
-        about: "GRC 22 is currently under construction. It is Gryphon Racing's first fully electric car. It's slated to be completed by quarter two of 2024.",
+        about: "GRC22 is the first fully electric car and advanced aero design built by Gryphon Racing.",
         stats: undefined,
         // stats: {
         //   Weight: "Test",
@@ -338,8 +338,8 @@ function updateSelectedCar(id: number) {
 
 <style scoped>
 .cars_view {
-    color: var(--gryphon-light-black);
-    background-color: var(--gryphon-white);
+    color: var(--gryphon-white);
+    background-color: var(--gryphon-black);
     padding: 5.2em 0 4em;
     display: flex;
 }
@@ -377,11 +377,14 @@ function updateSelectedCar(id: number) {
 }
 
 .cars_selector button:not(.selected_car) {
-    color: var(--gryphon-light-gray);
+    color: var(--gryphon-light-black);
 }
 
 .cars_selector button:hover:not(.selected_car) {
+    background-color: var(--gryphon-yellow);
     color: var(--gryphon-red);
+    transform: scale(1.05);
+    transition: ease-in-out 0.2s;
 }
 
 .selected_car {
@@ -442,7 +445,7 @@ h2 {
 }
 
 .stats_table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: var(--gryphon-light-black);
 }
 
 @media screen and (max-width: 850px) {

@@ -73,7 +73,8 @@ const popup = ref(false);
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px 0 rgba(255, 199, 42, 0.3);
 }
 
 .profile_picture {

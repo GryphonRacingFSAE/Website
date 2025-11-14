@@ -153,18 +153,18 @@ h2 {
     text-align: center;
     font-size: 1.8em;
     margin: 0;
-    /* Fpr text gradiant: Important because we need to override main.css */
+    /* For text gradient: Important because we need to override main.css */
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
 
 .root {
-    background-color: var(--gryphon-white);
+    background-color: var(--gryphon-black);
     padding-top: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--gryphon-light-black);
+    color: var(--gryphon-white);
     padding-left: 2%;
     padding-right: 2%;
 }

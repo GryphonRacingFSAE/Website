@@ -34,16 +34,6 @@ onMounted(() => {
             <div id="map" class="map"></div>
         </div>
 
-        <iframe
-            width="540"
-            height="810"
-            src="https://aaf090a9.sibforms.com/serve/MUIFAA9U7cVYUDM0j3J9d_h4gpjuB9N30FuKYI2oT6HIJjYgsDpHEGk8R-jvFyu12-rsnJCYsBa9Y22Gc32jYZiRibzKyyv7JlmbQ0d_9o2_QXlW8tO0W912dDN-m3mFaSmafgsMSwwgz9y0t9Ps4IWJ_d4CzGZWYUpZmctGSWMBR-4RGwVeg5cKNZzI7sDt8zBh8ht_hy5GSfIH"
-            frameborder="0"
-            scrolling="auto"
-            allowfullscreen
-            style="display: block; margin-left: auto; margin-right: auto; max-width: 100%"
-        ></iframe>
-
         <div class="links-wrapper">
             <h2>Club Documents</h2>
             <a href="/media/club_docs/Constitution.pdf" target="_blank">Constitution</a>
@@ -61,7 +51,8 @@ onMounted(() => {
 <style scoped>
 .root {
     width: 100%;
-    background-color: var(--gryphon-white);
+    background-color: var(--gryphon-black);
+    color: var(--gryphon-white);
 }
 
 .shop_info {
@@ -127,11 +118,11 @@ a {
     text-decoration: none;
     padding-top: 1em;
     padding-left: 0.5em;
-    color: black;
+    color: var(--gryphon-red);
     transition-duration: 0.2s;
 }
 a:hover {
-    color: var(--gryphon-red);
+    color: var(--gryphon-yellow);
     translate: 8px;
 }
 
