@@ -172,6 +172,10 @@ window.addEventListener("scroll", () => {
         display: none;
     }
 
+    .navbar {
+        backdrop-filter: blur(10px);
+    }
+
     .navbar .hamburger {
         /* display: block; */
         display: flex;

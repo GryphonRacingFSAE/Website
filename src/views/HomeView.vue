@@ -103,7 +103,7 @@ const time_till_soonest = computed(() => {
                         </p>
                     </div>
                     <div class="about_us_img">
-                        <img src="/media/grc24_showcase.webp" width="1000" height="667" alt="Gryphon Racing 2024" />
+                        <img src="/media/grc22_showcase.webp" width="1000" height="667" alt="Gryphon Racing 2024" />
                     </div>
                 </div>
                 <div class="our_cars_section">
@@ -121,7 +121,7 @@ const time_till_soonest = computed(() => {
                             <div>
                                 <h2>GRC19</h2>
                                 <p>
-                                    The first and last in Gryphon Racing's legacy. For the first time since the team's founding, the 600cc GSX-R engine was mounted transversely in the car and the iconic
+                                    Gryphon Racing's legacy. For the first time since the team's founding, the 600cc GSX-R engine was mounted transversely in the car and the iconic
                                     shaft drive was replaced with a chain and custom-built limited slip differential. This allowed the team to switch to 10” rims and lower the car's overall center of
                                     gravity.
                                 </p>
@@ -142,7 +142,7 @@ const time_till_soonest = computed(() => {
     height: 100%;
 
     /* The image used */
-    background-image: url("/media/grc24_teampicture.webp");   /* reminder: convert this image to webp */
+    background-image: url("/media/grc22_teampicture (1).webp");   /* reminder: convert this image to webp */
 
     /* Set a specific height */
     min-height: 100vh;
@@ -240,18 +240,12 @@ const time_till_soonest = computed(() => {
 
 @media screen and (max-width: 800px) {
     .landing_page_image {
-        background-image: url("/media/grc22_background.webp");
+        background-image: linear-gradient(#000 0%, #0003 33%), url("/media/grc22_background.webp");
+        min-height: 100vh;
     }
 }
 
 @media screen and (max-width: 1000px) {
-
-
-    .about_us_section {
-        padding: 6vh;
-        flex-direction: column;
-    }
-    
     .car_listings {
         flex-direction: column;
         justify-content: center;
@@ -260,6 +254,21 @@ const time_till_soonest = computed(() => {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 1625px) {
+    .about_us_section {
+        padding: 6vh;
+        flex-direction: column;
+    }
+
+    .about_us_img > img {
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 20px;
+    }
+    
+}
+
 
 .car_listings > div > h2 {
     margin-bottom: 0;

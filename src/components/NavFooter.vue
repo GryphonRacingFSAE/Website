@@ -5,6 +5,7 @@
             50 Stone Road East, Guelph, N1G2W1<br />
             (519) 824-4120 ext 52698<br />
             <a href="mailto:ugracing@uoguelph.ca" class="contact_email">ugracing@uoguelph.ca</a>
+            <a class="credit"><br>Maintained by Khoa Tran</a>
         </div>
 
         <img class="banner" src="/media/banner.svg" alt="Gryphon Racing Banner" />
@@ -35,7 +36,7 @@
     justify-content: space-evenly;
     display: flex;
     align-items: center;
-    padding: 50px 0;
+    padding: 10px 0;
 }
 
 .media_logos img {
@@ -52,12 +53,17 @@
 
 .contact_info {
     text-align: left;
-    line-height: 170%;
+    line-height: 150%;
+}
+
+.credit {
+    font-size: 0.8rem;
+    color: var(--gryphon-gray);
 }
 
 .banner {
     width: 30vw;
-    max-width: 500px;
+    max-width: 400px;
 }
 
 @media screen and (max-width: 900px) {
@@ -66,7 +72,7 @@
     }
 
     .footer > * {
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     .contact_info {
@@ -74,9 +80,9 @@
     }
 
     .banner {
-        width: 80vw;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        width: 60vw;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 </style>

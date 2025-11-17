@@ -21,7 +21,7 @@ import NavFooter from "@/components/NavFooter.vue";
                 <h2>Team Captains</h2>
                 <hr />
                 <div class="profiles_list">
-                    <LeadProfile title="Dynamics" name="Giuliana Koledin" linkedin="https://www.linkedin.com/in/giuliana-koledin-234501323/" />
+                    <LeadProfile title="Administrative" name="Giuliana Koledin" linkedin="https://www.linkedin.com/in/giuliana-koledin-234501323/" />
                     <LeadProfile title="Dynamics" name="Jacob Dykstra" linkedin="https://www.linkedin.com/in/jacob-dykstra-071889268/" />
                     <LeadProfile title="Electrical" name="Evan Rutten" linkedin="https://www.linkedin.com/in/evan-rutten/" />
                 </div>
@@ -120,7 +120,7 @@ hr {
     clear: both;
     display: block;
     width: 99%;
-    background: linear-gradient(to right, var(--gryphon-white) 5%, var(--gryphon-red) 50%, var(--gryphon-white) 95%);
+    background: linear-gradient(to right, var(--gryphon-yellow) 5%, var(--gryphon-red) 50%, var(--gryphon-yellow) 95%);
     height: 3px;
     border-radius: 50px;
 }
@@ -149,6 +149,10 @@ a {
 }
 
 @media screen and (max-width: 800px) {
+    .landing_page_image {
+        background-image: linear-gradient(#000 0%, #0003 33%), url("/media/team_photo.webp");
+    }
+    
     .title {
         white-space: normal;
         flex-direction: column;
