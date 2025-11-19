@@ -62,13 +62,12 @@ onMounted(() => {
     display: flex;
     padding: 15vh 15% 10vh;
 
-    color: var(--gryphon-red);
+    color: var(--gryphon-dark-white);
 }
 
 .map {
     background: url(/media/maps_loading.webp);
     background-size: cover;
-    border-radius: 2em;
     overflow: hidden;
     border: 0;
 
@@ -86,6 +85,12 @@ onMounted(() => {
     margin-bottom: auto;
 }
 
+.info h1 {
+    text-decoration: underline;
+    text-decoration-color: var(--gryphon-red);
+    text-underline-offset: 10px;
+}
+
 .shop_info p {
     font-size: 2em;
 }
@@ -99,7 +104,10 @@ h2 {
     margin: 0;
     font-size: 2em;
     text-align: center;
-    color: var(--gryphon-red);
+    color: var(--gryphon-dark-white);
+    text-decoration: underline;
+    text-decoration-color: var(--gryphon-red);
+    text-underline-offset: 5px;
 }
 
 .links-wrapper {
@@ -118,7 +126,7 @@ a {
     text-decoration: none;
     padding-top: 1em;
     padding-left: 0.5em;
-    color: var(--gryphon-red);
+    color: var(--gryphon-dark-white);
     transition-duration: 0.2s;
 }
 a:hover {
@@ -130,8 +138,8 @@ hr {
     border: 0;
     clear: both;
     display: block;
-    width: 99%;
-    background: linear-gradient(to right, var(--gryphon-red) 0%, var(--gryphon-white) 100%);
+    width: 100%;
+    background: linear-gradient(to right, var(--gryphon-yellow) 0%, var(--gryphon-red) 50%, var(--gryphon-yellow) 100%);
     height: 3px;
     border-radius: 50px;
 }

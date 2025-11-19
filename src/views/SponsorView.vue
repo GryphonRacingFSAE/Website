@@ -1,7 +1,7 @@
 <template>
     <div class="root">
-        <div class="list_container diamond">
-            <h2>Diamond Sponsors</h2>
+        <div class="list_container platinum">
+            <h2>Platinum Sponsors</h2>
             <div class="sponsor_list">
                 <a href="https://www.uoguelph.ca/engineering/">
                     <img src="/sponsors/lab_fund.webp" width="400" height="402" alt="Lab Fund" />
@@ -12,31 +12,14 @@
                 <a href="https://musashiamericas.com/">
                     <img src="/sponsors/musashi.webp" width="400" height="71" alt="Musashi" />
                 </a>
-                <a href="https://aocformulations.com/en-amr/home/">
-                    <img src="/sponsors/aoc_formulation.webp" width="400" height="71" alt="AOC Formulations" />
-                </a>
-            </div>
-        </div>
-        <div class="list_container platinum">
-            <h2>Platinum Sponsors</h2>
-            <div class="sponsor_list">
                 <a href="https://www.tek.com/">
                     <img src="/sponsors/tektronix.webp" width="1077" height="194" alt="Textronix" />
                 </a>
-                <a href="https://true-gear.com/">
-                    <img src="/sponsors/true_gear.webp" width="400" height="144" alt="True Gear" />
+                <a href="https://www.siemens.com/">
+                    <img src="/sponsors/siemens.webp" width="400" height="129" alt="Siemens" />
                 </a>
                 <a href="https://www.denso.com/us-ca/en/">
                     <img src="/sponsors/denso.webp" width="400" height="78" alt="Denso" />
-                </a>
-                <a href="https://www.uoguelph.ca/engineering/">
-                    <img src="/sponsors/uog_eng.webp" width="400" height="129" alt="UOG Engineering" />
-                </a>
-                <a href="https://www.inhousesolutions.com/">
-                    <img src="/sponsors/in_house_solutions.webp" width="400" height="238" alt="In House Solutions" />
-                </a>
-                <a href="https://www.altium.com/">
-                    <img src="/sponsors/Altium.png" width="1077" height="194" alt="Textronix" />
                 </a>
             </div>
         </div>
@@ -45,9 +28,6 @@
             <div class="sponsor_list">
                 <a href="https://www.answerprecision.com/">
                     <img src="/sponsors/apt.webp" width="400" height="120" alt="APT" />
-                </a>
-                <a href="https://aocresins.com/en-amr/home/">
-                    <img src="/sponsors/aoc.webp" width="400" height="400" alt="AOC" />
                 </a>
                 <a href="https://www.summitlaser.ca/">
                     <img src="/sponsors/summit_laser.webp" width="400" height="400" alt="Summit Laser" />
@@ -63,6 +43,12 @@
                 </a>
                 <a href="https://cambridgeheattreating.com//">
                     <img src="/sponsors/cambridge_heat_treating.webp" width="400" height="224" alt="Cambridge Heat Treating" />
+                </a>
+                <a href="https://vr3.ca/">
+                    <img src="/sponsors/vr3.webp" height="143" width="400" alt="VR3" />
+                </a>
+                <a href="https://schnell-engineering.com/">
+                    <img src="/sponsors/schnell_engineering.webp" width="400" height="150" alt="Schnell Engineering" />
                 </a>
                 <!-- <img src="/sponsors/applied_precision.webp" width="400" height="141" alt="Applied Precision" /> -->
                 <!-- <img src="/sponsors/parker.webp" width="400" height="154" alt="Parker" /> -->
@@ -86,6 +72,24 @@
                 <a href="https://www.facebook.com/idigexcavating/">
                     <img src="/sponsors/i-dig.webp" width="400" height="300" alt="I-DIG Excavating" />
                 </a>
+                <a href="https://www.uoguelph.ca/engineering/">
+                    <img src="/sponsors/uog_eng.webp" width="400" height="129" alt="UOG Engineering" />
+                </a>
+                <a href="https://www.inhousesolutions.com/">
+                    <img src="/sponsors/in_house_solutions.webp" width="400" height="238" alt="In House Solutions" />
+                </a>
+                <a href="https://aocformulations.com/en-amr/home/">
+                    <img src="/sponsors/aoc_formulation.webp" width="400" height="71" alt="AOC Formulations" />
+                </a>
+                <a href="https://easycomposites.co.uk">
+                    <img src="/sponsors/easy_composites.webp" width="400" height="185" alt="Easy Composites" />
+                </a>
+                <a href="https://true-gear.com/">
+                    <img src="/sponsors/true_gear.webp" width="400" height="144" alt="True Gear" />
+                </a>
+                <a href="https://www.altium.com/">
+                    <img src="/sponsors/Altium.png" width="1077" height="194" alt="Textronix" />
+                </a>
                 <!-- <img src="/sponsors/linamar.webp" width="400" height="101" alt="Linamar" /> -->
                 <!-- <img src="/sponsors/vibrant.webp" width="400" height="120" alt="Vibrant" /> -->
                 <!-- <img src="/sponsors/gryphon_technical.webp" width="400" height="184" alt="Gryphon Technical" /> -->
@@ -95,17 +99,14 @@
         <div class="list_container bronze">
             <h2>Bronze Sponsors</h2>
             <div class="sponsor_list">
-                <a href="https://easycomposites.co.uk">
-                    <img src="/sponsors/easy_composites.webp" width="400" height="185" alt="Easy Composites" />
+                <a href="https://compositescanada.com/">
+                    <img src="/sponsors/composites_canada.webp" width="400" height="106" alt="Composites Canada" />
                 </a>
                 <a href="https://corporate.evonik.com/en">
                     <img src="/sponsors/evonik.webp" width="400" height="104" alt="Evonik" />
                 </a>
                 <a href="https://grsigndesign.com/">
                     <img src="/sponsors/grand_river_sign_design.webp" width="400" height="98" alt="Grand River Sign Design" />
-                </a>
-                <a href="https://compositescanada.com/">
-                    <img src="/sponsors/composites_canada.webp" width="400" height="106" alt="Composites Canada" />
                 </a>
                 <a href="https://www.hoosiertirecanada.com/">
                     <img src="/sponsors/hoosier.webp" width="400" height="123" alt="Hoosier" />
@@ -116,20 +117,22 @@
                 <a href="https://www.quaife.co.uk/">
                     <img src="/sponsors/quaife.webp" width="400" height="97" alt="Quaife" />
                 </a>
-                <a href="https://vr3.ca/">
-                    <img src="/sponsors/vr3.webp" height="143" width="400" alt="VR3" />
-                </a>
                 <a href="https://www.homedepot.ca/">
                     <img src="/sponsors/home_depot.webp" height="400" width="400" alt="Home Depot" />
                 </a>
-
+                <a href="https://theshakespearearms.com/">
+                    <img src="/sponsors/shakespeare_arms.webp" height="800" width="800" alt="Shakespeare Arms" />
+                </a>
+                <a href="https://www.melitron.com/">
+                    <img src="/sponsors/melitron.webp" height="400" width="400" alt="Melitron" />  
+                </a>
                 <!-- <img src="/sponsors/aurora_bearing.webp" width="400" height="129" alt="Aurora Bearing" /> -->
                 <!-- <img src="/sponsors/paradigm.webp" width="400" height="81" alt="Paradigm" /> -->
             </div>
         </div>
         <br />
         <br />
-        <h2>Special Thanks</h2>
+        <h1>Special Thanks</h1>
         <div class="individuals">
             <p>Barry Verspagen</p>
             <p>Dave Wright</p>
@@ -137,6 +140,7 @@
             <p>John Runciman</p>
             <p>Karine Semina</p>
             <p>Suzana Milosevic</p>
+            <p>Stephen Mattucci</p>
             <p>Mohammad Al Janaideh</p>
             <p>Mohammad Biglarbegian</p>
             <p>Ken Graham</p>
@@ -154,7 +158,7 @@ h1 {
 h2 {
     padding-bottom: 4px;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2.5em;
     margin: 0;
     /* For text gradient: Important because we need to override main.css */
     -webkit-background-clip: text !important;
@@ -211,16 +215,6 @@ h2 {
     justify-content: center;
 }
 
-.diamond > .sponsor_list > a,
-.diamond > .sponsor_list > img {
-    width: 25%;
-}
-
-.diamond > h2,
-.diamond > .sponsor_list {
-    background: linear-gradient(to right, #98d9f7, #b2effa);
-}
-
 .platinum > .sponsor_list > a,
 .platinum > .sponsor_list > img {
     width: 20%;
@@ -228,7 +222,7 @@ h2 {
 
 .platinum > h2,
 .platinum > .sponsor_list {
-    background: linear-gradient(to right, #93918e, #d8d7d4);
+    background: linear-gradient(to right, #d9d9d9 0%, #ffffff 50%, #aeaeae 100%);
 }
 
 .gold > .sponsor_list > a,
@@ -238,7 +232,7 @@ h2 {
 
 .gold > h2,
 .gold > .sponsor_list {
-    background: linear-gradient(to right, #c09b24, #ddc579);
+    background: linear-gradient(to right, #efbf04 0%, #ffc766 50%, #ffdd00 100%);
 }
 
 .silver > .sponsor_list > a,
@@ -248,7 +242,7 @@ h2 {
 
 .silver > h2,
 .silver > .sponsor_list {
-    background: linear-gradient(to right, #c7c6c6, #ededed);
+    background: linear-gradient(to right, #c4c4c4 0%, #e0e0e0 50%, #666666 100%);
 }
 
 .bronze > .sponsor_list > a,
@@ -258,7 +252,7 @@ h2 {
 
 .bronze > h2,
 .bronze > .sponsor_list {
-    background: linear-gradient(to right, #bf7226, #f4c292);
+    background: linear-gradient(to right, #ce8946 0%, #fca956 50%, #82572c 100%);
 }
 
 @media screen and (max-width: 750px) {

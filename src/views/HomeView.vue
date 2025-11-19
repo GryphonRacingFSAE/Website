@@ -209,6 +209,7 @@ const time_till_soonest = computed(() => {
 
 .our_cars_section {
     padding: 0;
+    margin-bottom: 60px;
 }
 
 .our_cars {
@@ -364,7 +365,7 @@ const time_till_soonest = computed(() => {
     padding-top: 4em; /* So we are not hidden under navbar on some screens */ 
     width: 5%; 
     min-width: 100px;  
-
+    
     position: fixed;
     bottom: 25px;
     left: 25px;
