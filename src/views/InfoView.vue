@@ -48,8 +48,6 @@ onMounted(() => {
             <hr />
             <a href="/media/club_docs/Vehicle_Usage_Procedure.pdf" target="_blank">Vehicle Usage Procedure</a>
             <hr />
-            <a href="/media/club_docs/Gryphon Racing Sponsorship Package 2026.pdf" target="_blank">Sponsorship Guide</a>
-            <hr />
         </div>
     </div>
 </template>
