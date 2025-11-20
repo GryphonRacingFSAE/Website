@@ -73,7 +73,7 @@
                     <img src="/sponsors/true_gear.webp" width="400" height="144" alt="True Gear" />
                 </a>
                 <a href="https://www.altium.com/">
-                    <img src="/sponsors/Altium.png" width="1077" height="194" alt="Textronix" />
+                    <img src="/sponsors/Altium.webp" width="1077" height="194" alt="Altium" />
                 </a>
                 <!-- <a href="http://westexcoatings.ca/">
                     <img src="/sponsors/westex.webp" width="400" height="144" alt="Westex" />
