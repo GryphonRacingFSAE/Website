@@ -257,17 +257,17 @@ h2 {
 
     .gold > .sponsor_list > a,
     .gold > .sponsor_list > img {
-        width: 20%;
+        width: 25%;
     }
 
     .silver > .sponsor_list > a,
     .silver > .sponsor_list > img {
-        width: 20%;
+        width: 25%;
     }
 
     .bronze > .sponsor_list > a,
     .bronze > .sponsor_list > img {
-        width: 18%;
+        width: 25%;
     }
 }
 
