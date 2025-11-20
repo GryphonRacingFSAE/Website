@@ -26,8 +26,12 @@ onMounted(() => {
                     50 Stone Rd E, Guelph, ON N1G 2W1
                 </p>
                 <p>
-                    Join our team as members, <br />
-                    sponsors or advisors
+                    Join our team as <span class="members">members</span>, <br />
+                    <span class="sponsors">sponsors</span> or <span class="advisors">advisors</span>
+                </p>
+                <p>
+                    ugracing@uoguelph.ca<br />
+                    (519) 824-4120 ext 52698
                 </p>
             </div>
 
@@ -43,6 +47,8 @@ onMounted(() => {
             <a href="/media/club_docs/Leadership_Code_of_Conduct.pdf" target="_blank">Leadership Code of Conduct</a>
             <hr />
             <a href="/media/club_docs/Vehicle_Usage_Procedure.pdf" target="_blank">Vehicle Usage Procedure</a>
+            <hr />
+            <a href="/media/club_docs/Gryphon Racing Sponsorship Package 2026.pdf" target="_blank">Sponsorship Guide</a>
             <hr />
         </div>
     </div>
@@ -89,6 +95,24 @@ onMounted(() => {
     text-decoration: underline;
     text-decoration-color: var(--gryphon-red);
     text-underline-offset: 10px;
+}
+
+.members {
+    font-weight: bold;
+    font-style: italic;
+    color: var(--gryphon-white);
+}
+
+.sponsors {
+    font-weight: bold;
+    font-style: italic;
+    color: var(--gryphon-red);
+}
+
+.advisors {
+    font-weight: bold;
+    font-style: italic;
+    color: var(--gryphon-yellow);
 }
 
 .shop_info p {

@@ -9,47 +9,47 @@
                 <a href="https://www.linkedin.com/in/mark-van-voorst-p-eng-14322b20">
                     <img src="/sponsors/van-voorst-engineering.webp" width="400" height="402" alt="Van Voorst Engineering" />
                 </a>
-                <a href="https://musashiamericas.com/">
+                <a href="https://www.siemens.com/">
+                    <img src="/sponsors/siemens.webp" width="400" height="129" alt="Siemens" />
+                </a>
+                <!-- <a href="https://musashiamericas.com/">
                     <img src="/sponsors/musashi.webp" width="400" height="71" alt="Musashi" />
                 </a>
                 <a href="https://www.tek.com/">
                     <img src="/sponsors/tektronix.webp" width="1077" height="194" alt="Textronix" />
                 </a>
-                <a href="https://www.siemens.com/">
-                    <img src="/sponsors/siemens.webp" width="400" height="129" alt="Siemens" />
-                </a>
                 <a href="https://www.denso.com/us-ca/en/">
                     <img src="/sponsors/denso.webp" width="400" height="78" alt="Denso" />
-                </a>
+                </a> -->
             </div>
         </div>
         <div class="list_container gold">
             <h2>Gold Sponsors</h2>
             <div class="sponsor_list">
-                <a href="https://www.answerprecision.com/">
-                    <img src="/sponsors/apt.webp" width="400" height="120" alt="APT" />
+                <a href="https://vr3.ca/">
+                    <img src="/sponsors/vr3.webp" height="400" width="400" alt="VR3" />
                 </a>
                 <a href="https://www.summitlaser.ca/">
                     <img src="/sponsors/summit_laser.webp" width="400" height="400" alt="Summit Laser" />
                 </a>
+                <a href="https://schnell-engineering.com/">
+                    <img src="/sponsors/schnell_engineering.webp" width="400" height="150" alt="Schnell Engineering" />
+                </a>
+                <!-- <a href="https://www.answerprecision.com/">
+                    <img src="/sponsors/apt.webp" width="400" height="120" alt="APT" />
+                </a>
                 <a href="https://www.dominos.ca/en/">
                     <img src="/sponsors/dominos.webp" width="400" height="400" alt="Dominos" />
                 </a>
-                <!-- <a href="https://gfo.ca/">
+                <a href="https://gfo.ca/">
                     <img src="/sponsors/grain_farmers.webp" width="400" height="400" alt="Grain Farmers" />
-                </a> -->
+                </a>
                 <a href="https://rapidharness.com/">
                     <img src="/sponsors/rapidharness.webp" width="400" height="61" alt="Rapid Harness" />
                 </a>
                 <a href="https://cambridgeheattreating.com//">
                     <img src="/sponsors/cambridge_heat_treating.webp" width="400" height="224" alt="Cambridge Heat Treating" />
-                </a>
-                <a href="https://vr3.ca/">
-                    <img src="/sponsors/vr3.webp" height="143" width="400" alt="VR3" />
-                </a>
-                <a href="https://schnell-engineering.com/">
-                    <img src="/sponsors/schnell_engineering.webp" width="400" height="150" alt="Schnell Engineering" />
-                </a>
+                </a> -->
                 <!-- <img src="/sponsors/applied_precision.webp" width="400" height="141" alt="Applied Precision" /> -->
                 <!-- <img src="/sponsors/parker.webp" width="400" height="154" alt="Parker" /> -->
             </div>
@@ -57,21 +57,6 @@
         <div class="list_container silver">
             <h2>Silver Sponsors</h2>
             <div class="sponsor_list">
-                <a href="http://westexcoatings.ca/">
-                    <img src="/sponsors/westex.webp" width="400" height="144" alt="Westex" />
-                </a>
-                <a href="https://www.jmpsolutions.com/">
-                    <img src="/sponsors/jmp.webp" width="400" height="138" alt="JMP" />
-                </a>
-                <a href="https://www.skf.com/ca/en">
-                    <img src="/sponsors/skf.webp" width="400" height="191" alt="SKF" />
-                </a>
-                <a href="https://agile-manufacturing.com/">
-                    <img src="/sponsors/agile.webp" width="400" height="58" alt="Agile Manufacturing" />
-                </a>
-                <a href="https://www.facebook.com/idigexcavating/">
-                    <img src="/sponsors/i-dig.webp" width="400" height="300" alt="I-DIG Excavating" />
-                </a>
                 <a href="https://www.uoguelph.ca/engineering/">
                     <img src="/sponsors/uog_eng.webp" width="400" height="129" alt="UOG Engineering" />
                 </a>
@@ -90,6 +75,21 @@
                 <a href="https://www.altium.com/">
                     <img src="/sponsors/Altium.png" width="1077" height="194" alt="Textronix" />
                 </a>
+                <!-- <a href="http://westexcoatings.ca/">
+                    <img src="/sponsors/westex.webp" width="400" height="144" alt="Westex" />
+                </a>
+                <a href="https://www.jmpsolutions.com/">
+                    <img src="/sponsors/jmp.webp" width="400" height="138" alt="JMP" />
+                </a>
+                <a href="https://www.skf.com/ca/en">
+                    <img src="/sponsors/skf.webp" width="400" height="191" alt="SKF" />
+                </a>
+                <a href="https://agile-manufacturing.com/">
+                    <img src="/sponsors/agile.webp" width="400" height="58" alt="Agile Manufacturing" />
+                </a>
+                <a href="https://www.facebook.com/idigexcavating/">
+                    <img src="/sponsors/i-dig.webp" width="400" height="300" alt="I-DIG Excavating" />
+                </a> -->
                 <!-- <img src="/sponsors/linamar.webp" width="400" height="101" alt="Linamar" /> -->
                 <!-- <img src="/sponsors/vibrant.webp" width="400" height="120" alt="Vibrant" /> -->
                 <!-- <img src="/sponsors/gryphon_technical.webp" width="400" height="184" alt="Gryphon Technical" /> -->
@@ -99,7 +99,13 @@
         <div class="list_container bronze">
             <h2>Bronze Sponsors</h2>
             <div class="sponsor_list">
-                <a href="https://compositescanada.com/">
+                <a href="https://theshakespearearms.com/">
+                    <img src="/sponsors/shakespeare_arms.webp" height="800" width="800" alt="Shakespeare Arms" />
+                </a>
+                <a href="https://www.melitron.com/">
+                    <img src="/sponsors/melitron.webp" height="400" width="400" alt="Melitron" />  
+                </a>
+                <!-- <a href="https://compositescanada.com/">
                     <img src="/sponsors/composites_canada.webp" width="400" height="106" alt="Composites Canada" />
                 </a>
                 <a href="https://corporate.evonik.com/en">
@@ -119,13 +125,7 @@
                 </a>
                 <a href="https://www.homedepot.ca/">
                     <img src="/sponsors/home_depot.webp" height="400" width="400" alt="Home Depot" />
-                </a>
-                <a href="https://theshakespearearms.com/">
-                    <img src="/sponsors/shakespeare_arms.webp" height="800" width="800" alt="Shakespeare Arms" />
-                </a>
-                <a href="https://www.melitron.com/">
-                    <img src="/sponsors/melitron.webp" height="400" width="400" alt="Melitron" />  
-                </a>
+                </a> -->
                 <!-- <img src="/sponsors/aurora_bearing.webp" width="400" height="129" alt="Aurora Bearing" /> -->
                 <!-- <img src="/sponsors/paradigm.webp" width="400" height="81" alt="Paradigm" /> -->
             </div>
@@ -135,16 +135,10 @@
         <h1>Special Thanks</h1>
         <div class="individuals">
             <p>Barry Verspagen</p>
-            <p>Dave Wright</p>
-            <p>John Cloutier</p>
             <p>John Runciman</p>
-            <p>Karine Semina</p>
-            <p>Suzana Milosevic</p>
             <p>Stephen Mattucci</p>
-            <p>Mohammad Al Janaideh</p>
-            <p>Mohammad Biglarbegian</p>
-            <p>Ken Graham</p>
-            <p>Shannon Macdonald</p>
+            <p>Abdallah Elsayed</p>
+            <p>Mike Speagle</p>
         </div>
     </div>
 </template>
@@ -227,7 +221,7 @@ h2 {
 
 .gold > .sponsor_list > a,
 .gold > .sponsor_list > img {
-    width: 12%;
+    width: 20%;
 }
 
 .gold > h2,
@@ -247,7 +241,7 @@ h2 {
 
 .bronze > .sponsor_list > a,
 .bronze > .sponsor_list > img {
-    max-width: 10%;
+    max-width: 20%;
 }
 
 .bronze > h2,
@@ -256,11 +250,6 @@ h2 {
 }
 
 @media screen and (max-width: 750px) {
-    .diamond > .sponsor_list > a,
-    .diamond > .sponsor_list > img {
-        width: 45%;
-    }
-
     .platinum > .sponsor_list > a,
     .platinum > .sponsor_list > img {
         width: 35%;
@@ -273,12 +262,12 @@ h2 {
 
     .silver > .sponsor_list > a,
     .silver > .sponsor_list > img {
-        width: 18%;
+        width: 20%;
     }
 
     .bronze > .sponsor_list > a,
     .bronze > .sponsor_list > img {
-        width: 15%;
+        width: 18%;
     }
 }
 
