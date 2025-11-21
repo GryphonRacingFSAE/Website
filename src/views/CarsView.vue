@@ -4,239 +4,20 @@ import CarGallery from "@/components/CarGallery.vue";
 
 const ourCars = [
     {
-        id: 3,
-        images: ["team_photo", "grc03", "cad", "frame"],
-        about: undefined,
+        id: 22,
+        images: ["grc22"],
+        about: "GRC22 is the first fully electric car and advanced aero design built by Gryphon Racing.",
         stats: undefined,
+        // stats: {
+        //   Weight: "Test",
+        //   Length: "Test",
+        //   Width: "Test",
+        //   "Top Speed": "Test",
+        //   Engine: "Test",
+        // },
         results: {
-            "Formula Michigan": {
-                Overall: "47th / 123",
-                "Presentation Event": "81st / 123",
-                "Design Event": "43rd / 105",
-                "Cost Event": "78th / 123",
-                "Acceleration Event": "21st / 78",
-                "Skid-Pad Event": "6th / 76",
-                "Autocross Event": "38th / 87",
-                Economy: "31st / 32",
-            },
-        },
-    },
-
-    {
-        id: 4,
-        images: ["team_photo", "grc04"],
-        about: undefined,
-        stats: undefined,
-        results: {
-            "Formula Michigan": {
-                Overall: "17th / 134",
-                "Presentation Event": "35th / 128",
-                "Design Event": "48th / 129",
-                "Cost Event": "102nd / 133",
-                "Acceleration Event": "23rd / 100",
-                "Skid-Pad Event": "53rd / 99",
-                "Autocross Event": "7th / 103",
-                Economy: "16th / 41",
-            },
-        },
-    },
-
-    {
-        id: 5,
-        images: ["team_photo", "grc05"],
-        about: undefined,
-        stats: undefined,
-        results: {
-            "Formula Michigan": {
-                Overall: "61st / 120",
-                "Presentation Event": "65th / 110",
-                "Design Event": "43rd / 110",
-                "Cost Event": "84th / 120",
-                "Acceleration Event": "39th / 97",
-                "Skid-Pad Event": "48th / 95",
-                "Autocross Event": "39th / 99",
-                Economy: "44th / 44",
-            },
-        },
-    },
-
-    {
-        id: 7,
-        images: [],
-        about: undefined,
-        stats: undefined,
-        results: {
-            "Formula Michigan": {
-                Overall: "96th / 106",
-                "Presentation Event": "91st / 100",
-                "Design Event": "94th / 104",
-                "Cost Event": "82nd / 106",
-                "Acceleration Event": "73rd / 106",
-                "Skid-Pad Event": "76th/ 76",
-                "Autocross Event": "80th / 90",
-                Economy: "37.45th / 37.45nd",
-            },
-        },
-    },
-
-    {
-        id: 8,
-        images: ["grc08", "nose"],
-        about: undefined,
-        stats: undefined,
-        results: {
-            "Formula Michigan": {
-                Overall: "86th / 104",
-                "Presentation Event": "45th / 104",
-                "Design Event": "61st / 103",
-                "Cost Event": "77th / 105",
-                "Autocross Event": "75th / 75",
-                Economy: "34th / 42",
-            },
-        },
-    },
-
-    {
-        id: 9,
-        images: [],
-        about: undefined,
-        stats: undefined,
-        results: {
-            "Formula Michigan": {
-                Overall: "58th / 91",
-                "Presentation Event": "79th / 88",
-                "Design Event": "50th / 89",
-                "Cost Event": "25th / 91",
-                "Acceleration Event": "51st / 64",
-                "Skid-Pad Event": "66th/ 66",
-                "Autocross Event": "45th / 66",
-            },
-        },
-    },
-
-    {
-        id: 11,
-        images: [],
-        about: undefined,
-        stats: undefined,
-        results: {
-            "Formula California": {
-                Overall: "52nd / 61",
-                "Presentation Event": "34th / 60",
-                "Design Event": "59th / 59",
-                "Cost Event": "29th / 58",
-                "Autocross Event": "38th / 38",
-                Endurance: "30th / 30",
-                Economy: "27th / 30",
-            },
-        },
-    },
-
-    {
-        id: 12,
-        images: ["grc12"],
-        about: undefined,
-        stats: undefined,
-        results: {
-            "Formula Michigan": {
-                Overall: "70th / 105",
-                "Presentation Event": "78th / 102",
-                "Design Event": "98th / 102",
-                "Cost Event": "53rd /105th",
-                "Acceleration Event": "18th / 75",
-                "Skid-Pad Event": "65th / 74",
-                "Autocross Event": "55th / 55",
-            },
-        },
-    },
-
-    {
-        id: 13,
-        images: ["grc13", "back", "frame", "build"],
-        about: undefined,
-        stats: undefined,
-    },
-
-    {
-        id: 14,
-        images: ["grc14", "team", "team2", "parked", "model"],
-        about: undefined,
-        stats: undefined,
-        results: {
-            "Formula Michigan": {
-                Overall: "86th / 107",
-                "Presentation Event": "101st / 107",
-                "Design Event": "97th / 105",
-                "Cost Event": "14th / 108",
-                "Autocross Event": "71st / 71",
-            },
-        },
-    },
-
-    {
-        id: 15,
-        images: ["team_photo", "autocross"],
-        about: undefined,
-        stats: undefined,
-        results: {
-            "Formula Michigan": {
-                Overall: "72nd / 109",
-                "Design Event": "57th / 108",
-                "Cost Event": "9th / 110",
-                "Autocross Event": "50th / 78",
-            },
-        },
-    },
-
-    {
-        id: 16,
-        images: ["grc16", "team", "areo", "build", "driving", "fixing", "model"],
-        about: undefined,
-        stats: undefined,
-        results: {
-            "Formula Michigan": {
-                Overall: "111th / 115",
-                "Presentation Event": "84th / 115",
-                "Design Event": "74th / 113",
-                "Cost Event": "89th / 115",
-                "Skid-Pad Event": "83rd / 83",
-                "Autocross Event": "88th / 91",
-            },
-        },
-    },
-
-    {
-        id: 17,
-        images: ["grc17", "team", "build", "naked", "ready"],
-        about: undefined,
-        stats: undefined,
-        results: {
-            "Formula Michigan": {
-                Overall: "79th / 109",
-                "Presentation Event": "69th / 110",
-                "Design Event": "86th / 108",
-                "Cost Event": "20th / 109",
-                "Acceleration Event": "56th / 89",
-                "Skid-Pad Event": "74th / 83",
-                "Autocross Event": "76th / 88",
-            },
-        },
-    },
-
-    {
-        id: 18,
-        images: ["drifting", "assembly", "car_show", "frame", "thanks_sponsors", "transport", "unveiling"],
-        about: undefined,
-        stats: undefined,
-        results: {
-            "Formula Michigan": {
-                Overall: "63rd / 114",
-                "Presentation Event": "62nd / 114",
-                "Design Event": "84th / 111",
-                "Cost Event": "80th / 114",
-                "Acceleration Event": "14th / 90",
-                "Skid-Pad Event": "38th / 90",
-                "Autocross Event": "66th / 80",
+            "Formula Hybrid + Electric": {
+                Overall: "13th / 30",
             },
         },
     },
@@ -264,20 +45,239 @@ const ourCars = [
     },
 
     {
-        id: 22,
-        images: ["grc22"],
-        about: "GRC22 is the first fully electric car and advanced aero design built by Gryphon Racing.",
+        id: 18,
+        images: ["drifting", "assembly", "car_show", "frame", "thanks_sponsors", "transport", "unveiling"],
+        about: undefined,
         stats: undefined,
-        // stats: {
-        //   Weight: "Test",
-        //   Length: "Test",
-        //   Width: "Test",
-        //   "Top Speed": "Test",
-        //   Engine: "Test",
-        // },
         results: {
-            "Formula Hybrid + Electric": {
-                Overall: "13th / 30",
+            "Formula Michigan": {
+                Overall: "63rd / 114",
+                "Presentation Event": "62nd / 114",
+                "Design Event": "84th / 111",
+                "Cost Event": "80th / 114",
+                "Acceleration Event": "14th / 90",
+                "Skid-Pad Event": "38th / 90",
+                "Autocross Event": "66th / 80",
+            },
+        },
+    },
+
+    {
+        id: 17,
+        images: ["grc17", "team", "build", "naked", "ready"],
+        about: undefined,
+        stats: undefined,
+        results: {
+            "Formula Michigan": {
+                Overall: "79th / 109",
+                "Presentation Event": "69th / 110",
+                "Design Event": "86th / 108",
+                "Cost Event": "20th / 109",
+                "Acceleration Event": "56th / 89",
+                "Skid-Pad Event": "74th / 83",
+                "Autocross Event": "76th / 88",
+            },
+        },
+    },
+
+    {
+        id: 16,
+        images: ["grc16", "team", "areo", "build", "driving", "fixing", "model"],
+        about: undefined,
+        stats: undefined,
+        results: {
+            "Formula Michigan": {
+                Overall: "111th / 115",
+                "Presentation Event": "84th / 115",
+                "Design Event": "74th / 113",
+                "Cost Event": "89th / 115",
+                "Skid-Pad Event": "83rd / 83",
+                "Autocross Event": "88th / 91",
+            },
+        },
+    },
+
+    {
+        id: 15,
+        images: ["team_photo", "autocross"],
+        about: undefined,
+        stats: undefined,
+        results: {
+            "Formula Michigan": {
+                Overall: "72nd / 109",
+                "Design Event": "57th / 108",
+                "Cost Event": "9th / 110",
+                "Autocross Event": "50th / 78",
+            },
+        },
+    },
+
+    {
+        id: 14,
+        images: ["grc14", "team", "team2", "parked", "model"],
+        about: undefined,
+        stats: undefined,
+        results: {
+            "Formula Michigan": {
+                Overall: "86th / 107",
+                "Presentation Event": "101st / 107",
+                "Design Event": "97th / 105",
+                "Cost Event": "14th / 108",
+                "Autocross Event": "71st / 71",
+            },
+        },
+    },
+
+    {
+        id: 13,
+        images: ["grc13", "back", "frame", "build"],
+        about: undefined,
+        stats: undefined,
+    },
+
+    {
+        id: 12,
+        images: ["grc12"],
+        about: undefined,
+        stats: undefined,
+        results: {
+            "Formula Michigan": {
+                Overall: "70th / 105",
+                "Presentation Event": "78th / 102",
+                "Design Event": "98th / 102",
+                "Cost Event": "53rd /105th",
+                "Acceleration Event": "18th / 75",
+                "Skid-Pad Event": "65th / 74",
+                "Autocross Event": "55th / 55",
+            },
+        },
+    },
+
+    {
+        id: 11,
+        images: [],
+        about: undefined,
+        stats: undefined,
+        results: {
+            "Formula California": {
+                Overall: "52nd / 61",
+                "Presentation Event": "34th / 60",
+                "Design Event": "59th / 59",
+                "Cost Event": "29th / 58",
+                "Autocross Event": "38th / 38",
+                Endurance: "30th / 30",
+                Economy: "27th / 30",
+            },
+        },
+    },
+
+    {
+        id: 9,
+        images: [],
+        about: undefined,
+        stats: undefined,
+        results: {
+            "Formula Michigan": {
+                Overall: "58th / 91",
+                "Presentation Event": "79th / 88",
+                "Design Event": "50th / 89",
+                "Cost Event": "25th / 91",
+                "Acceleration Event": "51st / 64",
+                "Skid-Pad Event": "66th/ 66",
+                "Autocross Event": "45th / 66",
+            },
+        },
+    },
+
+    {
+        id: 8,
+        images: ["grc08", "nose"],
+        about: undefined,
+        stats: undefined,
+        results: {
+            "Formula Michigan": {
+                Overall: "86th / 104",
+                "Presentation Event": "45th / 104",
+                "Design Event": "61st / 103",
+                "Cost Event": "77th / 105",
+                "Autocross Event": "75th / 75",
+                Economy: "34th / 42",
+            },
+        },
+    },
+
+    {
+        id: 7,
+        images: [],
+        about: undefined,
+        stats: undefined,
+        results: {
+            "Formula Michigan": {
+                Overall: "96th / 106",
+                "Presentation Event": "91st / 100",
+                "Design Event": "94th / 104",
+                "Cost Event": "82nd / 106",
+                "Acceleration Event": "73rd / 106",
+                "Skid-Pad Event": "76th/ 76",
+                "Autocross Event": "80th / 90",
+                Economy: "37.45th / 37.45nd",
+            },
+        },
+    },
+
+    {
+        id: 5,
+        images: ["team_photo", "grc05"],
+        about: undefined,
+        stats: undefined,
+        results: {
+            "Formula Michigan": {
+                Overall: "61st / 120",
+                "Presentation Event": "65th / 110",
+                "Design Event": "43rd / 110",
+                "Cost Event": "84th / 120",
+                "Acceleration Event": "39th / 97",
+                "Skid-Pad Event": "48th / 95",
+                "Autocross Event": "39th / 99",
+                Economy: "44th / 44",
+            },
+        },
+    },
+
+    {
+        id: 4,
+        images: ["team_photo", "grc04"],
+        about: undefined,
+        stats: undefined,
+        results: {
+            "Formula Michigan": {
+                Overall: "17th / 134",
+                "Presentation Event": "35th / 128",
+                "Design Event": "48th / 129",
+                "Cost Event": "102nd / 133",
+                "Acceleration Event": "23rd / 100",
+                "Skid-Pad Event": "53rd / 99",
+                "Autocross Event": "7th / 103",
+                Economy: "16th / 41",
+            },
+        },
+    },
+
+    {
+        id: 3,
+        images: ["team_photo", "grc03", "cad", "frame"],
+        about: undefined,
+        stats: undefined,
+        results: {
+            "Formula Michigan": {
+                Overall: "47th / 123",
+                "Presentation Event": "81st / 123",
+                "Design Event": "43rd / 105",
+                "Cost Event": "78th / 123",
+                "Acceleration Event": "21st / 78",
+                "Skid-Pad Event": "6th / 76",
+                "Autocross Event": "38th / 87",
+                Economy: "31st / 32",
             },
         },
     },
