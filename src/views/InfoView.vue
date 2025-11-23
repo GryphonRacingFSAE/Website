@@ -34,10 +34,10 @@ onMounted(() => {
                     (519) 824-4120 ext 52698
                 </p>
             </div>
-
+            
             <div id="map" class="map"></div>
         </div>
-
+        
         <div class="links-wrapper">
             <h2>Club Documents</h2>
             <a href="/media/club_docs/Constitution.pdf" target="_blank">Constitution</a>
