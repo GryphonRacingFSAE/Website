@@ -26,13 +26,18 @@ onMounted(() => {
                     50 Stone Rd E, Guelph, ON N1G 2W1
                 </p>
                 <p>
-                    Join our team as members, <br />
-                    sponsors or advisors
+                    Join our team as <span class="members">members</span>, <br />
+                    <span class="sponsors">sponsors</span> or <span class="advisors">advisors</span>
+                </p>
+                <p>
+                    ugracing@uoguelph.ca<br />
+                    (519) 824-4120 ext 52698
                 </p>
             </div>
             
             <div id="map" class="map"></div>
         </div>
+        
         <div class="links-wrapper">
             <h2>Club Documents</h2>
             <a href="/media/club_docs/Constitution.pdf" target="_blank">Constitution</a>
@@ -50,7 +55,8 @@ onMounted(() => {
 <style scoped>
 .root {
     width: 100%;
-    background-color: var(--gryphon-white);
+    background-color: var(--gryphon-black);
+    color: var(--gryphon-white);
 }
 
 .shop_info {
@@ -60,13 +66,12 @@ onMounted(() => {
     display: flex;
     padding: 15vh 15% 10vh;
 
-    color: var(--gryphon-red);
+    color: var(--gryphon-dark-white);
 }
 
 .map {
     background: url(/media/maps_loading.webp);
     background-size: cover;
-    border-radius: 2em;
     overflow: hidden;
     border: 0;
 
@@ -84,6 +89,30 @@ onMounted(() => {
     margin-bottom: auto;
 }
 
+.info h1 {
+    text-decoration: underline;
+    text-decoration-color: var(--gryphon-red);
+    text-underline-offset: 10px;
+}
+
+.members {
+    font-weight: bold;
+    font-style: italic;
+    color: var(--gryphon-white);
+}
+
+.sponsors {
+    font-weight: bold;
+    font-style: italic;
+    color: var(--gryphon-red);
+}
+
+.advisors {
+    font-weight: bold;
+    font-style: italic;
+    color: var(--gryphon-yellow);
+}
+
 .shop_info p {
     font-size: 2em;
 }
@@ -97,7 +126,10 @@ h2 {
     margin: 0;
     font-size: 2em;
     text-align: center;
-    color: var(--gryphon-red);
+    color: var(--gryphon-dark-white);
+    text-decoration: underline;
+    text-decoration-color: var(--gryphon-red);
+    text-underline-offset: 5px;
 }
 
 .links-wrapper {
@@ -116,11 +148,11 @@ a {
     text-decoration: none;
     padding-top: 1em;
     padding-left: 0.5em;
-    color: black;
+    color: var(--gryphon-dark-white);
     transition-duration: 0.2s;
 }
 a:hover {
-    color: var(--gryphon-red);
+    color: var(--gryphon-yellow);
     translate: 8px;
 }
 
@@ -128,8 +160,8 @@ hr {
     border: 0;
     clear: both;
     display: block;
-    width: 99%;
-    background: linear-gradient(to right, var(--gryphon-red) 0%, var(--gryphon-white) 100%);
+    width: 100%;
+    background: linear-gradient(to right, var(--gryphon-yellow) 0%, var(--gryphon-red) 50%, var(--gryphon-yellow) 100%);
     height: 3px;
     border-radius: 50px;
 }

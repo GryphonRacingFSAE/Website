@@ -24,7 +24,7 @@ h1 {
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif; 
     font-weight: 400;
     background-color: var(--gryphon-light-black);
     color: var(--gryphon-dark-white);
@@ -35,6 +35,7 @@ body {
     display: none;
 }
 
+/* bullets to view cars in our cars page */
 .swiper-pagination-bullet {
     width: 20px !important;
     height: 20px !important;
@@ -43,7 +44,7 @@ body {
     font-size: 12px !important;
     color: #000 !important;
     opacity: 1 !important;
-    background: var(--gryphon-gray) !important;
+    background: var(--gryphon-white) !important;
 }
 
 .swiper-pagination-bullet-active {
