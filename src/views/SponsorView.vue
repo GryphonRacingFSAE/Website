@@ -103,7 +103,7 @@
                     <img src="/sponsors/shakespeare_arms.webp" height="800" width="800" alt="Shakespeare Arms" />
                 </a>
                 <a href="https://www.melitron.com/">
-                    <img src="/sponsors/melitron.webp" height="400" width="400" alt="Melitron" />  
+                    <img src="/sponsors/melitron.webp" height="400" width="400" alt="Melitron" />
                 </a>
                 <!-- <a href="https://compositescanada.com/">
                     <img src="/sponsors/composites_canada.webp" width="400" height="106" alt="Composites Canada" />

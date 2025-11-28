@@ -298,7 +298,6 @@ function getCarImagePath(car: any) {
     }
     return "";
 }
-
 </script>
 
 <template>
@@ -306,35 +305,20 @@ function getCarImagePath(car: any) {
         <!-- Horizontal Timeline -->
         <div class="timeline-container">
             <h3 class="timeline-title">Gryphon Racing History</h3>
-            
+
             <div class="timeline-wrapper">
                 <!-- Timeline -->
-                <div 
-                    ref="timelineRef" 
-                    class="timeline"
-                >
-
+                <div ref="timelineRef" class="timeline">
                     <!-- Timeline Nodes with Car Images -->
-                    <div 
-                        v-for="car in ourCars" 
-                        :key="car.id"
-                        @click="updateSelectedCar(car.id)"
-                        class="timeline-node"
-                        :class="{ 'selected': selectedCar?.id === car.id }"
-                    >
+                    <div v-for="car in ourCars" :key="car.id" @click="updateSelectedCar(car.id)" class="timeline-node" :class="{ selected: selectedCar?.id === car.id }">
                         <!-- Car Image -->
                         <div class="car-image-container">
-                            <img 
-                                v-if="car.images && car.images.length > 0"
-                                :src="getCarImagePath(car)"
-                                :alt="`GRC ${car.id}`"
-                                class="car-image"
-                            />
+                            <img v-if="car.images && car.images.length > 0" :src="getCarImagePath(car)" :alt="`GRC ${car.id}`" class="car-image" />
                             <div v-else class="car-placeholder">
                                 <span>GRC {{ car.id }}</span>
                             </div>
                         </div>
-                        
+
                         <!-- Car Label -->
                         <div class="node-label">
                             <span class="car-name">GRC {{ car.id }}</span>
@@ -477,8 +461,9 @@ function getCarImagePath(car: any) {
 
 .timeline-node.selected .car-image-container {
     border: 4px solid var(--gryphon-yellow);
-    box-shadow: 0 0 25px rgba(220, 20, 60, 0.6),
-                0 0 40px rgba(255, 215, 0, 0.4);
+    box-shadow:
+        0 0 25px rgba(220, 20, 60, 0.6),
+        0 0 40px rgba(255, 215, 0, 0.4);
 }
 
 .timeline-node:hover .car-image-container {

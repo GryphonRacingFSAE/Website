@@ -67,7 +67,7 @@ window.addEventListener("scroll", () => {
     margin-right: 20px; /* Add some spacing from the right edge */
 }
 
-.navbar > * {   
+.navbar > * {
     padding: 0 20px;
     display: flex;
     align-items: center;
@@ -91,7 +91,7 @@ window.addEventListener("scroll", () => {
     right: 0;
     bottom: 0;
     display: none;
-    background-color: var(--gryphon-light-black-transparent); 
+    background-color: var(--gryphon-light-black-transparent);
     backdrop-filter: blur(25px);
     z-index: 1000;
 
@@ -122,7 +122,7 @@ window.addEventListener("scroll", () => {
 
 .close-button {
     position: absolute;
-    top: 1.0rem;
+    top: 1rem;
     right: 1.5rem;
     color: var(--gryphon-white);
     font-size: 2.5rem;
@@ -152,7 +152,7 @@ window.addEventListener("scroll", () => {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .highlight a:not(.banner):hover {           
+    .highlight a:not(.banner):hover {
         /* Dont highlight the banner cause it looks weird */
         background-color: var(--gryphon-yellow);
         color: var(--gryphon-light-black);
@@ -168,7 +168,7 @@ window.addEventListener("scroll", () => {
 
 @media screen and (max-width: 800px) {
     .nav-links {
-    /* .navbar a:not(:nth-child(1)) { */
+        /* .navbar a:not(:nth-child(1)) { */
         display: none;
     }
 

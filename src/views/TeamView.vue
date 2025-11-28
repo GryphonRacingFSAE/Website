@@ -14,10 +14,9 @@ import NavFooter from "@/components/NavFooter.vue";
                 </div>
             </div>
         </div>
-        
+
         <div class="floating_scroll_body">
             <div class="team">
-                
                 <h2>Team Captains</h2>
                 <hr />
                 <div class="profiles_list">
@@ -85,18 +84,18 @@ import NavFooter from "@/components/NavFooter.vue";
     justify-content: space-evenly;
     align-items: center;
     max-width: 1200px;
-    
-    padding-top: 4em; /* So we are not hidden under navbar on some screens */ 
-    width: 20%; 
-    min-width: 300px;  
+
+    padding-top: 4em; /* So we are not hidden under navbar on some screens */
+    width: 20%;
+    min-width: 300px;
     position: fixed;
     bottom: 25px;
     left: 25px;
 }
 
 .title {
-    display: flex;            /* lay the H1s out in a row */
-    align-items: center;      /* vertically center them */
+    display: flex; /* lay the H1s out in a row */
+    align-items: center; /* vertically center them */
 }
 
 h1 {
@@ -152,7 +151,7 @@ a {
     .landing_page_image {
         background-image: linear-gradient(#000 0%, #0003 33%), url("/media/team_photo.webp");
     }
-    
+
     .title {
         white-space: normal;
         flex-direction: column;
@@ -186,5 +185,4 @@ a {
     background-color: rgba(255, 255, 255, 0);
     position: absolute;
 }
-
 </style>

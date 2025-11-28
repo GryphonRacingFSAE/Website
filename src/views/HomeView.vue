@@ -97,9 +97,11 @@ const time_till_soonest = computed(() => {
                     <div class="about_us">
                         <h1>About Us</h1>
                         <p>
-                            Gryphon Racing is an engineering team that build race cars and led by students from University of Guelph is where students can gain real-world engineering experience building a performance vehicle for Formula Student competitions. This
-                            gives students the opportunity to explore and pursue their passion for knowledge through firsthand experiences as team members are required to design, buld, test, and troubleshooting. <br><br>
-                            Founded in 2002, the Gryphon Racing has built 19 cars and competed in multiple events from Formula Michigan to Toronto shout out. The team has evolved from building small displacement, gas-powered vehicles to electrical vehicles with advanced aerodynamics and custom systems. 
+                            Gryphon Racing is an engineering team that build race cars and led by students from University of Guelph is where students can gain real-world engineering experience
+                            building a performance vehicle for Formula Student competitions. This gives students the opportunity to explore and pursue their passion for knowledge through firsthand
+                            experiences as team members are required to design, buld, test, and troubleshooting. <br /><br />
+                            Founded in 2002, the Gryphon Racing has built 19 cars and competed in multiple events from Formula Michigan to Toronto shout out. The team has evolved from building small
+                            displacement, gas-powered vehicles to electrical vehicles with advanced aerodynamics and custom systems.
                         </p>
                     </div>
                     <div class="about_us_img">
@@ -111,19 +113,18 @@ const time_till_soonest = computed(() => {
                         <h1>Recent Cars</h1>
                         <div class="car_listings">
                             <div>
-                                <h2>GRC22   </h2>
+                                <h2>GRC22</h2>
                                 <p>
-                                    A new generation of Gryphon Racing design. This car marks the ending of an almost 20-year history of GSX-R powertrains. The team at Gryphon Racing has spent countless
-                                    hours developing Gryphon Racing's first ever: electric car, full aerodynamics kit, custom gearbox + differential, and custom Vehicle Control Unit.
+                                    A new generation of Gryphon Racing design. This car marks the ending of an almost 20-year history of GSX-R powertrains. The team at Gryphon Racing has spent
+                                    countless hours developing Gryphon Racing's first ever: electric car, full aerodynamics kit, custom gearbox + differential, and custom Vehicle Control Unit.
                                 </p>
                                 <img class="car_portrait" src="/current_cars/grc22_our_cars.webp" width="1000" height="667" alt="GRC22 Car Portrait" />
                             </div>
                             <div>
                                 <h2>GRC19</h2>
                                 <p>
-                                    Gryphon Racing's legacy. For the first time since the team's founding, the 600cc GSX-R engine was mounted transversely in the car and the iconic
-                                    shaft drive was replaced with a chain and custom-built limited slip differential. This allowed the team to switch to 10” rims and lower the car's overall center of
-                                    gravity.
+                                    Gryphon Racing's legacy. For the first time since the team's founding, the 600cc GSX-R engine was mounted transversely in the car and the iconic shaft drive was
+                                    replaced with a chain and custom-built limited slip differential. This allowed the team to switch to 10” rims and lower the car's overall center of gravity.
                                 </p>
                                 <img class="car_portrait" src="/current_cars/grc19.webp" width="1000" height="667" alt="GRC19 Car Portrait" />
                             </div>
@@ -142,7 +143,7 @@ const time_till_soonest = computed(() => {
     height: 100%;
 
     /* The image used */
-    background-image: url("/media/grc22_teampicture (1).webp");   /* reminder: convert this image to webp */
+    background-image: url("/media/grc22_teampicture.webp"); /* reminder: convert this image to webp */
 
     /* Set a specific height */
     min-height: 100vh;
@@ -267,9 +268,7 @@ const time_till_soonest = computed(() => {
         justify-content: center;
         border-radius: 20px;
     }
-    
 }
-
 
 .car_listings > div > h2 {
     margin-bottom: 0;
@@ -361,14 +360,13 @@ const time_till_soonest = computed(() => {
     justify-content: space-evenly;
 }
 
-.banner { 
-    padding-top: 4em; /* So we are not hidden under navbar on some screens */ 
-    width: 5%; 
-    min-width: 100px;  
-    
+.banner {
+    padding-top: 4em; /* So we are not hidden under navbar on some screens */
+    width: 5%;
+    min-width: 100px;
+
     position: fixed;
     bottom: 25px;
     left: 25px;
-} 
-
+}
 </style>
