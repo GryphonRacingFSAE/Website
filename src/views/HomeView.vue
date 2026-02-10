@@ -97,11 +97,8 @@ const time_till_soonest = computed(() => {
                     <div class="about_us">
                         <h1>About Us</h1>
                         <p>
-                            Gryphon Racing is an engineering team that build race cars and led by students from University of Guelph is where students can gain real-world engineering experience
-                            building a performance vehicle for Formula Student competitions. This gives students the opportunity to explore and pursue their passion for knowledge through firsthand
-                            experiences as team members are required to design, buld, test, and troubleshooting. <br /><br />
-                            Founded in 2002, the Gryphon Racing has built 19 cars and competed in multiple events from Formula Michigan to Toronto shout out. The team has evolved from building small
-                            displacement, gas-powered vehicles to electrical vehicles with advanced aerodynamics and custom systems.
+                            Gryphon Racing is a student-led engineering team at the University of Guelph that designs and builds race cars for Formula Student competitions. The team provides students with real-world engineering experience by working hands-on to design, build, test, and troubleshoot a high-performance vehicle. Through this process, members are able to explore and pursue their passion for engineering in a practical, team-based environment. <br /><br />
+                            Founded in 2002, Gryphon Racing has built 19 cars and competed in events such as Formula Michigan and the Toronto Shootout. Over the years, the team has evolved from producing small-displacement, gas-powered vehicles to developing electric vehicles featuring advanced aerodynamics and custom-designed systems.
                         </p>
                     </div>
                     <div class="about_us_img">
