@@ -58,7 +58,7 @@ import NavFooter from "@/components/NavFooter.vue";
     height: 100%;
 
     /* The image used */
-    background-image: url("/media/team_photo.webp");
+    background-image: url("/media/grc26_team_photo.webp");
 
     /* Set a specific height */
     min-height: 100vh;
@@ -149,7 +149,7 @@ a {
 
 @media screen and (max-width: 800px) {
     .landing_page_image {
-        background-image: linear-gradient(#000 0%, #0003 33%), url("/media/team_photo.webp");
+        background-image: linear-gradient(#000 0%, #0003 33%), url("/media/grc26_team_photo.webp");
     }
 
     .title {
