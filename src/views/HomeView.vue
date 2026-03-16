@@ -239,6 +239,7 @@ const time_till_soonest = computed(() => {
 
 @media screen and (max-width: 800px) {
     .landing_page_image {
+        background-attachment: scroll;
         background-image: linear-gradient(#000 0%, #0003 33%), url("/media/grc22_background.webp");
         min-height: 100vh;
     }

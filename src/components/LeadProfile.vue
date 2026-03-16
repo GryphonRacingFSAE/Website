@@ -2,7 +2,7 @@
 import { computed, ref } from "vue";
 const props = defineProps<{ title: string; name: string; linkedin?: string }>();
 
-const known_names = [
+const known_names = new Set([
     "ayden_bourdeau",
     "owen_frey",
     "dallas_hart",
@@ -29,11 +29,11 @@ const known_names = [
     "maria_maldonado",
     "zohair_salman",
     "anish_ganapathyraju",
-];
+]);
 
 const profile_picture_url = computed(() => {
     let cleaned_name = props.name.replaceAll(" ", "_").toLowerCase();
-    if (!known_names.includes(cleaned_name)) {
+    if (!known_names.has(cleaned_name)) {
         console.warn(`Unknown name: ${props.name} : ${cleaned_name}}`);
         cleaned_name = "unknown";
     }
@@ -46,7 +46,7 @@ const popup = ref(false);
 
 <template>
     <a class="card" :href="linkedin" target="_blank" @click="popup = true">
-        <img :src="profile_picture_url" class="profile_picture" :alt="props.name" />
+        <img :src="profile_picture_url" class="profile_picture" :alt="props.name" loading="lazy" width="220" height="220" />
         <h1>{{ props.name }}</h1>
         <h2>{{ props.title }}</h2>
 
@@ -67,6 +67,9 @@ const popup = ref(false);
     display: flex;
     flex-direction: column;
     text-align: center;
+    contain: layout;
+    width: 220px;
+    min-height: 320px;
     background-color: var(--gryphon-white);
     color: var(--gryphon-light-black);
 }

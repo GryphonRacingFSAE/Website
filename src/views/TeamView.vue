@@ -1,20 +1,19 @@
 <script setup lang="ts">
-import LeadProfile from "@/components/LeadProfile.vue";
-import NavFooter from "@/components/NavFooter.vue";
+import { defineAsyncComponent } from 'vue';
+// Lazy load improve performance
+const LeadProfile = defineAsyncComponent(() => import("@/components/LeadProfile.vue"));
+const NavFooter = defineAsyncComponent(() => import("@/components/NavFooter.vue"));
 </script>
 
 <template>
     <div class="landing_page_image">
-        <div class="overlay">
-            <div class="meet_the_team">
-                <div class="title">
-                    <h1>Meet</h1>
-                    <h1 class="red_team">the</h1>
-                    <h1 class="yellow_team">team.</h1>
-                </div>
+        <div class="meet_the_team">
+            <div class="title">
+                <h1>Meet</h1>
+                <h1 class="red_team">the</h1>
+                <h1 class="yellow_team">team.</h1>
             </div>
         </div>
-
         <div class="floating_scroll_body">
             <div class="team">
                 <h2>Team Captains</h2>
@@ -58,13 +57,12 @@ import NavFooter from "@/components/NavFooter.vue";
     height: 100%;
 
     /* The image used */
-    background-image: url("/media/team_photo.webp");
+    background-image: url("/media/grc26_team_photo.webp");
 
     /* Set a specific height */
     min-height: 100vh;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,7 +86,7 @@ import NavFooter from "@/components/NavFooter.vue";
     padding-top: 4em; /* So we are not hidden under navbar on some screens */
     width: 20%;
     min-width: 300px;
-    position: fixed;
+    position: absolute;
     bottom: 25px;
     left: 25px;
 }
@@ -134,12 +132,12 @@ a {
 }
 
 .profiles_list {
-    max-width: 1200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
     padding-bottom: 2em;
 }
 
@@ -149,7 +147,7 @@ a {
 
 @media screen and (max-width: 800px) {
     .landing_page_image {
-        background-image: linear-gradient(#000 0%, #0003 33%), url("/media/team_photo.webp");
+        background-image: linear-gradient(#000 0%, #0003 33%), url("/media/grc26_team_photo.webp");
     }
 
     .title {

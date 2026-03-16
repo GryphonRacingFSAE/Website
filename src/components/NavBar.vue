@@ -16,7 +16,7 @@ window.addEventListener("scroll", () => {
 
 <template>
     <div class="navbar highlight">
-        <RouterLink to="/" class="banner"><img src="/media/banner.svg" alt="Gryphon Racing Crest" /></RouterLink>
+        <RouterLink to="/" class="banner"><img src="/media/banner.svg" alt="Gryphon Racing Crest" width="200" height="50"/></RouterLink>
         <div class="nav-links">
             <RouterLink to="/">HOME</RouterLink>
             <RouterLink to="/team">TEAM</RouterLink>
