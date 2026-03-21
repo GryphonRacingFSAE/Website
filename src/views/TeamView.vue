@@ -63,7 +63,7 @@ const NavFooter = defineAsyncComponent(() => import("@/components/NavFooter.vue"
     min-height: 100vh;
 
     background-attachment: scroll;
-    background-position: center;
+    background-position: top -100px center;
     background-repeat: no-repeat;
     background-size: cover;
 }
