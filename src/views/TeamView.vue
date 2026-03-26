@@ -63,7 +63,7 @@ const NavFooter = defineAsyncComponent(() => import("@/components/NavFooter.vue"
     min-height: 100vh;
 
     background-attachment: scroll;
-    background-position: top -100px center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -148,8 +148,6 @@ a {
 @media screen and (max-width: 800px) {
     .landing_page_image {
         background-image: linear-gradient(#000 0%, #0003 33%), url("/media/grc26_team_photo.webp");
-        background-position: center;
-
     }
 
     .title {
