@@ -12,6 +12,9 @@
                 <a href="https://www.siemens.com/">
                     <img src="/sponsors/siemens.webp" width="400" height="129" alt="Siemens" />
                 </a>
+                <a href="https://www.specsavers.com/">
+                    <img src="/sponsors/specsavers.webp" width="400" height="154" alt="Specsavers" />
+                </a>
                 <!-- <a href="https://musashiamericas.com/">
                     <img src="/sponsors/musashi.webp" width="400" height="71" alt="Musashi" />
                 </a>
