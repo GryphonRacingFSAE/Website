@@ -2,6 +2,12 @@
 import { computed, ref } from "vue";
 const props = defineProps<{ title: string; name: string; linkedin?: string }>();
 
+/** 
+ * Korab Islami --> Conrad Islami
+ * Riyan Noaman --> Charger Noaman
+ * Zohair Salman --> Rodney Salman
+ * Jasryan Binning --> Jasryan Binning
+*/
 const known_names = new Set([
     "ayden_bourdeau",
     "owen_frey",
@@ -16,19 +22,20 @@ const known_names = new Set([
     "chris_walker",
     "jacob_dykstra",
     "bethany_hughes",
-    "korab_islami",
+    "conrad_islami", 
     "jonathan_chung",
     "max_brown",
     "julian_vanlandschoot",
     "sheel_sachdev",
     "chloe_san_juan",
     "giuliana_koledin",
-    "riyan_noaman",
+    "charger_noaman", 
     "christian_alloway",
     "ian_castelino",
     "maria_maldonado",
-    "zohair_salman",
+    "rodney_salman", 
     "anish_ganapathyraju",
+    "jasryan_binning" 
 ]);
 
 const profile_picture_url = computed(() => {
