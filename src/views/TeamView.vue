@@ -4,6 +4,11 @@ import { defineAsyncComponent } from 'vue';
 const LeadProfile = defineAsyncComponent(() => import("@/components/LeadProfile.vue"));
 const NavFooter = defineAsyncComponent(() => import("@/components/NavFooter.vue"));
 </script>
+ 
+<!-- Korab Islami to Conrad Islami
+Riyan Noaman to Charger Noaman
+Zohair Salman to Rodney Salman
+Jasryan Binning to Jasryan Binning -->
 
 <template>
     <div class="landing_page_image">
@@ -33,10 +38,10 @@ const NavFooter = defineAsyncComponent(() => import("@/components/NavFooter.vue"
                     <LeadProfile title="Business" name="Maria Maldonado" linkedin="https://www.linkedin.com/in/maria-maldonado-94b619223/" />
                     <LeadProfile title="Driveline" name="Christian Alloway" linkedin="https://www.linkedin.com/in/christian-alloway-9a939a201/" />
                     <LeadProfile title="Electrical" name="Rayne van Voorst" linkedin="https://www.linkedin.com/in/rayne-van-voorst-691030225/" />
-                    <LeadProfile title="Electrical" name="Zohair Salman" linkedin="https://www.linkedin.com/in/zohairsalman/" />
-                    <LeadProfile title="Embedded" name="Riyan Noaman" linkedin="https://www.linkedin.com/in/riyan-noaman-526744211/" />
+                    <LeadProfile title="Electrical" name="Rodney Salman" linkedin="https://www.linkedin.com/in/zohairsalman/" />
+                    <LeadProfile title="Embedded" name="Charger Noaman" linkedin="https://www.linkedin.com/in/riyan-noaman-526744211/" />
                     <LeadProfile title="Frame" name="Julian Vanlandschoot" />
-                    <LeadProfile title="Suspension" name="Korab Islami" linkedin="https://www.linkedin.com/in/korabislami/" />
+                    <LeadProfile title="Suspension" name="Conrad Islami" linkedin="https://www.linkedin.com/in/korabislami/" />
                     <LeadProfile title="Suspension" name="Owen Frey" linkedin="https://www.linkedin.com/in/owen-frey-8435b3261/" />
                 </div>
 
@@ -44,6 +49,8 @@ const NavFooter = defineAsyncComponent(() => import("@/components/NavFooter.vue"
                 <hr />
                 <div class="profiles_list">
                     <LeadProfile title="Aerodynamics" name="Anish Ganapathyraju" linkedin="https://www.linkedin.com/in/anish-ganapathyraju-24aa8832a/" />
+                    <LeadProfile title="Dynamics" name="Jasryan Binning" />
+
                 </div>
             </div>
             <NavFooter></NavFooter>
