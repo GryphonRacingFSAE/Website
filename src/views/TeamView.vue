@@ -44,6 +44,8 @@ const NavFooter = defineAsyncComponent(() => import("@/components/NavFooter.vue"
                 <hr />
                 <div class="profiles_list">
                     <LeadProfile title="Aerodynamics" name="Anish Ganapathyraju" linkedin="https://www.linkedin.com/in/anish-ganapathyraju-24aa8832a/" />
+                    <LeadProfile title="Dynamics" name="Jasryan Binning" linkedin="https://www.linkedin.com/in/jasryan-binning-2160432a1/" />
+                    <LeadProfile title="Dynamics" name="Thomas Knill" linkedin="https://www.linkedin.com/in/thomas-knill/" />
                 </div>
             </div>
             <NavFooter></NavFooter>
