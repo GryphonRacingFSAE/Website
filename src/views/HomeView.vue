@@ -110,20 +110,19 @@ const time_till_soonest = computed(() => {
                         <h1>Recent Cars</h1>
                         <div class="car_listings">
                             <div>
-                                <h2>GRC22</h2>
+                                <h2>GRC26</h2>
                                 <p>
-                                    A new generation of Gryphon Racing design. This car marks the ending of an almost 20-year history of GSX-R powertrains. The team at Gryphon Racing has spent
-                                    countless hours developing Gryphon Racing's first ever: electric car, full aerodynamics kit, custom gearbox + differential, and custom Vehicle Control Unit.
-                                </p>
-                                <img class="car_portrait" src="/current_cars/grc22_our_cars.webp" width="1000" height="667" alt="GRC22 Car Portrait" />
-                            </div>
-                            <div>
-                                <h2>GRC19</h2>
-                                <p>
-                                    Gryphon Racing's legacy. For the first time since the team's founding, the 600cc GSX-R engine was mounted transversely in the car and the iconic shaft drive was
-                                    replaced with a chain and custom-built limited slip differential. This allowed the team to switch to 10” rims and lower the car's overall center of gravity.
+                                    Gryphon Racing's return to combustion. GRC26 marks the team's first internal combustion entry to competition since GRC19, built around a CBR600RR engine. The car debuts a full aerodynamics package for the first time in team history, including a front wing, sidepods, a rear wing, and a floor, giving the team its most aggressive aero platform to date.
                                 </p>
                                 <img class="car_portrait" src="/current_cars/grc19.webp" width="1000" height="667" alt="GRC19 Car Portrait" />
+                            </div>
+                            <div>
+                                <h2>GRC22</h2>
+                                <p>
+                                    Gryphon Racing's new milestone being the first generation to design and compete with the electrical car. GRC22 marks the team's first fully electric car and advanced aero design built by Gryphon Racing. The team at Gryphon Racing has spent
+                                    countless hours developing the first ever electric car, full aerodynamics kit, custom gearbox plus differential, and custom Vehicle Control Unit.
+                                </p>
+                                <img class="car_portrait" src="/current_cars/grc22_our_cars.webp" width="1000" height="667" alt="GRC22 Car Portrait" />
                             </div>
                         </div>
                     </div>
