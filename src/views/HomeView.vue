@@ -139,7 +139,7 @@ const time_till_soonest = computed(() => {
     height: 100%;
 
     /* The image used */
-    background-image: url("/media/grc22_teampicture.webp"); /* reminder: convert this image to webp */
+    background-image: url("/media/grc26_michigan_team.webp"); /* reminder: convert this image to webp */
 
     /* Set a specific height */
     min-height: 100vh;
