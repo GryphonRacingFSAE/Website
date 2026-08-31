@@ -4,6 +4,20 @@ import CarGallery from "@/components/CarGallery.vue";
 
 const ourCars = [
     {
+        id: 26,
+        images: ["front_view1", "front_view2", "rear_view", "noise_test", "team_photo"],
+        about: "GRC26 is the return of internal combustion car with advanced aerodynamics.",
+        stats: undefined,
+        results: {
+            "Formula Michigan IC": {
+                Overall: "78th / 111",
+                "Design Event":"64th / 104",
+                "Presentation Event":"47th / 131",
+                "Cost Event":"52th / 104",
+            }
+        }
+    },
+    {
         id: 22,
         images: ["grc22"],
         about: "GRC22 is the first fully electric car and advanced aero design built by Gryphon Racing.",
