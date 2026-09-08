@@ -31,6 +31,8 @@ const known_names = new Set([
     "anish_ganapathyraju" 
 ]);
 
+// names to add: daniel_teasdale, samuel cherniak, zachary_caldwell, hasan_siddiqui, ibraheem_baig, jonathan_mildon, jasryan_binning, khoa_tran
+
 const profile_picture_url = computed(() => {
     let cleaned_name = props.name.replaceAll(" ", "_").toLowerCase();
     if (!known_names.has(cleaned_name)) {

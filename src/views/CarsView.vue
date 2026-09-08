@@ -5,7 +5,7 @@ import CarGallery from "@/components/CarGallery.vue";
 const ourCars = [
     {
         id: 26,
-        images: ["front_view1", "front_view2", "rear_view", "noise_test", "team_photo"],
+        images: ["front_view1", "front_view2", "rear_view", "noise_test"],
         about: "GRC26 is the return of internal combustion car with advanced aerodynamics.",
         stats: undefined,
         results: {

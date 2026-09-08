@@ -114,7 +114,7 @@ const time_till_soonest = computed(() => {
                                 <p>
                                     Gryphon Racing's return to combustion. GRC26 marks the team's first internal combustion entry to competition since GRC19, built around a CBR600RR engine. The car debuts a full aerodynamics package for the first time in team history, including a front wing, sidepods, a rear wing, and a floor, giving the team its most aggressive aero platform to date.
                                 </p>
-                                <img class="car_portrait" src="/current_cars/grc19.webp" width="1000" height="667" alt="GRC19 Car Portrait" />
+                                <img class="car_portrait" src="/current_cars/grc26_driver.webp" width="1000" height="667" alt="GRC26 Driver" />
                             </div>
                             <div>
                                 <h2>GRC22</h2>
