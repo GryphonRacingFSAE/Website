@@ -119,8 +119,8 @@ const time_till_soonest = computed(() => {
                             <div>
                                 <h2>GRC22</h2>
                                 <p>
-                                    Gryphon Racing's new milestone being the first generation to design and compete with the electrical car. GRC22 marks the team's first fully electric car and advanced aero design built by Gryphon Racing. The team at Gryphon Racing has spent
-                                    countless hours developing the first ever electric car, full aerodynamics kit, custom gearbox plus differential, and custom Vehicle Control Unit.
+                                    Gryphon Racing's new milestones. GRC22 marks the team's first fully electric car and advanced aero design built by Gryphon Racing. The team at Gryphon Racing has spent
+                                    countless hours developing the first ever electric car, custom gearbox + differential, and custom Vehicle Control Unit.
                                 </p>
                                 <img class="car_portrait" src="/current_cars/grc22_our_cars.webp" width="1000" height="667" alt="GRC22 Car Portrait" />
                             </div>
